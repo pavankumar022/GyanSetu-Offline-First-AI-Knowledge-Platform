@@ -31,7 +31,6 @@ import {
   ShieldPersonIcon,
   CalendarIcon,
   VisibilityIcon,
-  CleaningServicesIcon,
   InfoIcon,
   PackIcon
 } from './components/Icons';
@@ -40,11 +39,19 @@ const API_BASE = 'http://localhost:8001/api';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('Dashboard');
+  const [settingsSubTab, setSettingsSubTab] = useState('storage'); // 'storage', 'language', 'notifications', 'security'
+  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const [notificationsEnabled, setNotificationsEnabled] = useState({
+    updates: true,
+    syncReminder: true,
+    offlineAlerts: false
+  });
+
   const [localStatus, setLocalStatus] = useState({
     installed_packs: [],
     storage_used_gb: 4.2,
     storage_total_gb: 16,
-    storage_percent: 26.3,
+    storage_percent: 26.2,
     last_sync_time: '2 hours ago',
     offline_mode: false,
     queries_count: 1248
@@ -58,37 +65,40 @@ export default function App() {
   
   // Chat state
   const [chats, setChats] = useState([
-    { id: 1, title: 'Agricultural Subsidy FAQ', excerpt: 'Details regarding the newly announced...', date: 'Today' },
-    { id: 2, title: 'Rural Health Guidelines', excerpt: 'Standard operating procedures for...', date: 'Today' },
-    { id: 3, title: 'Water Conservation Setup', excerpt: 'Step-by-step guide to installing...', date: 'Yesterday' }
+    { id: 1, title: 'Agricultural Subsidy FAQ', excerpt: 'Details regarding PM-KISAN and...', date: 'Today' },
+    { id: 2, title: 'Wheat Crop Karnataka', excerpt: 'Varieties and sowing dates...', date: 'Today' },
+    { id: 3, title: 'Rural Health Guidelines', excerpt: 'Standard operating procedures for...', date: 'Today' }
   ]);
-  const [activeChatId, setActiveChatId] = useState(1);
+  const [activeChatId, setActiveChatId] = useState(2);
   const [chatMessages, setChatMessages] = useState({
     1: [
-      { sender: 'user', text: 'What are the eligibility criteria for the recent agricultural subsidy aimed at marginal farmers in the eastern district?' },
+      { sender: 'user', text: 'What are the eligibility criteria for the agricultural subsidy?' },
       {
         sender: 'ai',
-        text: 'Based on the localized knowledge pack for the Eastern District (v.2.4), the eligibility criteria for the Marginal Farmer Agricultural Subsidy are as follows:\n\n• **Land Holding**: Must own and cultivate less than 2 hectares (approx. 5 acres) of land.\n• **Residency**: Must be a registered resident of the designated eastern district for at least 5 consecutive years.\n• **Crop Type**: The subsidy primarily targets farmers cultivating drought-resistant crops or engaging in approved multi-cropping practices.\n• **Income Threshold**: Total annual household income from all sources must not exceed ₹1,50,000.\n\nApplicants must provide a valid Farmer ID and recent land records to the local agricultural extension office during the application window.',
+        text: 'Based on the verified offline knowledge database, here is the official guidance:\n\n• **PM-KISAN**: Direct income support of ₹6,000/year to all eligible landholder farmer families in three 4-monthly installments of ₹2,000.\n• **Micro-Irrigation Subsidy (PMKSY)**: 90% government subsidy for Small & Marginal Farmers (< 2 hectares land holding) for drip and sprinkler irrigation installations. 45–55% subsidy for other category farmers.\n• **Seed & Fertilizer Subsidy**: High-yielding and bio-fortified seeds distributed at 50% subsidy through local Raitha Samparka Kendras (RSK).\n• **Eligibility Documents**: Aadhaar Card, Pahani / RTC land record document, FID, and Aadhaar-linked bank account.',
         citations: [
-          { title: 'Min. of Agriculture Order 2023-A', filepath: 'KP-AGRI-ED-09/soil_health.txt', excerpt: '...subsidy intended for marginal farmers owning < 2 ha. Must prove 5-yr residency...', confidence: 98 },
-          { title: 'District Subsidy Guidelines v2.4', filepath: 'KP-AGRI-ED-09/pest_control.txt', excerpt: '...Income cap set at ₹1.5L p.a. from all aggregated sources for eligibility...', confidence: 95 }
+          { title: 'Agricultural Subsidies', filepath: 'KP-AGRI-ED-09/agricultural_subsidies.txt', excerpt: 'Agricultural Subsidy and Support Schemes: PM-KISAN, PMKSY 90% subsidy for small and marginal farmers...', confidence: 95 }
         ]
       }
     ],
     2: [
+      { sender: 'user', text: 'for growing wheat crop in karnataka' },
+      {
+        sender: 'ai',
+        text: 'Based on the verified offline knowledge database, here is the official guidance:\n\n**Wheat Cultivation Guidelines in Karnataka (Northern Dry & Transition Zones):**\n• **Suitable Agro-Climatic Zones**: Zone 3 (Northern Dry Zone) and Zone 8 (Northern Transition Zone), covering Dharwad, Belagavi, Bagalkot, Vijayapura, and Gadag districts.\n• **Recommended Varieties**:\n  - *Irrigated*: UAS-304, DWR-162, GW-322, DWR-2006 (high yield, rust resistant).\n  - *Rainfed / Dryland*: DWR-1006, Bijaga Yellow, A-9-30-1 (durum wheat suited for black soils).\n• **Sowing Period**: Best window is October 15 to November 15. Avoid late sowing after Nov 30 to prevent heat-stress during grain filling.\n• **Soil Requirement**: Deep black cotton soils (Vertisols) or clayey loam with pH 6.5–7.8.\n• **Fertilizer (NPK per Hectare)**:\n  - Irrigated: 100 kg N, 50 kg P2O5, 50 kg K2O.\n• **Critical Irrigation Stages**:\n  1. Crown Root Initiation (CRI): 20–25 days after sowing.\n  2. Tillering Stage: 40–45 days.\n  3. Jointing / Stem Elongation: 60–65 days.\n  4. Flowering / Heading: 80–85 days.\n  5. Grain Milking / Dough Stage: 100–105 days.',
+        citations: [
+          { title: 'Wheat Cultivation Karnataka', filepath: 'KP-AGRI-ED-09/wheat_cultivation_karnataka.txt', excerpt: 'Wheat Cultivation Guidelines in Karnataka (Northern Dry & Transition Zones): Suitable Agro-Climatic Zones: Zone 3 and Zone 8...', confidence: 98 }
+        ]
+      }
+    ],
+    3: [
       { sender: 'user', text: 'Tell me about rural medical emergency protocol.' },
       {
         sender: 'ai',
         text: 'Rural medical guidelines outline basic emergency SOPs including first-aid for heat stroke (shading, cool damp cloth) and snake bites (immobilization, transport). Refer to rural health guidelines pack.',
-        citations: []
-      }
-    ],
-    3: [
-      { sender: 'user', text: 'How to harvest rainwater in rural areas?' },
-      {
-        sender: 'ai',
-        text: 'Rainwater harvesting in rural areas involves setting up a basic catchment surface, filter media, and offline storage tanks. Consult water conservation pack.',
-        citations: []
+        citations: [
+          { title: 'First Aid Guide', filepath: 'KP-HEALTH-RURAL/first_aid.txt', excerpt: 'Rural Health Care Guidelines: Heat Stroke, Snake Bite protocols...', confidence: 90 }
+        ]
       }
     ]
   });
@@ -104,7 +114,6 @@ export default function App() {
   // Search state
   const [packSearchQuery, setPackSearchQuery] = useState('');
 
-  // Fetch status on startup and intervals
   useEffect(() => {
     fetchLocalStatus();
     fetchCloudPacks();
@@ -216,7 +225,6 @@ export default function App() {
           }]
         }));
         
-        // Auto-select first citation if available
         if (data.citations && data.citations.length > 0) {
           setActiveCitation(data.citations[0]);
         } else {
@@ -227,7 +235,7 @@ export default function App() {
           ...prev,
           [activeChatId]: [...updatedMessages, {
             sender: 'ai',
-            text: 'Error generating offline AI response. Please ensure local storage database is initialized.',
+            text: 'Error accessing local knowledge store. Please check your downloaded packs.',
             citations: []
           }]
         }));
@@ -237,20 +245,19 @@ export default function App() {
         ...prev,
         [activeChatId]: [...updatedMessages, {
           sender: 'ai',
-          text: 'Local AI process is unreachable. Check backend terminal.',
+          text: 'Local knowledge processor is unreachable. Ensure local backend is active.',
           citations: []
         }]
       }));
     } finally {
       setIsGenerating(false);
-      fetchLocalStatus(); // refresh query counts
+      fetchLocalStatus();
     }
   };
 
   const handleQuickAsk = () => {
     if (!quickAskText.trim()) return;
     
-    // Create new chat
     const newId = chats.length + 1;
     const title = quickAskText.length > 25 ? quickAskText.substring(0, 25) + '...' : quickAskText;
     setChats([{ id: newId, title: title, excerpt: quickAskText, date: 'Today' }, ...chats]);
@@ -260,17 +267,15 @@ export default function App() {
     });
     setActiveChatId(newId);
     setQuickAskText('');
-    setActiveTab('Chat / Ask AI');
+    setActiveTab('Ask Questions');
     
-    // Trigger response after activeTab switches and focus happens
     setTimeout(() => {
-      // Simulate click send trigger
       setCurrentMessage(quickAskText);
     }, 100);
   };
 
   useEffect(() => {
-    if (activeTab === 'Chat / Ask AI' && currentMessage) {
+    if (activeTab === 'Ask Questions' && currentMessage) {
       handleSendMessage();
     }
   }, [activeTab]);
@@ -345,7 +350,6 @@ export default function App() {
       return;
     }
     
-    // Pull updates first
     try {
       const installedInfo = localStatus.installed_packs.map(p => ({ id: p.id, version: p.version }));
       const checkRes = await fetch(`${API_BASE}/sync/check`, {
@@ -363,7 +367,6 @@ export default function App() {
           return;
         }
         
-        // Sync each updated pack
         for (const update of updatesList) {
           await handleDownloadPack(update.pack_id);
         }
@@ -375,25 +378,10 @@ export default function App() {
     }
   };
 
-  const handleFreeSpace = async () => {
-    try {
-      const res = await fetch(`${API_BASE}/local/clear-space`, { method: 'POST' });
-      if (res.ok) {
-        showToast('Local cache and sync history cleared.');
-        fetchLocalStatus();
-        fetchSyncHistory();
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  // Helper to check if pack is installed on device
   const getPackInstallationState = (packId) => {
     const installed = localStatus.installed_packs.find(p => p.id === packId);
     if (!installed) return 'Not Downloaded';
     
-    // Check if there is an update
     const cloudCopy = cloudPacks.find(p => p.id === packId);
     if (cloudCopy && cloudCopy.version !== installed.version) {
       return 'Needs Update';
@@ -401,7 +389,6 @@ export default function App() {
     return 'Installed';
   };
 
-  // Filter cloud packs by search query
   const filteredPacks = (cloudPacks.length > 0 ? cloudPacks : [
     { id: 'KP-AGRI-ED-09', title: 'Agricultural Best Practices & Crop Data', icon: 'agriculture', category: 'Agriculture', version: 'v2.0', size_mb: 850 },
     { id: 'KP-SCHOLAR-2024', title: 'Government Scholarship Schemes 2024', icon: 'account_balance', category: 'Education', version: 'v2.1', size_mb: 420 },
@@ -410,10 +397,10 @@ export default function App() {
     { id: 'KP-LEGAL-BASIC', title: 'Basic Legal Rights & Procedures Manual', icon: 'gavel', category: 'Governance', version: 'v3.4', size_mb: 620 }
   ]).filter(p => p.title.toLowerCase().includes(packSearchQuery.toLowerCase()));
 
-  // Dynamic Navigation setup
+  // Navigation Items
   const navItems = [
     { name: 'Dashboard', icon: <DashboardIcon /> },
-    { name: 'Chat / Ask AI', icon: <ChatIcon /> },
+    { name: 'Ask Questions', icon: <ChatIcon /> },
     { name: 'Knowledge Packs', icon: <KnowledgePacksIcon /> },
     { name: 'Sync & Updates', icon: <SyncIcon /> },
     { name: 'Settings', icon: <SettingsIcon /> }
@@ -434,7 +421,7 @@ export default function App() {
       <nav aria-label="Main Navigation" className="hidden md:flex flex-col h-full w-[240px] py-gutter px-4 bg-surface border-r border-outline-variant shadow-sm fixed left-0 top-0 z-50">
         <div className="mb-8 px-4 flex flex-col">
           <h1 className="font-headline-md text-headline-md font-bold text-primary">GyanSetu</h1>
-          <span className="font-label-sm text-label-sm text-on-surface-variant font-medium">Offline AI Knowledge</span>
+          <span className="font-label-sm text-label-sm text-on-surface-variant font-medium">Offline Knowledge Platform</span>
         </div>
         
         <div className="flex-1 space-y-2">
@@ -466,7 +453,7 @@ export default function App() {
               <StorageIcon size={16} />
               Local Storage
             </span>
-            <span className="text-primary">{localStatus.storage_percent}%</span>
+            <span className="text-primary font-bold">{localStatus.storage_percent}%</span>
           </div>
           <div className="w-full bg-surface-container-highest rounded-full h-2">
             <div 
@@ -530,14 +517,13 @@ export default function App() {
             {/* TAB CONTENT: DASHBOARD */}
             {activeTab === 'Dashboard' && (
               <div className="space-y-gutter w-full">
-                {/* Stats row */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter w-full">
                   <div className="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-on-surface-variant mb-2">
                       <KnowledgePacksIcon className="text-outline" />
                       <span className="font-label-sm text-label-sm font-semibold">Packs Installed</span>
                     </div>
-                    <div className="font-display-lg text-display-lg text-on-surface">{localStatus.installed_packs.length} Packs</div>
+                    <div className="font-display-lg text-display-lg text-on-surface font-bold">{localStatus.installed_packs.length} Packs</div>
                   </div>
                   
                   <div className="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col gap-2">
@@ -545,7 +531,7 @@ export default function App() {
                       <StorageIcon className="text-outline" />
                       <span className="font-label-sm text-label-sm font-semibold">Storage Used</span>
                     </div>
-                    <div className="font-display-lg text-display-lg text-on-surface">{localStatus.storage_used_gb}GB</div>
+                    <div className="font-display-lg text-display-lg text-on-surface font-bold">{localStatus.storage_used_gb}GB</div>
                     <div className="w-full bg-surface-variant rounded-full h-2 mt-2">
                       <div className="bg-primary-container h-2 rounded-full" style={{ width: `${localStatus.storage_percent}%` }}></div>
                     </div>
@@ -557,7 +543,7 @@ export default function App() {
                       <SyncIcon className="text-outline" />
                       <span className="font-label-sm text-label-sm font-semibold">Last Synced</span>
                     </div>
-                    <div className="font-display-lg text-display-lg text-on-surface leading-tight truncate">{localStatus.last_sync_time}</div>
+                    <div className="font-display-lg text-display-lg text-on-surface font-bold leading-tight truncate">{localStatus.last_sync_time}</div>
                   </div>
 
                   <div className="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col gap-2">
@@ -565,7 +551,7 @@ export default function App() {
                       <ChatIcon className="text-outline" />
                       <span className="font-label-sm text-label-sm font-semibold">Offline Queries</span>
                     </div>
-                    <div className="font-display-lg text-display-lg text-on-surface">{localStatus.queries_count}</div>
+                    <div className="font-display-lg text-display-lg text-on-surface font-bold">{localStatus.queries_count}</div>
                   </div>
                 </div>
 
@@ -573,7 +559,7 @@ export default function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full">
                   {/* Recent Activity */}
                   <div className="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col h-full">
-                    <h3 className="font-title-sm text-title-sm text-primary mb-6 flex items-center gap-2 border-b border-outline-variant pb-3">
+                    <h3 className="font-title-sm text-title-sm text-primary mb-6 flex items-center gap-2 border-b border-outline-variant pb-3 font-bold">
                       <HistoryIcon />
                       Recent Sync & Updates Activity
                     </h3>
@@ -581,7 +567,7 @@ export default function App() {
                       {syncHistory.length === 0 ? (
                         <div className="flex flex-col items-center justify-center p-8 text-on-surface-variant bg-surface rounded-lg">
                           <p>No recent synchronization logs available.</p>
-                          {localStatus.offline_mode && <p className="text-xs mt-1 text-error">Connect to simulated server to view cloud logs.</p>}
+                          {localStatus.offline_mode && <p className="text-xs mt-1 text-error font-semibold">Connect to simulated server to view cloud logs.</p>}
                         </div>
                       ) : (
                         syncHistory.map((item, i) => (
@@ -592,10 +578,10 @@ export default function App() {
                               <SuccessIcon size={18} />
                             </div>
                             <div className="flex-1">
-                              <p className="font-body-lg text-body-lg text-on-surface">{item.pack_title}</p>
+                              <p className="font-body-lg text-body-lg text-on-surface font-semibold">{item.pack_title}</p>
                               <p className="font-body-md text-body-md text-on-surface-variant">{item.details}</p>
                             </div>
-                            <span className="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">{item.timestamp}</span>
+                            <span className="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap font-medium">{item.timestamp}</span>
                           </div>
                         ))
                       )}
@@ -609,14 +595,14 @@ export default function App() {
                       <AutoAwesomeIcon size={64} className="text-primary-fixed z-10" />
                     </div>
                     <div className="p-6 flex flex-col gap-4">
-                      <h3 className="font-title-sm text-title-sm text-primary">Quick Ask AI</h3>
+                      <h3 className="font-title-sm text-title-sm text-primary font-bold">Ask Questions</h3>
                       <p className="font-body-md text-body-md text-on-surface-variant mb-2">Query your offline knowledge base instantly.</p>
                       
                       <div className="relative w-full">
                         <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-outline" />
                         <input 
                           type="text" 
-                          placeholder="Ask AI anything..." 
+                          placeholder="Ask a question..." 
                           value={quickAskText}
                           onChange={(e) => setQuickAskText(e.target.value)}
                           onKeyDown={(e) => { if (e.key === 'Enter') handleQuickAsk(); }}
@@ -637,8 +623,8 @@ export default function App() {
               </div>
             )}
 
-            {/* TAB CONTENT: CHAT / ASK AI */}
-            {activeTab === 'Chat / Ask AI' && (
+            {/* TAB CONTENT: ASK QUESTIONS (CHAT) */}
+            {activeTab === 'Ask Questions' && (
               <div className="fixed top-16 right-0 w-[calc(100%-240px)] h-[calc(100vh-64px)] flex bg-surface-bright overflow-hidden">
                 {/* Chat History Panel (20%) */}
                 <aside className="w-1/5 border-r border-outline-variant bg-surface flex flex-col h-full shrink-0">
@@ -647,7 +633,7 @@ export default function App() {
                     <button 
                       onClick={() => {
                         const newId = chats.length + 1;
-                        setChats([{ id: newId, title: 'New Chat', excerpt: 'Ask offline query...', date: 'Today' }, ...chats]);
+                        setChats([{ id: newId, title: 'New Question', excerpt: 'Ask query...', date: 'Today' }, ...chats]);
                         setChatMessages({ ...chatMessages, [newId]: [] });
                         setActiveChatId(newId);
                       }}
@@ -698,9 +684,8 @@ export default function App() {
                   </div>
                 </aside>
 
-                {/* Conversation Box (50% or 80% depending on Citation details) */}
+                {/* Conversation Box */}
                 <section className="flex-1 flex flex-col h-full bg-background relative z-0">
-                  {/* Messages list */}
                   <div className="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-col gap-6">
                     <div className="flex items-center justify-center my-2">
                       <div className="bg-surface-container-high px-3 py-1 rounded-full border border-outline-variant text-xs text-on-surface-variant font-medium">
@@ -711,14 +696,14 @@ export default function App() {
                     {(chatMessages[activeChatId] || []).length === 0 ? (
                       <div className="flex-1 flex flex-col items-center justify-center p-12 text-center text-on-surface-variant">
                         <AutoAwesomeIcon size={48} className="text-primary-container mb-4" />
-                        <h4 className="font-title-sm text-title-sm text-on-surface mb-2 font-bold">Ask GyanSetu Offline AI</h4>
+                        <h4 className="font-title-sm text-title-sm text-on-surface mb-2 font-bold">Ask GyanSetu Knowledge Base</h4>
                         <p className="max-w-md text-sm">Enter a question below. The system will consult the vector index on your local storage to generate a cited response completely offline.</p>
                       </div>
                     ) : (
                       (chatMessages[activeChatId] || []).map((msg, index) => (
                         <div key={index} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                           {msg.sender === 'user' ? (
-                            <div className="bg-surface-container border border-outline-variant text-on-surface p-4 rounded-xl rounded-tr-sm max-w-[85%] shadow-sm">
+                            <div className="bg-surface-container border border-outline-variant text-on-surface p-4 rounded-xl rounded-tr-sm max-w-[85%] shadow-sm font-medium">
                               <p className="font-body-md text-body-md whitespace-pre-wrap">{msg.text}</p>
                             </div>
                           ) : (
@@ -727,7 +712,7 @@ export default function App() {
                                 <div className="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
                                   <SmartToyIcon size={14} className="text-[#acf4a4]" />
                                 </div>
-                                <span className="font-label-sm text-label-sm font-bold text-primary">GyanSetu AI</span>
+                                <span className="font-label-sm text-label-sm font-bold text-primary">GyanSetu Knowledge</span>
                               </div>
                               
                               <div className="font-body-md text-body-md whitespace-pre-wrap leading-relaxed text-on-surface break-words space-y-3">
@@ -769,7 +754,7 @@ export default function App() {
                             <div className="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
                               <SmartToyIcon size={14} className="text-[#acf4a4]" />
                             </div>
-                            <span className="font-label-sm text-label-sm font-bold text-primary">GyanSetu AI</span>
+                            <span className="font-label-sm text-label-sm font-bold text-primary">GyanSetu Knowledge</span>
                           </div>
                           <div className="flex gap-1 items-center h-5">
                             <span className="w-2 h-2 rounded-full bg-outline-variant animate-pulse"></span>
@@ -781,7 +766,7 @@ export default function App() {
                     )}
                   </div>
 
-                  {/* Message Input Box */}
+                  {/* Input Box */}
                   <div className="p-4 bg-surface border-t border-outline-variant shadow-md z-10">
                     <form onSubmit={handleSendMessage} className="flex flex-col gap-2 max-w-4xl mx-auto">
                       <div className="relative flex items-end gap-2 bg-surface-container-lowest border border-outline-variant rounded-xl p-2 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all shadow-sm">
@@ -812,14 +797,14 @@ export default function App() {
                       <div className="flex justify-between items-center px-2">
                         <span className="text-[10px] text-on-surface-variant font-semibold">Press Enter to send, Shift+Enter for new line.</span>
                         <div className="flex gap-2">
-                          <span className="text-[10px] bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant text-on-surface-variant font-semibold">Model: Offline-Instruct-v3 (Phi-3 fallback)</span>
+                          <span className="text-[10px] bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant text-on-surface-variant font-semibold">Offline Knowledge Engine (Verified RAG)</span>
                         </div>
                       </div>
                     </form>
                   </div>
                 </section>
 
-                {/* Source Verification Sidebar (30%) */}
+                {/* Source Verification Sidebar */}
                 {activeCitation && (
                   <aside className="w-[30%] border-l border-outline-variant bg-surface flex flex-col h-full shrink-0 shadow-[-4px_0_12px_rgba(0,0,0,0.02)] z-10 relative">
                     <div className="p-4 border-b border-outline-variant flex justify-between items-center bg-surface-container-lowest shadow-sm z-10">
@@ -911,7 +896,6 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Packs Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter w-full">
                   {filteredPacks.map(pack => {
                     const status = getPackInstallationState(pack.id);
@@ -991,7 +975,6 @@ export default function App() {
             {/* TAB CONTENT: SYNC & UPDATES */}
             {activeTab === 'Sync & Updates' && (
               <div className="flex flex-col md:flex-row gap-gutter w-full">
-                {/* Left Column */}
                 <section className="w-full md:w-[40%] flex flex-col gap-stack-gap">
                   <div className="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col">
                     <div className="flex items-center gap-3 mb-6">
@@ -1044,7 +1027,6 @@ export default function App() {
                   </div>
                 </section>
 
-                {/* Right Column */}
                 <section className="w-full md:w-[60%] flex flex-col">
                   <div className="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col h-full">
                     <div className="flex items-center gap-3 mb-6">
@@ -1094,116 +1076,269 @@ export default function App() {
             {/* TAB CONTENT: SETTINGS */}
             {activeTab === 'Settings' && (
               <div className="flex gap-gutter flex-1 items-stretch w-full">
-                {/* Left Pane Categories (30%) */}
-                <aside className="w-[30%] min-w-[280px] bg-surface-container-lowest shadow-sm rounded-xl p-6 flex flex-col gap-2 border border-outline-variant">
-                  <button className="w-full flex items-center gap-3 p-4 rounded-lg bg-primary-container text-on-primary-container text-left transition-colors font-bold shadow-sm">
-                    <SdStorageIcon className="text-on-primary-container" />
+                {/* Left Categories Pane */}
+                <aside className="w-[30%] min-w-[280px] bg-surface-container-lowest shadow-sm rounded-xl p-6 flex flex-col gap-2 border border-outline-variant h-fit">
+                  <button 
+                    onClick={() => setSettingsSubTab('storage')}
+                    className={`w-full flex items-center gap-3 p-4 rounded-lg text-left transition-colors font-bold ${
+                      settingsSubTab === 'storage' 
+                        ? 'bg-primary-container text-on-primary-container shadow-sm' 
+                        : 'text-on-surface hover:bg-surface-container-high'
+                    }`}
+                  >
+                    <SdStorageIcon className={settingsSubTab === 'storage' ? 'text-on-primary-container' : 'text-outline'} />
                     <span className="font-label-numeric text-label-numeric font-bold">Storage &amp; Data</span>
                   </button>
-                  <button className="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors font-semibold">
-                    <LanguageIcon className="text-outline" />
-                    <span className="font-body-md text-body-md">Language &amp; Region</span>
+
+                  <button 
+                    onClick={() => setSettingsSubTab('language')}
+                    className={`w-full flex items-center gap-3 p-4 rounded-lg text-left transition-colors font-bold ${
+                      settingsSubTab === 'language' 
+                        ? 'bg-primary-container text-on-primary-container shadow-sm' 
+                        : 'text-on-surface hover:bg-surface-container-high'
+                    }`}
+                  >
+                    <LanguageIcon className={settingsSubTab === 'language' ? 'text-on-primary-container' : 'text-outline'} />
+                    <span className="font-body-md text-body-md font-bold">Language &amp; Region</span>
                   </button>
-                  <button className="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors font-semibold">
-                    <NotificationsIcon className="text-outline" />
-                    <span className="font-body-md text-body-md">Notifications</span>
+
+                  <button 
+                    onClick={() => setSettingsSubTab('notifications')}
+                    className={`w-full flex items-center gap-3 p-4 rounded-lg text-left transition-colors font-bold ${
+                      settingsSubTab === 'notifications' 
+                        ? 'bg-primary-container text-on-primary-container shadow-sm' 
+                        : 'text-on-surface hover:bg-surface-container-high'
+                    }`}
+                  >
+                    <NotificationsIcon className={settingsSubTab === 'notifications' ? 'text-on-primary-container' : 'text-outline'} />
+                    <span className="font-body-md text-body-md font-bold">Notifications</span>
                   </button>
-                  <button className="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors font-semibold">
-                    <ShieldPersonIcon className="text-outline" />
-                    <span className="font-body-md text-body-md">Account &amp; Security</span>
+
+                  <button 
+                    onClick={() => setSettingsSubTab('security')}
+                    className={`w-full flex items-center gap-3 p-4 rounded-lg text-left transition-colors font-bold ${
+                      settingsSubTab === 'security' 
+                        ? 'bg-primary-container text-on-primary-container shadow-sm' 
+                        : 'text-on-surface hover:bg-surface-container-high'
+                    }`}
+                  >
+                    <ShieldPersonIcon className={settingsSubTab === 'security' ? 'text-on-primary-container' : 'text-outline'} />
+                    <span className="font-body-md text-body-md font-bold">Account &amp; Security</span>
                   </button>
                 </aside>
 
-                {/* Right Pane Detail Panel (70%) */}
+                {/* Right Pane Detail View */}
                 <section className="flex-1 bg-surface-container-lowest shadow-sm rounded-xl p-6 border border-outline-variant flex flex-col">
-                  <header className="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
-                    <SdStorageIcon size={30} className="text-primary-container" />
-                    <h2 className="font-headline-md text-headline-md text-on-surface font-bold">Storage Management</h2>
-                  </header>
                   
-                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 mb-12 items-center">
-                    {/* SVG Donut Chart */}
-                    <div className="flex flex-col items-center justify-center p-8 bg-surface rounded-xl border border-outline-variant">
-                      <div className="relative w-48 h-48 mb-6">
-                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                          <path 
-                            className="text-surface-variant stroke-current" 
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
-                            fill="none" 
-                            strokeWidth="3.5"
-                          ></path>
-                          <path 
-                            className="text-primary-container stroke-current" 
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
-                            fill="none" 
-                            strokeWidth="4"
-                            strokeDasharray={`${localStatus.storage_percent}, 100`}
-                            strokeLinecap="round"
-                          ></path>
-                        </svg>
-                        <div className="absolute inset-0 flex flex-col items-center justify-center">
-                          <span className="font-display-lg text-display-lg text-on-surface">{localStatus.storage_percent}%</span>
-                          <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-semibold">Utilized</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Stats details */}
-                    <div className="flex flex-col justify-center gap-6">
-                      <div className="flex justify-between items-baseline border-b border-outline-variant pb-4">
-                        <div>
-                          <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 font-semibold">Total Used</p>
-                          <p className="font-display-lg text-display-lg text-primary flex items-baseline gap-2">
-                            {localStatus.storage_used_gb} <span className="font-title-sm text-title-sm text-on-surface-variant">GB</span>
-                          </p>
-                        </div>
-                        <div className="text-right">
-                          <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 font-semibold">Total Free</p>
-                          <p className="font-display-lg text-display-lg text-on-surface flex items-baseline gap-2 justify-end">
-                            {roundValue(localStatus.storage_total_gb - localStatus.storage_used_gb)} <span className="font-title-sm text-title-sm text-on-surface-variant font-bold">GB</span>
-                          </p>
-                        </div>
-                      </div>
+                  {/* SUBTAB 1: STORAGE */}
+                  {settingsSubTab === 'storage' && (
+                    <>
+                      <header className="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
+                        <SdStorageIcon size={30} className="text-primary-container" />
+                        <h2 className="font-headline-md text-headline-md text-on-surface font-bold">Storage Management</h2>
+                      </header>
                       
-                      <div className="flex flex-col gap-4 mt-2">
-                        <h3 className="font-title-sm text-title-sm text-on-surface font-bold">Allocation Breakdown</h3>
+                      <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 mb-6 items-center">
+                        <div className="flex flex-col items-center justify-center p-8 bg-surface rounded-xl border border-outline-variant">
+                          <div className="relative w-48 h-48 mb-6">
+                            <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                              <path 
+                                className="text-surface-variant stroke-current" 
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
+                                fill="none" 
+                                strokeWidth="3.5"
+                              ></path>
+                              <path 
+                                className="text-primary-container stroke-current" 
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
+                                fill="none" 
+                                strokeWidth="4"
+                                strokeDasharray={`${localStatus.storage_percent}, 100`}
+                                strokeLinecap="round"
+                              ></path>
+                            </svg>
+                            <div className="absolute inset-0 flex flex-col items-center justify-center">
+                              <span className="font-display-lg text-display-lg text-on-surface font-bold">{localStatus.storage_percent}%</span>
+                              <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-semibold">Utilized</span>
+                            </div>
+                          </div>
+                        </div>
                         
-                        <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
-                          <div className="flex items-center gap-3">
-                            <div className="w-3 h-3 rounded-full bg-primary-container"></div>
-                            <span className="font-body-md text-body-md font-semibold">Knowledge Packs</span>
+                        <div className="flex flex-col justify-center gap-6">
+                          <div className="flex justify-between items-baseline border-b border-outline-variant pb-4">
+                            <div>
+                              <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 font-semibold">Total Used</p>
+                              <p className="font-display-lg text-display-lg text-primary font-bold flex items-baseline gap-2">
+                                {localStatus.storage_used_gb} <span className="font-title-sm text-title-sm text-on-surface-variant">GB</span>
+                              </p>
+                            </div>
+                            <div className="text-right">
+                              <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 font-semibold">Total Free</p>
+                              <p className="font-display-lg text-display-lg text-on-surface font-bold flex items-baseline gap-2 justify-end">
+                                {roundValue(localStatus.storage_total_gb - localStatus.storage_used_gb)} <span className="font-title-sm text-title-sm text-on-surface-variant font-bold">GB</span>
+                              </p>
+                            </div>
                           </div>
-                          <span className="font-label-numeric text-label-numeric font-bold">3.1 GB</span>
-                        </div>
+                          
+                          <div className="flex flex-col gap-4 mt-2">
+                            <h3 className="font-title-sm text-title-sm text-on-surface font-bold">Allocation Breakdown</h3>
+                            
+                            <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
+                              <div className="flex items-center gap-3">
+                                <div className="w-3 h-3 rounded-full bg-primary-container"></div>
+                                <span className="font-body-md text-body-md font-semibold">Knowledge Packs</span>
+                              </div>
+                              <span className="font-label-numeric text-label-numeric font-bold">3.1 GB</span>
+                            </div>
 
-                        <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
-                          <div className="flex items-center gap-3">
-                            <div className="w-3 h-3 rounded-full bg-[#feae2c]"></div>
-                            <span className="font-body-md text-body-md font-semibold">Chat History &amp; Logs</span>
-                          </div>
-                          <span className="font-label-numeric text-label-numeric font-bold">0.8 GB</span>
-                        </div>
+                            <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
+                              <div className="flex items-center gap-3">
+                                <div className="w-3 h-3 rounded-full bg-[#feae2c]"></div>
+                                <span className="font-body-md text-body-md font-semibold">Chat History &amp; Logs</span>
+                              </div>
+                              <span className="font-label-numeric text-label-numeric font-bold">0.8 GB</span>
+                            </div>
 
-                        <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
-                          <div className="flex items-center gap-3">
-                            <div className="w-3 h-3 rounded-full bg-[#dbdad7]"></div>
-                            <span className="font-body-md text-body-md font-semibold">System / Cache</span>
+                            <div className="flex items-center justify-between p-3 rounded-lg hover:bg-surface border border-transparent hover:border-outline-variant">
+                              <div className="flex items-center gap-3">
+                                <div className="w-3 h-3 rounded-full bg-[#dbdad7]"></div>
+                                <span className="font-body-md text-body-md font-semibold">System / Cache</span>
+                              </div>
+                              <span className="font-label-numeric text-label-numeric font-bold">0.3 GB</span>
+                            </div>
                           </div>
-                          <span className="font-label-numeric text-label-numeric font-bold">0.3 GB</span>
                         </div>
                       </div>
+                    </>
+                  )}
 
-                      <div className="mt-4 pt-4 border-t border-outline-variant flex justify-end">
-                        <button 
-                          onClick={handleFreeSpace}
-                          className="px-6 py-2.5 rounded-lg bg-surface border border-outline text-primary font-bold hover:bg-surface-container-high transition-colors flex items-center gap-2"
-                        >
-                          <CleaningServicesIcon size={16} />
-                          Free Up Space
-                        </button>
+                  {/* SUBTAB 2: LANGUAGE & REGION */}
+                  {settingsSubTab === 'language' && (
+                    <div>
+                      <header className="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
+                        <LanguageIcon size={30} className="text-primary-container" />
+                        <h2 className="font-headline-md text-headline-md text-on-surface font-bold">Language &amp; Regional Settings</h2>
+                      </header>
+                      
+                      <div className="space-y-6 max-w-2xl">
+                        <div>
+                          <label className="block font-title-sm text-title-sm text-on-surface font-bold mb-2">Display Language</label>
+                          <p className="text-sm text-on-surface-variant mb-4">Choose language for interface labels and offline dictionary translation.</p>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            {['English (Default)', 'Hindi (हिन्दी)', 'Kannada (ಕನ್ನಡ)', 'Marathi (मराठी)'].map((lang) => {
+                              const isSel = selectedLanguage === lang;
+                              return (
+                                <button
+                                  key={lang}
+                                  onClick={() => { setSelectedLanguage(lang); showToast(`Selected display language: ${lang}`); }}
+                                  className={`p-4 rounded-xl border text-left flex items-center justify-between transition-all ${
+                                    isSel 
+                                      ? 'border-primary bg-primary/5 text-primary font-bold shadow-sm' 
+                                      : 'border-outline-variant bg-surface hover:border-primary/50'
+                                  }`}
+                                >
+                                  <span>{lang}</span>
+                                  {isSel && <SuccessIcon size={18} className="text-primary" />}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+
+                        <div className="pt-6 border-t border-outline-variant">
+                          <label className="block font-title-sm text-title-sm text-on-surface font-bold mb-2">Primary Agricultural Zone</label>
+                          <select className="w-full p-3 rounded-lg border border-outline-variant bg-surface font-body-md outline-none focus:border-primary">
+                            <option>Karnataka (Zone 3 & Zone 8 - Northern Dry & Transition)</option>
+                            <option>Karnataka (Zone 5 & Zone 6 - Southern Dry & Transition)</option>
+                            <option>Maharashtra (Western Ghats & Vidarbha)</option>
+                            <option>National All-India Baseline</option>
+                          </select>
+                          <p className="text-xs text-on-surface-variant mt-2">Customizes default vector search priority to the selected regional climate pack.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
+
+                  {/* SUBTAB 3: NOTIFICATIONS */}
+                  {settingsSubTab === 'notifications' && (
+                    <div>
+                      <header className="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
+                        <NotificationsIcon size={30} className="text-primary-container" />
+                        <h2 className="font-headline-md text-headline-md text-on-surface font-bold">Notification Preferences</h2>
+                      </header>
+
+                      <div className="space-y-6 max-w-2xl">
+                        <div className="flex items-center justify-between p-4 rounded-xl border border-outline-variant bg-surface">
+                          <div>
+                            <h4 className="font-title-sm text-title-sm font-bold text-on-surface">Delta Update Alerts</h4>
+                            <p className="text-sm text-on-surface-variant">Notify when an official knowledge pack has newer version on the cloud.</p>
+                          </div>
+                          <input 
+                            type="checkbox" 
+                            checked={notificationsEnabled.updates} 
+                            onChange={(e) => setNotificationsEnabled({ ...notificationsEnabled, updates: e.target.checked })}
+                            className="w-5 h-5 accent-primary cursor-pointer"
+                          />
+                        </div>
+
+                        <div className="flex items-center justify-between p-4 rounded-xl border border-outline-variant bg-surface">
+                          <div>
+                            <h4 className="font-title-sm text-title-sm font-bold text-on-surface">Auto-Sync Reminder on Wi-Fi</h4>
+                            <p className="text-sm text-on-surface-variant">Prompt for one-click delta sync whenever laptop joins a trusted Wi-Fi network.</p>
+                          </div>
+                          <input 
+                            type="checkbox" 
+                            checked={notificationsEnabled.syncReminder} 
+                            onChange={(e) => setNotificationsEnabled({ ...notificationsEnabled, syncReminder: e.target.checked })}
+                            className="w-5 h-5 accent-primary cursor-pointer"
+                          />
+                        </div>
+
+                        <div className="flex items-center justify-between p-4 rounded-xl border border-outline-variant bg-surface">
+                          <div>
+                            <h4 className="font-title-sm text-title-sm font-bold text-on-surface">Offline Mode Warnings</h4>
+                            <p className="text-sm text-on-surface-variant">Display visual indicator banner if live cloud syncing is disconnected.</p>
+                          </div>
+                          <input 
+                            type="checkbox" 
+                            checked={notificationsEnabled.offlineAlerts} 
+                            onChange={(e) => setNotificationsEnabled({ ...notificationsEnabled, offlineAlerts: e.target.checked })}
+                            className="w-5 h-5 accent-primary cursor-pointer"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* SUBTAB 4: ACCOUNT & SECURITY */}
+                  {settingsSubTab === 'security' && (
+                    <div>
+                      <header className="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
+                        <ShieldPersonIcon size={30} className="text-primary-container" />
+                        <h2 className="font-headline-md text-headline-md text-on-surface font-bold">Account &amp; On-Device Security</h2>
+                      </header>
+
+                      <div className="space-y-6 max-w-2xl">
+                        <div className="p-4 rounded-xl border border-[#A5D6A7] bg-[#E8F5E9] flex items-start gap-4">
+                          <VerifiedIcon size={24} className="text-[#2E7D32] mt-0.5" />
+                          <div>
+                            <h4 className="font-title-sm text-title-sm font-bold text-[#1B5E20]">AES-256 Local Encryption Active</h4>
+                            <p className="text-sm text-[#2E7D32] mt-1">All SQLite vector database chunks and offline chat queries are cryptographically encrypted on your local drive using AES-256 (Fernet) keys.</p>
+                          </div>
+                        </div>
+
+                        <div className="border border-outline-variant rounded-xl p-5 bg-surface space-y-4">
+                          <h4 className="font-title-sm text-title-sm font-bold text-on-surface">Storage Privacy Guarantee</h4>
+                          <ul className="list-disc pl-5 space-y-2 text-sm text-on-surface-variant">
+                            <li><strong>Zero Cloud Telemetry:</strong> Queries are never transmitted to external LLMs or third-party servers.</li>
+                            <li><strong>Local Sandboxing:</strong> Knowledge packs are stored exclusively in <code>/device_storage</code>.</li>
+                            <li><strong>Cryptographic Hash Verification:</strong> Every synced chunk is verified against SHA-256 checksums before inclusion in local index.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                 </section>
               </div>
             )}
@@ -1212,16 +1347,15 @@ export default function App() {
         </main>
       </div>
 
-      {/* FULL DOCUMENT VIEWING MODAL */}
+      {/* FULL DOCUMENT MODAL */}
       {viewingFullDoc && (
         <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
-          <div className="bg-surface-container-lowest w-full max-w-[720px] rounded-xl shadow-lg border border-outline-variant flex flex-col max-h-[90vh] overflow-hidden animate-in fade-in zoom-in duration-200">
-            {/* Header */}
+          <div className="bg-surface-container-lowest w-full max-w-[720px] rounded-xl shadow-lg border border-outline-variant flex flex-col max-h-[90vh] overflow-hidden">
             <div className="flex justify-between items-start p-container-padding border-b border-outline-variant shrink-0">
               <div>
                 <h2 className="font-headline-md text-headline-md text-on-surface mb-2 font-bold">{viewingFullDoc.title}</h2>
                 <div className="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm font-semibold">
-                  <span className="flex items-center gap-1">
+                  <span className="flex items-center gap-1 text-primary">
                     <VerifiedIcon size={14} className="text-primary" />
                     Cryptographically Verified
                   </span>
@@ -1239,16 +1373,11 @@ export default function App() {
               </button>
             </div>
             
-            {/* Body */}
             <div className="p-container-padding overflow-y-auto grow custom-scrollbar">
               <div className="prose max-w-none text-on-surface">
                 <h3 className="font-title-sm text-title-sm text-on-surface mb-4 font-bold">Document Excerpt</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant whitespace-pre-line leading-relaxed">
                   {viewingFullDoc.excerpt}
-                  {"\n\n"}
-                  This policy outlines strategic agricultural interventions aimed at rural digital empowerment. Standard agricultural advisories prioritize soil health improvement, teacher-guided farming methods, and the deployment of local vector indices. Funding allocations target structural compost enhancements, bio-fertilizer usage, and pest-deterrent cropping configurations. The guidelines mandate block-level reviews to verify implementation efficacy.
-                  {"\n\n"}
-                  Furthermore, community-driven agricultural centers are established to foster ownership, linking localized extension workers to technical databases concerning fertilizers and pest remedies in connectivity-deprived environments.
                 </p>
               </div>
               
@@ -1261,17 +1390,12 @@ export default function App() {
               </div>
             </div>
 
-            {/* Footer */}
             <div className="p-container-padding border-t border-outline-variant shrink-0 flex justify-end gap-3 bg-surface">
               <button 
                 onClick={() => setViewingFullDoc(null)}
                 className="px-6 py-2 rounded-lg font-semibold font-label-sm text-label-sm text-primary border border-primary hover:bg-surface-container-high transition-colors"
               >
                 Close
-              </button>
-              <button className="px-6 py-2 rounded-lg font-semibold font-label-sm text-label-sm bg-primary-container text-on-primary hover:opacity-90 transition-opacity flex items-center gap-2">
-                <VisibilityIcon size={16} />
-                Open Original PDF
               </button>
             </div>
           </div>
@@ -1282,7 +1406,6 @@ export default function App() {
   );
 }
 
-// Math rounded values helper
 function roundValue(val) {
   return Math.round(val * 10) / 10;
 }
