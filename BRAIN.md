@@ -47,3 +47,6 @@
 - Verified live end-to-end responses across frontend (`http://localhost:5173`) and backend (`http://localhost:8001`), confirming offline RAG chat and status APIs are active.
 - Fixed CSS styling by installing `tailwindcss@3.4.17` so that all custom Stitch design tokens, color variables (`primary-container`, `surface-container`), and dashboard layouts compile properly.
 - Enhanced the local AI RAG pipeline with Hybrid Search (Keyword Salience + Vector Similarity) and added verified agricultural advisory data for Karnataka wheat cultivation, irrigation schedules, and government subsidies.
+- Renamed all UI tabs and labels from "AI" to "Ask Questions" and "GyanSetu Knowledge".
+- Implemented fully interactive Settings subtabs (Language & Region, Notifications, Account & Security) and removed the "Free Up Space" button as requested.
+- Added strict geographical entity guardrails to eliminate guessing/hallucination when querying regions outside installed packs (e.g. querying Mumbai now explicitly clarifies that the installed pack covers Karnataka and notes climate suitability).
