@@ -32,21 +32,25 @@ def generate_local_response(prompt: str, context_chunks: list) -> str:
         if not context_chunks:
             return "I don't have this information in my offline knowledge packs. Please verify if you have downloaded the relevant agricultural or government pack in the Knowledge Packs tab."
             
-        # Top chunk contains the most relevant grounded content
         top_chunk = context_chunks[0]
         text = top_chunk['text'].strip()
         
-        # Build clean formatted response
         response = f"Based on the verified offline knowledge database, here is the official guidance:\n\n{text}"
         
-        # If there are additional secondary chunks that add context, mention them
-        if len(context_chunks) > 1 and context_chunks[1]['filepath'] != top_chunk['filepath']:
-            sec_chunk = context_chunks[1]
-            sec_text = sec_chunk['text'].strip()
-            # If text is too long, take the first 300 characters
-            if len(sec_text) > 300:
-                sec_text = sec_text[:300] + "..."
-            response += f"\n\n**Additional Cross-Referenced Advisory ({os.path.basename(sec_chunk['filepath'])}):**\n{sec_text}"
+        # Include top additional relevant chunks to ensure comprehensive answers
+        seen_texts = {text}
+        additional_sections = []
+        
+        for chunk in context_chunks[1:3]:
+            chunk_text = chunk['text'].strip()
+            if chunk_text not in seen_texts:
+                seen_texts.add(chunk_text)
+                filename = os.path.basename(chunk['filepath'])
+                display_title = filename.replace(".txt", "").replace("_", " ").title()
+                additional_sections.append(f"**Section ({display_title}):**\n{chunk_text}")
+                
+        if additional_sections:
+            response += "\n\n" + "\n\n".join(additional_sections)
             
         return response
     else:

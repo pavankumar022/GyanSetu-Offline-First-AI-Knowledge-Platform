@@ -512,7 +512,7 @@ import json as _json
 try:
     _state_result = ingest_state_dataset()
     _state_meta   = _state_result["meta"]
-    print(f"[GyanSetu] State dataset ingested: {_state_result['records_processed']} records → pack {STATE_PACK_ID}")
+    print(f"[GyanSetu] State dataset ingested: {_state_result['records_processed']} records -> pack {STATE_PACK_ID}")
 except Exception as _e:
     _state_meta = None
     print(f"[GyanSetu] Warning: state dataset ingestion failed: {_e}")
