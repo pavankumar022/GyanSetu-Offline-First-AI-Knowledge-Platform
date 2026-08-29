@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Knowledge Packs - GyanSetu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-secondary-container": "#6b4500",
+                            "primary-fixed": "#acf4a4",
+                            "secondary-fixed-dim": "#ffb955",
+                            "on-primary-container": "#90d689",
+                            "primary-container": "#1b5e20",
+                            "error": "#ba1a1a",
+                            "on-secondary": "#ffffff",
+                            "on-tertiary-fixed": "#3e001d",
+                            "on-tertiary": "#ffffff",
+                            "outline-variant": "#c0c9bb",
+                            "on-error-container": "#93000a",
+                            "inverse-primary": "#91d78a",
+                            "tertiary-fixed": "#ffd9e2",
+                            "on-secondary-fixed-variant": "#633f00",
+                            "secondary-container": "#feae2c",
+                            "on-tertiary-container": "#ffaec6",
+                            "on-surface": "#1a1c1a",
+                            "surface-bright": "#faf9f6",
+                            "surface": "#faf9f6",
+                            "on-primary-fixed": "#002203",
+                            "on-background": "#1a1c1a",
+                            "surface-container-low": "#f4f3f1",
+                            "on-surface-variant": "#41493e",
+                            "inverse-surface": "#2f312f",
+                            "surface-container-high": "#e9e8e5",
+                            "on-primary": "#ffffff",
+                            "secondary": "#835500",
+                            "background": "#faf9f6",
+                            "outline": "#717a6d",
+                            "surface-tint": "#2a6b2c",
+                            "surface-container-lowest": "#ffffff",
+                            "primary": "#00450d",
+                            "primary-fixed-dim": "#91d78a",
+                            "inverse-on-surface": "#f2f1ee",
+                            "tertiary-container": "#883454",
+                            "surface-dim": "#dbdad7",
+                            "surface-container-highest": "#e3e2e0",
+                            "on-error": "#ffffff",
+                            "surface-variant": "#e3e2e0",
+                            "error-container": "#ffdad6",
+                            "on-primary-fixed-variant": "#0c5216",
+                            "surface-container": "#efeeeb",
+                            "secondary-fixed": "#ffddb4",
+                            "tertiary": "#6b1d3d",
+                            "on-tertiary-fixed-variant": "#7a2949",
+                            "on-secondary-fixed": "#291800",
+                            "tertiary-fixed-dim": "#ffb1c8"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "gutter": "20px",
+                            "sidebar-width": "240px",
+                            "max-content-width": "1440px",
+                            "stack-gap": "16px",
+                            "container-padding": "24px"
+                    },
+                    "fontFamily": {
+                            "body-md": ["Inter"],
+                            "headline-md": ["Inter"],
+                            "body-lg": ["Inter"],
+                            "label-sm": ["Inter"],
+                            "display-lg": ["Inter"],
+                            "title-sm": ["Inter"],
+                            "label-numeric": ["Inter"]
+                    },
+                    "fontSize": {
+                            "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                            "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "title-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                            "label-numeric": ["16px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #FAF9F6; }
+        .card-shadow { box-shadow: 0px 4px 12px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="font-body-md text-on-surface bg-background antialiased flex h-screen overflow-hidden">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-[240px] bg-surface border-r border-outline-variant shadow-sm z-50 flex flex-col py-gutter px-4">
+<div class="mb-8 px-4">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">GyanSetu</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Offline AI</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-label-sm text-label-sm">Chat / Ask AI</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-lg font-bold transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-label-sm text-label-sm">Knowledge Packs</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="sync">sync</span>
+<span class="font-label-sm text-label-sm">Sync &amp; Updates</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+</li>
+</ul>
+<!-- Storage Widget -->
+<div class="mt-auto px-4 py-6 border-t border-outline-variant">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">sd_storage</span>
+                    Local Storage
+                </span>
+<span class="font-label-numeric text-label-numeric text-primary">26%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-2">
+<div class="bg-primary-container h-2 rounded-full" style="width: 26%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">4.2GB used of 16GB</p>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex flex-col flex-1 ml-[240px] h-full">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-240px)] h-16 bg-surface border-b border-outline-variant shadow-sm z-40 flex justify-between items-center px-container-padding">
+<h2 class="font-title-sm text-title-sm text-primary font-bold">Knowledge Packs</h2>
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F5E9] text-primary-container font-label-sm text-label-sm font-medium border border-[#A5D6A7]">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                    Online — Synced
+                </span>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto pt-16 p-container-padding bg-background">
+<div class="max-w-max-content-width mx-auto">
+<div class="mb-8 flex justify-between items-end">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Available &amp; Installed Packs</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Manage your offline knowledge repositories. Download packs to ensure access without internet connectivity. Update existing packs to get the latest information.</p>
+</div>
+<div class="flex gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-shadow w-64" placeholder="Search packs..." type="text"/>
+</div>
+</div>
+</div>
+<!-- 4xN Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter pb-12">
+<!-- Pack Card: Installed & Up to date -->
+<div class="bg-surface-container-lowest rounded-xl p-[24px] card-shadow border border-outline-variant flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-[#E8F5E9] rounded-lg text-primary-container">
+<span class="material-symbols-outlined text-3xl">account_balance</span>
+</div>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm">Installed</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface mb-2 flex-grow">Government Scholarship Schemes 2024</h4>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-surface-variant">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Version: v2.1</span>
+<span>Size: 420MB</span>
+</div>
+<button class="w-full py-2 px-4 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center justify-center gap-2 cursor-default opacity-70">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                                Up to Date
+                            </button>
+</div>
+</div>
+<!-- Pack Card: Needs Update -->
+<div class="bg-surface-container-lowest rounded-xl p-[24px] card-shadow border border-outline-variant flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-[#FFF8E1] rounded-lg text-[#F5A623]">
+<span class="material-symbols-outlined text-3xl">agriculture</span>
+</div>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm">Installed</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface mb-2 flex-grow">Agricultural Best Practices &amp; Crop Data</h4>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-surface-variant">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Version: v1.8 <span class="text-[#F5A623] ml-1">→ v2.0</span></span>
+<span>Size: 850MB</span>
+</div>
+<button class="w-full py-2 px-4 rounded-lg bg-[#F5A623] text-white font-label-sm text-label-sm font-medium flex items-center justify-center gap-2 hover:bg-[#E09612] transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">system_update</span>
+                                Update Available
+                            </button>
+</div>
+</div>
+<!-- Pack Card: Not Installed -->
+<div class="bg-surface-container-lowest rounded-xl p-[24px] card-shadow border border-outline-variant flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-surface-container rounded-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-3xl">local_hospital</span>
+</div>
+<span class="px-2 py-1 bg-surface text-on-surface-variant border border-outline-variant rounded font-label-sm text-label-sm">Not Downloaded</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface mb-2 flex-grow">Rural Healthcare First-Aid Guide</h4>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-surface-variant">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Version: v1.0</span>
+<span>Size: 1.2GB</span>
+</div>
+<button class="w-full py-2 px-4 rounded-lg bg-primary-container text-on-primary border border-primary-container font-label-sm text-label-sm font-medium flex items-center justify-center gap-2 hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                                Download Pack
+                            </button>
+</div>
+</div>
+<!-- Pack Card: Downloading -->
+<div class="bg-surface-container-lowest rounded-xl p-[24px] card-shadow border border-outline-variant flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-surface-container rounded-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<span class="px-2 py-1 bg-[#E3F2FD] text-[#1976D2] rounded font-label-sm text-label-sm animate-pulse">Downloading</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface mb-2 flex-grow">Primary Education Curriculum Offline</h4>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-surface-variant">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>45% Complete</span>
+<span>2.4GB</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mb-2">
+<div class="bg-[#1976D2] h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+<button class="w-full py-2 px-4 rounded-lg bg-surface text-on-surface-variant border border-outline-variant font-label-sm text-label-sm font-medium flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+                                Pause
+                            </button>
+</div>
+</div>
+<!-- Pack Card: Not Installed 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-[24px] card-shadow border border-outline-variant flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-surface-container rounded-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-3xl">gavel</span>
+</div>
+<span class="px-2 py-1 bg-surface text-on-surface-variant border border-outline-variant rounded font-label-sm text-label-sm">Not Downloaded</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface mb-2 flex-grow">Basic Legal Rights &amp; Procedures Manual</h4>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-surface-variant">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Version: v3.4</span>
+<span>Size: 620MB</span>
+</div>
+<button class="w-full py-2 px-4 rounded-lg bg-primary-container text-on-primary border border-primary-container font-label-sm text-label-sm font-medium flex items-center justify-center gap-2 hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                                Download Pack
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

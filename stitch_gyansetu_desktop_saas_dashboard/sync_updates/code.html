@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sync &amp; Updates - GyanSetu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#6b4500",
+                        "primary-fixed": "#acf4a4",
+                        "secondary-fixed-dim": "#ffb955",
+                        "on-primary-container": "#90d689",
+                        "primary-container": "#1b5e20",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#3e001d",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c0c9bb",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#91d78a",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "secondary-container": "#feae2c",
+                        "on-tertiary-container": "#ffaec6",
+                        "on-surface": "#1a1c1a",
+                        "surface-bright": "#faf9f6",
+                        "surface": "#faf9f6",
+                        "on-primary-fixed": "#002203",
+                        "on-background": "#1a1c1a",
+                        "surface-container-low": "#f4f3f1",
+                        "on-surface-variant": "#41493e",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-high": "#e9e8e5",
+                        "on-primary": "#ffffff",
+                        "secondary": "#835500",
+                        "background": "#faf9f6",
+                        "outline": "#717a6d",
+                        "surface-tint": "#2a6b2c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00450d",
+                        "primary-fixed-dim": "#91d78a",
+                        "inverse-on-surface": "#f2f1ee",
+                        "tertiary-container": "#883454",
+                        "surface-dim": "#dbdad7",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#0c5216",
+                        "surface-container": "#efeeeb",
+                        "secondary-fixed": "#ffddb4",
+                        "tertiary": "#6b1d3d",
+                        "on-tertiary-fixed-variant": "#7a2949",
+                        "on-secondary-fixed": "#291800",
+                        "tertiary-fixed-dim": "#ffb1c8"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "20px",
+                        "sidebar-width": "240px",
+                        "max-content-width": "1440px",
+                        "stack-gap": "16px",
+                        "container-padding": "24px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "title-sm": ["Inter"],
+                        "label-numeric": ["Inter"]
+                    },
+                    fontSize: {
+                        "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "title-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+                        "label-numeric": ["16px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .custom-shadow { box-shadow: 0px 4px 12px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md h-screen overflow-hidden flex">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-[240px] bg-surface border-r border-outline-variant shadow-sm flex flex-col py-gutter px-4 z-50">
+<div class="mb-8 px-4">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">GyanSetu</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Offline AI</p>
+</div>
+<ul class="flex flex-col gap-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-label-sm text-label-sm">Chat / Ask AI</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-label-sm text-label-sm">Knowledge Packs</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-lg font-bold transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="sync" data-weight="fill" style="font-variation-settings: 'FILL' 1;">sync</span>
+<span class="font-label-sm text-label-sm">Sync &amp; Updates</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-240px)] h-16 bg-surface border-b border-outline-variant shadow-sm flex justify-between items-center px-container-padding z-40">
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Sync &amp; Updates</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#2E7D32]"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Online — Synced</span>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="ml-[240px] mt-16 p-container-padding w-full h-[calc(100vh-64px)] overflow-y-auto">
+<div class="max-w-max-content-width mx-auto flex flex-col md:flex-row gap-gutter">
+<!-- Left Column: Sync Status -->
+<section class="w-full md:w-[40%] flex flex-col gap-stack-gap">
+<div class="bg-surface-container-lowest rounded-[12px] p-container-padding custom-shadow flex flex-col border border-outline-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="cloud_sync">cloud_sync</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Storage &amp; Sync Status</h3>
+</div>
+<div class="mb-8">
+<div class="flex justify-between items-end mb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Local Storage Used</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">4.2GB <span class="font-body-md text-body-md text-on-surface-variant font-normal">of 16GB total</span></span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 26.25%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between mb-8 pb-6 border-b border-surface-variant">
+<div>
+<p class="font-title-sm text-title-sm text-on-surface mb-1">Wi-Fi Only Sync</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Prevent data charges on mobile networks</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<button class="w-full bg-[#F5A623] hover:bg-[#E09612] text-white font-title-sm text-title-sm py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="update">update</span>
+                        Update Now
+                    </button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-4">Last checked: 10 mins ago</p>
+</div>
+</section>
+<!-- Right Column: Sync History -->
+<section class="w-full md:w-[60%] flex flex-col">
+<div class="bg-surface-container-lowest rounded-[12px] p-container-padding custom-shadow flex flex-col h-full border border-outline-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Sync History</h3>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-variant">
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Timestamp</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Knowledge Pack</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-right">Data Size</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface">Today, 09:41 AM</td>
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface font-medium">Core Medical DB v2.4</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-[#2E7D32] text-white">Success</span>
+</td>
+<td class="py-4 px-4 font-label-numeric text-label-numeric text-on-surface text-right">124 MB</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface">Yesterday, 14:20 PM</td>
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface font-medium">Agricultural Guidelines Q3</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-[#C62828] text-white">Failed</span>
+</td>
+<td class="py-4 px-4 font-label-numeric text-label-numeric text-on-surface text-right">89 MB</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface">Oct 12, 08:00 AM</td>
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface font-medium">Offline Maps - North Region</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-[#2E7D32] text-white">Success</span>
+</td>
+<td class="py-4 px-4 font-label-numeric text-label-numeric text-on-surface text-right">1.2 GB</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface">Oct 10, 11:15 AM</td>
+<td class="py-4 px-4 font-body-md text-body-md text-on-surface font-medium">System Core Update</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-[#2E7D32] text-white">Success</span>
+</td>
+<td class="py-4 px-4 font-label-numeric text-label-numeric text-on-surface text-right">45 MB</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+</main>
+</body></html>

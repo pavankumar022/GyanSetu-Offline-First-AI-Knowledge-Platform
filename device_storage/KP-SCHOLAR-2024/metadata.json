@@ -1,0 +1,16 @@
+{
+  "id": "KP-SCHOLAR-2024",
+  "title": "Government Scholarship Schemes 2024",
+  "icon": "account_balance",
+  "category": "Education",
+  "version": "v2.1",
+  "size_mb": 420,
+  "files_count": 1,
+  "files_metadata": [
+    {
+      "path": "scholarships.txt",
+      "size_bytes": 350000,
+      "hash": "scholar_v2_hash"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GyanSetu Settings</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#6b4500",
+                        "primary-fixed": "#acf4a4",
+                        "secondary-fixed-dim": "#ffb955",
+                        "on-primary-container": "#90d689",
+                        "primary-container": "#1b5e20",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#3e001d",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c0c9bb",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#91d78a",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "secondary-container": "#feae2c",
+                        "on-tertiary-container": "#ffaec6",
+                        "on-surface": "#1a1c1a",
+                        "surface-bright": "#faf9f6",
+                        "surface": "#faf9f6",
+                        "on-primary-fixed": "#002203",
+                        "on-background": "#1a1c1a",
+                        "surface-container-low": "#f4f3f1",
+                        "on-surface-variant": "#41493e",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-high": "#e9e8e5",
+                        "on-primary": "#ffffff",
+                        "secondary": "#835500",
+                        "background": "#faf9f6",
+                        "outline": "#717a6d",
+                        "surface-tint": "#2a6b2c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00450d",
+                        "primary-fixed-dim": "#91d78a",
+                        "inverse-on-surface": "#f2f1ee",
+                        "tertiary-container": "#883454",
+                        "surface-dim": "#dbdad7",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#0c5216",
+                        "surface-container": "#efeeeb",
+                        "secondary-fixed": "#ffddb4",
+                        "tertiary": "#6b1d3d",
+                        "on-tertiary-fixed-variant": "#7a2949",
+                        "on-secondary-fixed": "#291800",
+                        "tertiary-fixed-dim": "#ffb1c8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "20px",
+                        "sidebar-width": "240px",
+                        "max-content-width": "1440px",
+                        "stack-gap": "16px",
+                        "container-padding": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "title-sm": ["Inter"],
+                        "label-numeric": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "label-numeric": ["16px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Donut Chart Animation */
+        @keyframes fillDonut {
+            from { stroke-dasharray: 0, 100; }
+            to { stroke-dasharray: 26.3, 100; }
+        }
+        .donut-fill {
+            animation: fillDonut 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-surface-bright font-body-md text-on-surface min-h-screen flex antialiased">
+<!-- Shared Component: SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-[240px] bg-surface dark:bg-surface-container-low border-r border-outline-variant shadow-sm flex flex-col py-gutter px-4 z-50">
+<div class="mb-8 px-2 flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">GyanSetu</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Offline AI</span>
+</div>
+<ul class="flex flex-col gap-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-high transition-colors hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all duration-200 ease-in-out active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-high transition-colors hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all duration-200 ease-in-out active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">forum</span>
+<span class="font-body-md text-body-md">Chat / Ask AI</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-high transition-colors hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all duration-200 ease-in-out active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="font-body-md text-body-md">Knowledge Packs</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-high transition-colors hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all duration-200 ease-in-out active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sync</span>
+<span class="font-body-md text-body-md">Sync &amp; Updates</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-lg font-bold hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all duration-200 ease-in-out active:scale-95" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 ml-[240px] flex flex-col min-w-0">
+<!-- Shared Component: TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-240px)] h-16 bg-surface dark:bg-surface-container-low border-b border-outline-variant shadow-sm flex justify-between items-center px-container-padding z-40">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hidden">GyanSetu</div>
+<div class="flex-1"></div> <!-- Spacer since search is hidden per JSON -->
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+                    Online — Synced
+                </span>
+</div>
+</header>
+<!-- Page Canvas -->
+<main class="pt-24 pb-container-padding px-container-padding max-w-max-content-width mx-auto w-full flex-1 flex flex-col">
+<div class="mb-8 flex items-center justify-between">
+<h1 class="font-display-lg text-display-lg text-on-surface">Settings</h1>
+</div>
+<!-- Two-Pane Layout -->
+<div class="flex gap-gutter flex-1 items-stretch">
+<!-- Left Pane: Categories (30%) -->
+<aside class="w-[30%] min-w-[280px] bg-surface-container-lowest shadow-[0px_4px_12px_rgba(0,0,0,0.05)] rounded-xl p-container-padding flex flex-col gap-2">
+<button class="w-full flex items-center gap-3 p-4 rounded-lg bg-primary-container text-on-primary-container text-left transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sd_storage</span>
+<span class="font-label-numeric text-label-numeric font-bold">Storage &amp; Data</span>
+</button>
+<button class="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">language</span>
+<span class="font-body-md text-body-md font-medium">Language &amp; Region</span>
+</button>
+<button class="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+<span class="font-body-md text-body-md font-medium">Notifications</span>
+</button>
+<button class="w-full flex items-center gap-3 p-4 rounded-lg text-on-surface hover:bg-surface-container-high text-left transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shield_person</span>
+<span class="font-body-md text-body-md font-medium">Account &amp; Security</span>
+</button>
+</aside>
+<!-- Right Pane: Detail Panel (70%) -->
+<section class="flex-1 bg-surface-container-lowest shadow-[0px_4px_12px_rgba(0,0,0,0.05)] rounded-xl p-container-padding overflow-y-auto">
+<header class="mb-8 flex items-center gap-3 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary-container text-3xl">sd_storage</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Storage Management</h2>
+</header>
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-12 mb-12">
+<!-- Donut Chart Vis -->
+<div class="flex flex-col items-center justify-center p-8 bg-surface rounded-xl border border-outline-variant">
+<div class="relative w-64 h-64 mb-6">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle (Free) -->
+<path class="text-surface-variant stroke-current" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"></path>
+<!-- Foreground Circle (Used - 26.3%) -->
+<path class="text-primary-container stroke-current donut-fill" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="0, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<!-- Center Text -->
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-display-lg text-display-lg text-on-surface">26.3%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Utilized</span>
+</div>
+</div>
+</div>
+<!-- Data Breakdown -->
+<div class="flex flex-col justify-center gap-6">
+<div class="flex justify-between items-baseline border-b border-outline-variant pb-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Total Used</p>
+<p class="font-display-lg text-display-lg text-primary-container flex items-baseline gap-2">
+                                        4.2 <span class="font-title-sm text-title-sm text-on-surface-variant">GB</span>
+</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Total Free</p>
+<p class="font-display-lg text-display-lg text-on-surface flex items-baseline gap-2 justify-end">
+                                        11.8 <span class="font-title-sm text-title-sm text-on-surface-variant">GB</span>
+</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 mt-2">
+<h3 class="font-title-sm text-title-sm text-on-surface">Allocation Breakdown</h3>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="font-body-md text-body-md font-medium">Knowledge Packs</span>
+</div>
+<span class="font-label-numeric text-label-numeric">3.1 GB</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<span class="font-body-md text-body-md font-medium">Chat History &amp; Logs</span>
+</div>
+<span class="font-label-numeric text-label-numeric">0.8 GB</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-surface-variant"></div>
+<span class="font-body-md text-body-md font-medium">System / Cache</span>
+</div>
+<span class="font-label-numeric text-label-numeric">0.3 GB</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-end">
+<button class="px-6 py-2 rounded-lg bg-surface border border-outline-variant text-primary-container font-label-numeric hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">cleaning_services</span>
+                                    Free Up Space
+                                </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</body></html>

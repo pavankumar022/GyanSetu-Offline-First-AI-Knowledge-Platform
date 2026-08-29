@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+app/node_modules/
+__pycache__/
+*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build outputs
+dist/
+app/dist/
+build/
+*.egg-info/
+
+# Environments
+.env
+.env.local
+.venv/
+env/
+venv/
+ENV/
+
+# Local databases & model weights (generated at runtime)
+*.db
+*.sqlite
+*.sqlite3
+server/*.db
+device_storage/*.db
+device_storage/models/
+*.gguf
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/

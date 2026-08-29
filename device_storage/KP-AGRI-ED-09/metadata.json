@@ -1,0 +1,21 @@
+{
+  "id": "KP-AGRI-ED-09",
+  "title": "Agricultural Best Practices & Crop Data",
+  "icon": "agriculture",
+  "category": "Agriculture",
+  "version": "v1.8",
+  "size_mb": 850,
+  "files_count": 2,
+  "files_metadata": [
+    {
+      "path": "soil_health.txt",
+      "size_bytes": 100000,
+      "hash": "soil_v18_hash"
+    },
+    {
+      "path": "pest_control.txt",
+      "size_bytes": 150000,
+      "hash": "pest_v18_hash"
+    }
+  ]
+}

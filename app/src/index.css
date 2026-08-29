@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-body-md {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .font-headline-md {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .font-body-lg {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-label-sm {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .font-display-lg {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .font-title-sm {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .font-label-numeric {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dbdad7;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #faf9f6;
+  color: #1a1c1a;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
