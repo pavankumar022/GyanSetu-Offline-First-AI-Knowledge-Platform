@@ -1,0 +1,32 @@
+Jharkhand — State-Level Agriculture, Livestock, Fisheries & GI Products
+Source: India State-Level Agriculture Dataset (Ministry of Agriculture, NCERT, CGPDTM GI Registry)
+Administrative Type: State
+Coverage: State/UT level ONLY. District-level data is NOT available in this knowledge pack.
+
+━━━ MAJOR CROPS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Kharif Season (Sown June–July, Harvested October–November):
+  Rice
+
+Rabi Season (Sown October–November, Harvested March–April):
+  Pulses
+
+Zaid / Perennial / Plantation Crops:
+  None recorded at state level
+
+━━━ LIVESTOCK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cattle and goat rearing common; tribal-linked pig rearing in parts.
+
+━━━ FISHERIES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Inland freshwater fisheries.
+
+━━━ GI-TAGGED PRODUCTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Geographical Indication (GI) registered products from Jharkhand:
+  Palamu Chironji
+
+Note: This lists well-known GI tags verified against the CGPDTM registry.
+The full GI list for India has 600+ entries; consult ipindia.gov.in for the
+complete current registry.

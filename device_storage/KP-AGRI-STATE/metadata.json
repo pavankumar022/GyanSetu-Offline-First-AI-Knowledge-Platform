@@ -1,0 +1,228 @@
+{
+  "id": "KP-AGRI-STATE",
+  "title": "India State-Level Agriculture, Livestock & GI Products",
+  "icon": "map",
+  "category": "Agriculture",
+  "version": "v1.0",
+  "size_mb": 0.06,
+  "files_count": 36,
+  "files_metadata": [
+    {
+      "path": "andhra_pradesh.txt",
+      "size_bytes": 1820,
+      "hash": "989d1022c3d1e3637148772638fd38bf",
+      "state_name": "Andhra Pradesh"
+    },
+    {
+      "path": "arunachal_pradesh.txt",
+      "size_bytes": 1741,
+      "hash": "c401237b3563ff267d5868fc652325c8",
+      "state_name": "Arunachal Pradesh"
+    },
+    {
+      "path": "assam.txt",
+      "size_bytes": 1748,
+      "hash": "21de2494b514bac3839aa270c05218dd",
+      "state_name": "Assam"
+    },
+    {
+      "path": "bihar.txt",
+      "size_bytes": 1715,
+      "hash": "c4c7868dc1049c42d56b708828764957",
+      "state_name": "Bihar"
+    },
+    {
+      "path": "chhattisgarh.txt",
+      "size_bytes": 1732,
+      "hash": "87088cde4c048ae7181c5a290c74952b",
+      "state_name": "Chhattisgarh"
+    },
+    {
+      "path": "goa.txt",
+      "size_bytes": 1669,
+      "hash": "741b40d0a07228df54135c68d232bf5a",
+      "state_name": "Goa"
+    },
+    {
+      "path": "gujarat.txt",
+      "size_bytes": 1801,
+      "hash": "b62f186dda67c6e8f4e8d1677b494521",
+      "state_name": "Gujarat"
+    },
+    {
+      "path": "haryana.txt",
+      "size_bytes": 1734,
+      "hash": "d9f22c500504bb7cc78b6ba04c3bec69",
+      "state_name": "Haryana"
+    },
+    {
+      "path": "himachal_pradesh.txt",
+      "size_bytes": 1742,
+      "hash": "6c5e94dba6427fdf774c8def8bc4cf16",
+      "state_name": "Himachal Pradesh"
+    },
+    {
+      "path": "jharkhand.txt",
+      "size_bytes": 1665,
+      "hash": "5240de31d93e40337b49f048d46044ad",
+      "state_name": "Jharkhand"
+    },
+    {
+      "path": "karnataka.txt",
+      "size_bytes": 1745,
+      "hash": "65bea9fb3ee98fbc82b1ed1df829e310",
+      "state_name": "Karnataka"
+    },
+    {
+      "path": "kerala.txt",
+      "size_bytes": 1825,
+      "hash": "409c969f400a6442dda346e59ad7fdba",
+      "state_name": "Kerala"
+    },
+    {
+      "path": "madhya_pradesh.txt",
+      "size_bytes": 1774,
+      "hash": "af532c21a56d17c8c5ea075f45be1cd1",
+      "state_name": "Madhya Pradesh"
+    },
+    {
+      "path": "maharashtra.txt",
+      "size_bytes": 1792,
+      "hash": "553b5a5c412718e8ece0a40c51c9d697",
+      "state_name": "Maharashtra"
+    },
+    {
+      "path": "manipur.txt",
+      "size_bytes": 1672,
+      "hash": "e7c9971e57f0dbb9ec7c9a4aee24177b",
+      "state_name": "Manipur"
+    },
+    {
+      "path": "meghalaya.txt",
+      "size_bytes": 1669,
+      "hash": "b1a73682a23c97bfe430c1260f0ea1c1",
+      "state_name": "Meghalaya"
+    },
+    {
+      "path": "mizoram.txt",
+      "size_bytes": 1620,
+      "hash": "5f97a5ea881eb9e131c7ad4196859c36",
+      "state_name": "Mizoram"
+    },
+    {
+      "path": "nagaland.txt",
+      "size_bytes": 1671,
+      "hash": "f9f6f4352d16b3c0e0e2c8493640319b",
+      "state_name": "Nagaland"
+    },
+    {
+      "path": "odisha.txt",
+      "size_bytes": 1721,
+      "hash": "1532f6c7e885f1ec486122d5c622c955",
+      "state_name": "Odisha"
+    },
+    {
+      "path": "punjab.txt",
+      "size_bytes": 1684,
+      "hash": "e2dbd726b04d766a725f94eb4a063e8c",
+      "state_name": "Punjab"
+    },
+    {
+      "path": "rajasthan.txt",
+      "size_bytes": 1779,
+      "hash": "2064f5d1f2f58f512e4d61a3ac2aa5e1",
+      "state_name": "Rajasthan"
+    },
+    {
+      "path": "sikkim.txt",
+      "size_bytes": 1669,
+      "hash": "26df6562f8329ba2f1dd8baadbf2a6d9",
+      "state_name": "Sikkim"
+    },
+    {
+      "path": "tamil_nadu.txt",
+      "size_bytes": 1757,
+      "hash": "c712a22feaf48d7421c8a48a0ea1efb1",
+      "state_name": "Tamil Nadu"
+    },
+    {
+      "path": "telangana.txt",
+      "size_bytes": 1718,
+      "hash": "4e52ec24a21fa2fa52ef7c3fdf2f8e44",
+      "state_name": "Telangana"
+    },
+    {
+      "path": "tripura.txt",
+      "size_bytes": 1630,
+      "hash": "c273c887d82bbbdd69d9a1aaa3e45a8b",
+      "state_name": "Tripura"
+    },
+    {
+      "path": "uttar_pradesh.txt",
+      "size_bytes": 1776,
+      "hash": "799fa247e94076c591bb0349fb8ce147",
+      "state_name": "Uttar Pradesh"
+    },
+    {
+      "path": "uttarakhand.txt",
+      "size_bytes": 1677,
+      "hash": "506b57a84554f74de57b294c28a199a6",
+      "state_name": "Uttarakhand"
+    },
+    {
+      "path": "west_bengal.txt",
+      "size_bytes": 1810,
+      "hash": "28e31f02b7a7d421fc55bb705657ea37",
+      "state_name": "West Bengal"
+    },
+    {
+      "path": "andaman_and_nicobar_islands.txt",
+      "size_bytes": 1730,
+      "hash": "59c0a5938f7350feaaa90656d4053196",
+      "state_name": "Andaman and Nicobar Islands"
+    },
+    {
+      "path": "chandigarh.txt",
+      "size_bytes": 1658,
+      "hash": "5ae2abe042f5e228ec33ecb309bd3de1",
+      "state_name": "Chandigarh"
+    },
+    {
+      "path": "dadra_and_nagar_haveli_and_daman_and_diu.txt",
+      "size_bytes": 1720,
+      "hash": "f3447347f4002312e17352b31ff31fb4",
+      "state_name": "Dadra and Nagar Haveli and Daman and Diu"
+    },
+    {
+      "path": "delhi.txt",
+      "size_bytes": 1683,
+      "hash": "15348462616e63e6742d611182343be2",
+      "state_name": "Delhi"
+    },
+    {
+      "path": "jammu_and_kashmir.txt",
+      "size_bytes": 1762,
+      "hash": "1b2522a0422db3f49ff62ad5183f2b65",
+      "state_name": "Jammu and Kashmir"
+    },
+    {
+      "path": "ladakh.txt",
+      "size_bytes": 1635,
+      "hash": "82bc2890e33e497e40342770c48db44a",
+      "state_name": "Ladakh"
+    },
+    {
+      "path": "lakshadweep.txt",
+      "size_bytes": 1686,
+      "hash": "a65747a7b164cf24ef7747d216b0c96a",
+      "state_name": "Lakshadweep"
+    },
+    {
+      "path": "puducherry.txt",
+      "size_bytes": 1686,
+      "hash": "d9fbd7916574e6ee0ca5a1a671b8e00c",
+      "state_name": "Puducherry"
+    }
+  ],
+  "description": "State/UT-level data for all 36 Indian states and union territories: Kharif/Rabi/Zaid crops, livestock specialisation, fisheries focus, and GI-tagged products. Source: Ministry of Agriculture, CGPDTM GI registry."
+}

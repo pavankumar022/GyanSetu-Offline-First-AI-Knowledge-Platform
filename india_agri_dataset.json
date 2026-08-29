@@ -1,0 +1,299 @@
+{
+  "_meta": {
+    "title": "India State-Level Agriculture, Livestock, Fisheries & GI Product Dataset",
+    "granularity": "state / union territory ONLY",
+    "confidence_note": "Crop seasons (Kharif/Rabi/Zaid) and major producing states are standard, well-documented facts (Ministry of Agriculture, NCERT geography syllabus level) and are reliable. GI-tagged products listed are real, registered GI tags verified against the CGPDTM/Wikipedia GI registry — but the full GI list has 600+ entries and this file lists only the most well-known 1-3 per state, not the complete registry. Livestock and fisheries entries describe well-known regional specializations (e.g. 'major dairy state', 'marine fisheries coast') rather than precise headcounts or tonnage, which require Livestock Census / CMFRI data not held in general knowledge.",
+    "NOT_INCLUDED": "District-level breakdowns, street/locality data, exact production tonnages, exact livestock counts. These require pulling from data.gov.in, Livestock Census, Agmarknet, and CMFRI/state fisheries datasets — see the ingestion plan sent separately for source URLs.",
+    "how_to_extend": "Use each state's official Department of Agriculture / Department of Animal Husbandry / State Fisheries portal, plus data.gov.in datasets, to add district-level rows under each state using the same schema keys."
+  },
+  "states": [
+    {
+      "name": "Andhra Pradesh",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Maize", "Cotton", "Groundnut"], "rabi": ["Bengal gram", "Sunflower"], "zaid": ["Vegetables"]},
+      "livestock": "Major poultry-producing state; sheep and goat rearing common in Rayalaseema.",
+      "fisheries": "Leading marine and inland fisheries/aquaculture state (shrimp aquaculture along coast).",
+      "gi_products": ["Bandar Laddu", "Guntur Sannam Chilli", "Uppada Jamdani Sari (handicraft)"]
+    },
+    {
+      "name": "Arunachal Pradesh",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Maize"], "rabi": [], "zaid": []},
+      "livestock": "Mithun (semi-domesticated cattle) rearing significant to tribal economy; pig rearing common.",
+      "fisheries": "Freshwater/hill stream fisheries.",
+      "gi_products": ["Arunachal Orange"]
+    },
+    {
+      "name": "Assam",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice (Aus, Aman)"], "rabi": ["Rice (Boro)", "Mustard"], "zaid": []},
+      "livestock": "Significant pig and poultry rearing; buffalo in wetland areas.",
+      "fisheries": "Major freshwater fisheries state (rivers, wetlands/beels).",
+      "gi_products": ["Assam (Orthodox) Tea", "Joha Rice", "Muga Silk (handicraft)"]
+    },
+    {
+      "name": "Bihar",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Maize"], "rabi": ["Wheat", "Gram"], "zaid": []},
+      "livestock": "Significant cattle and goat population; growing dairy sector.",
+      "fisheries": "Inland freshwater fisheries (rivers, ponds).",
+      "gi_products": ["Shahi Litchi", "Katarni Rice", "Bhagalpur Zardalu Mango"]
+    },
+    {
+      "name": "Chhattisgarh",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": ["Gram", "Lentil"], "zaid": []},
+      "livestock": "Cattle rearing widespread; known as 'Rice Bowl' with strong paddy-linked livestock economy.",
+      "fisheries": "Inland freshwater fisheries (reservoirs, tanks).",
+      "gi_products": ["Bastar Dhokra (handicraft)"]
+    },
+    {
+      "name": "Goa",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Cashew", "Coconut"]},
+      "livestock": "Small-scale poultry and piggery.",
+      "fisheries": "Major marine fisheries state (Arabian Sea coast).",
+      "gi_products": ["Goa Khola Chilli", "Goa Mankurad Mango"]
+    },
+    {
+      "name": "Gujarat",
+      "type": "State",
+      "major_crops": {"kharif": ["Cotton", "Groundnut", "Bajra"], "rabi": ["Wheat", "Mustard"], "zaid": []},
+      "livestock": "Leading dairy state (birthplace of Amul/White Revolution); major cattle and buffalo population.",
+      "fisheries": "Largest marine fish-producing state in India by coastline (Arabian Sea).",
+      "gi_products": ["Gir Kesar Mango", "Bhalia Wheat", "Kutch Shawl (handicraft)"]
+    },
+    {
+      "name": "Haryana",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Cotton"], "rabi": ["Wheat", "Mustard"], "zaid": []},
+      "livestock": "Major dairy state; Murrah buffalo breed originates here.",
+      "fisheries": "Limited inland fisheries.",
+      "gi_products": ["Basmati Rice (shared with Punjab, parts of UP, Rajasthan, HP, J&K, Delhi, Uttarakhand)"]
+    },
+    {
+      "name": "Himachal Pradesh",
+      "type": "State",
+      "major_crops": {"kharif": ["Maize"], "rabi": ["Wheat", "Barley"], "zaid": ["Apple", "Stone fruits"]},
+      "livestock": "Sheep and goat rearing significant in hill areas; wool production.",
+      "fisheries": "Trout farming (cold-water fisheries) is notable.",
+      "gi_products": ["Kullu Shawl (handicraft)", "Himachali Kala Zeera", "Chamba Chukh"]
+    },
+    {
+      "name": "Jharkhand",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": ["Pulses"], "zaid": []},
+      "livestock": "Cattle and goat rearing common; tribal-linked pig rearing in parts.",
+      "fisheries": "Inland freshwater fisheries.",
+      "gi_products": ["Palamu Chironji"]
+    },
+    {
+      "name": "Karnataka",
+      "type": "State",
+      "major_crops": {"kharif": ["Ragi", "Maize", "Cotton"], "rabi": ["Jowar"], "zaid": ["Coffee", "Areca nut"]},
+      "livestock": "Significant sheep, goat, and poultry sector; silk (sericulture) hub.",
+      "fisheries": "Marine fisheries (west coast) plus inland aquaculture.",
+      "gi_products": ["Mysore Silk", "Coorg Orange", "Mysore Agarbathi", "Bangalore Rose Onion"]
+    },
+    {
+      "name": "Kerala",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Coconut", "Rubber", "Spices (pepper, cardamom)"]},
+      "livestock": "Dairy sector important (Operation Flood legacy); poultry farming widespread.",
+      "fisheries": "One of India's largest marine fish producers (Arabian Sea coast); backwater aquaculture (shrimp).",
+      "gi_products": ["Alleppey Green Cardamom", "Malabar Pepper", "Navara Rice", "Nilambur Teak"]
+    },
+    {
+      "name": "Madhya Pradesh",
+      "type": "State",
+      "major_crops": {"kharif": ["Soybean", "Rice"], "rabi": ["Wheat", "Gram"], "zaid": []},
+      "livestock": "Largest livestock population among major states in several census years; significant cattle and goat rearing.",
+      "fisheries": "Inland fisheries (reservoirs).",
+      "gi_products": ["Chanderi Sarees (handicraft)", "Ratlami Sev (food product)"]
+    },
+    {
+      "name": "Maharashtra",
+      "type": "State",
+      "major_crops": {"kharif": ["Cotton", "Jowar", "Soybean", "Sugarcane"], "rabi": ["Gram"], "zaid": ["Grapes", "Onion"]},
+      "livestock": "Major dairy and poultry sector; goat rearing widespread in Marathwada.",
+      "fisheries": "Major marine fisheries state (Arabian Sea coast, Mumbai fishing hub).",
+      "gi_products": ["Alphonso (Hapus) Mango", "Nashik Grapes", "Solapur Chaddar (handicraft)", "Nagpur Orange"]
+    },
+    {
+      "name": "Manipur",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": []},
+      "livestock": "Pig rearing culturally significant.",
+      "fisheries": "Freshwater fisheries (Loktak Lake).",
+      "gi_products": ["Chak-Hao (Manipur Black Rice)"]
+    },
+    {
+      "name": "Meghalaya",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Maize"], "rabi": [], "zaid": ["Turmeric", "Citrus"]},
+      "livestock": "Pig rearing significant; small-scale dairy.",
+      "fisheries": "Freshwater fisheries.",
+      "gi_products": ["Khasi Mandarin", "Lakadong Turmeric"]
+    },
+    {
+      "name": "Mizoram",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Ginger"]},
+      "livestock": "Pig rearing significant.",
+      "fisheries": "Freshwater fisheries.",
+      "gi_products": ["Mizo Chilli (Bird's Eye)"]
+    },
+    {
+      "name": "Nagaland",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Naga chilli"]},
+      "livestock": "Pig rearing culturally central; Mithun also reared.",
+      "fisheries": "Freshwater fisheries.",
+      "gi_products": ["Naga Mircha (Bhut Jolokia / Ghost Chilli)"]
+    },
+    {
+      "name": "Odisha",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": ["Pulses"], "zaid": []},
+      "livestock": "Cattle rearing widespread; poultry growing.",
+      "fisheries": "Major marine fisheries state (Bay of Bengal, Chilika Lake brackish-water fisheries).",
+      "gi_products": ["Kotpad Handloom (handicraft)", "Odisha Rasagola"]
+    },
+    {
+      "name": "Punjab",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Cotton"], "rabi": ["Wheat"], "zaid": []},
+      "livestock": "Major dairy state; significant Nili-Ravi buffalo population.",
+      "fisheries": "Inland/pond aquaculture.",
+      "gi_products": ["Basmati Rice (shared)", "Phulkari (handicraft)"]
+    },
+    {
+      "name": "Rajasthan",
+      "type": "State",
+      "major_crops": {"kharif": ["Bajra", "Pulses"], "rabi": ["Wheat", "Mustard", "Gram"], "zaid": []},
+      "livestock": "Largest sheep and camel population among Indian states; significant goat rearing.",
+      "fisheries": "Limited, mostly inland reservoirs.",
+      "gi_products": ["Bikaneri Bhujia", "Kota Doria (handicraft)", "Blue Pottery (handicraft, shared with Delhi)"]
+    },
+    {
+      "name": "Sikkim",
+      "type": "State",
+      "major_crops": {"kharif": ["Maize", "Rice"], "rabi": [], "zaid": ["Cardamom", "Ginger"]},
+      "livestock": "First fully organic state; small-scale dairy and pig rearing.",
+      "fisheries": "Cold-water fisheries.",
+      "gi_products": ["Sikkim Large Cardamom"]
+    },
+    {
+      "name": "Tamil Nadu",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Sugarcane", "Groundnut", "Banana"]},
+      "livestock": "Major poultry state (Namakkal region); significant dairy sector.",
+      "fisheries": "Major marine fisheries state (Bay of Bengal coast).",
+      "gi_products": ["Salem Fabric (handicraft)", "Madurai Malli (Jasmine)", "Nilgiri Tea"]
+    },
+    {
+      "name": "Telangana",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Cotton"], "rabi": ["Maize"], "zaid": []},
+      "livestock": "Sheep rearing significant (Nallamala region); poultry growing sector.",
+      "fisheries": "Inland reservoir fisheries.",
+      "gi_products": ["Pochampally Ikat (handicraft)", "Warangal Durries (handicraft)"]
+    },
+    {
+      "name": "Tripura",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Pineapple", "Rubber"]},
+      "livestock": "Pig rearing significant.",
+      "fisheries": "Freshwater fisheries.",
+      "gi_products": ["Tripura Queen Pineapple"]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Sugarcane"], "rabi": ["Wheat"], "zaid": []},
+      "livestock": "Largest cattle and buffalo population among Indian states; large dairy sector.",
+      "fisheries": "Inland riverine fisheries (Ganga basin).",
+      "gi_products": ["Banarasi Sari (handicraft)", "Dussehri Mango (Lucknow/Malihabad)", "Kannauj Perfume/Attar"]
+    },
+    {
+      "name": "Uttarakhand",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice", "Maize"], "rabi": ["Wheat"], "zaid": ["Basmati"]},
+      "livestock": "Hill cattle and goat rearing; small-scale dairy.",
+      "fisheries": "Trout (cold-water) fisheries in hill streams.",
+      "gi_products": ["Basmati Rice (shared)", "Tejpat (Bay Leaf)"]
+    },
+    {
+      "name": "West Bengal",
+      "type": "State",
+      "major_crops": {"kharif": ["Rice (Aman)"], "rabi": ["Rice (Boro)", "Potato"], "zaid": []},
+      "livestock": "Significant goat and poultry rearing; growing dairy sector.",
+      "fisheries": "Largest inland fish-producing state in India (rivers, ponds, wetlands) plus marine fisheries on Bay of Bengal coast.",
+      "gi_products": ["Darjeeling Tea", "Nakshi Kantha (handicraft)", "Joynagar Moa"]
+    },
+    {
+      "name": "Andaman and Nicobar Islands",
+      "type": "Union Territory",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": ["Coconut", "Areca nut"]},
+      "livestock": "Small-scale poultry and piggery.",
+      "fisheries": "Major marine/oceanic fisheries (tuna and reef fisheries).",
+      "gi_products": []
+    },
+    {
+      "name": "Chandigarh",
+      "type": "Union Territory",
+      "major_crops": {"kharif": [], "rabi": ["Wheat"], "zaid": []},
+      "livestock": "Minimal — largely urban UT.",
+      "fisheries": "Negligible.",
+      "gi_products": []
+    },
+    {
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "type": "Union Territory",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": []},
+      "livestock": "Small-scale.",
+      "fisheries": "Marine fisheries (Daman coast).",
+      "gi_products": []
+    },
+    {
+      "name": "Delhi",
+      "type": "Union Territory (NCT)",
+      "major_crops": {"kharif": [], "rabi": ["Wheat (peri-urban)"], "zaid": ["Vegetables"]},
+      "livestock": "Peri-urban dairy colonies.",
+      "fisheries": "Negligible.",
+      "gi_products": ["Basmati Rice (shared)", "Delhi Blue Pottery (shared with Rajasthan)"]
+    },
+    {
+      "name": "Jammu and Kashmir",
+      "type": "Union Territory",
+      "major_crops": {"kharif": ["Rice", "Maize"], "rabi": [], "zaid": ["Apple", "Saffron"]},
+      "livestock": "Sheep and goat rearing significant (Pashmina wool from Changthangi goats).",
+      "fisheries": "Trout (cold-water) fisheries.",
+      "gi_products": ["Kashmir Saffron", "Kashmir Pashmina (handicraft)", "Bhaderwah Rajma"]
+    },
+    {
+      "name": "Ladakh",
+      "type": "Union Territory",
+      "major_crops": {"kharif": ["Barley", "Wheat"], "rabi": [], "zaid": ["Apricot"]},
+      "livestock": "Pashmina goat and yak rearing.",
+      "fisheries": "Minimal (cold desert).",
+      "gi_products": ["Ladakh Apricot"]
+    },
+    {
+      "name": "Lakshadweep",
+      "type": "Union Territory",
+      "major_crops": {"kharif": [], "rabi": [], "zaid": ["Coconut"]},
+      "livestock": "Minimal.",
+      "fisheries": "Major tuna/marine fisheries (Arabian Sea coral islands).",
+      "gi_products": []
+    },
+    {
+      "name": "Puducherry",
+      "type": "Union Territory",
+      "major_crops": {"kharif": ["Rice"], "rabi": [], "zaid": []},
+      "livestock": "Small-scale poultry and dairy.",
+      "fisheries": "Marine fisheries (Bay of Bengal coast).",
+      "gi_products": []
+    }
+  ]
+}

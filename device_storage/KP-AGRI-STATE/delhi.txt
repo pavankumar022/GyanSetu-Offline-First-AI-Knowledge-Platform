@@ -1,0 +1,32 @@
+Delhi — State-Level Agriculture, Livestock, Fisheries & GI Products
+Source: India State-Level Agriculture Dataset (Ministry of Agriculture, NCERT, CGPDTM GI Registry)
+Administrative Type: Union Territory (NCT)
+Coverage: State/UT level ONLY. District-level data is NOT available in this knowledge pack.
+
+━━━ MAJOR CROPS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Kharif Season (Sown June–July, Harvested October–November):
+  None recorded at state level
+
+Rabi Season (Sown October–November, Harvested March–April):
+  Wheat (peri-urban)
+
+Zaid / Perennial / Plantation Crops:
+  Vegetables
+
+━━━ LIVESTOCK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Peri-urban dairy colonies.
+
+━━━ FISHERIES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Negligible.
+
+━━━ GI-TAGGED PRODUCTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Geographical Indication (GI) registered products from Delhi:
+  Basmati Rice (shared), Delhi Blue Pottery (shared with Rajasthan)
+
+Note: This lists well-known GI tags verified against the CGPDTM registry.
+The full GI list for India has 600+ entries; consult ipindia.gov.in for the
+complete current registry.

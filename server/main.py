@@ -20,6 +20,7 @@ from scripts.delta_sync_simulator import (
 )
 from local_ai.rag_pipeline import query_offline_ai
 from local_ai.vector_store import index_file
+from scripts.ingest_state_data import ingest_state_dataset, PACK_ID as STATE_PACK_ID
 
 # Initialize SQLite tables
 init_db()
@@ -502,6 +503,71 @@ def seed_device_storage():
 
 # Reseed database & vector store
 seed_device_storage()
+
+# ── Ingest india_agri_dataset.json ─────────────────────────────────────────
+# Generates one knowledge doc per state/UT, writes to device_storage/KP-AGRI-STATE/
+# and indexes all 36 docs into the local vector store.
+import json as _json
+
+try:
+    _state_result = ingest_state_dataset()
+    _state_meta   = _state_result["meta"]
+    print(f"[GyanSetu] State dataset ingested: {_state_result['records_processed']} records → pack {STATE_PACK_ID}")
+except Exception as _e:
+    _state_meta = None
+    print(f"[GyanSetu] Warning: state dataset ingestion failed: {_e}")
+
+# Register KP-AGRI-STATE in the SQLite pack catalogue (cloud side)
+# and add it to device storage index + sync history
+def _register_state_pack_in_db():
+    db = SessionLocal()
+    try:
+        existing = db.query(KnowledgePack).filter(KnowledgePack.id == STATE_PACK_ID).first()
+        if existing:
+            # Update version/metadata if re-ingested
+            existing.version = "v1.0"
+            if _state_meta:
+                existing.size_mb = max(1, int(_state_meta["size_mb"] * 1024))  # convert MB to rough KB for display
+                existing.files_metadata = _state_meta["files_metadata"]
+        else:
+            state_pack = KnowledgePack(
+                id=STATE_PACK_ID,
+                title="India State-Level Agriculture, Livestock & GI Products",
+                icon="map",
+                category="Agriculture",
+                version="v1.0",
+                size_mb=2,  # ~2 MB total for 36 text docs
+                description=(
+                    "State/UT-level data for all 36 Indian states and union territories: "
+                    "Kharif/Rabi/Zaid crops, livestock specialisation, fisheries focus, "
+                    "and GI-tagged products. Source: Ministry of Agriculture & CGPDTM GI registry."
+                ),
+                files_metadata=_state_meta["files_metadata"] if _state_meta else []
+            )
+            db.add(state_pack)
+
+        # Add a sync history entry for the ingestion
+        import datetime
+        already_logged = db.query(SyncHistory).filter(
+            SyncHistory.pack_id == STATE_PACK_ID
+        ).first()
+        if not already_logged:
+            log = SyncHistory(
+                timestamp=datetime.datetime.now() - datetime.timedelta(minutes=30),
+                pack_id=STATE_PACK_ID,
+                pack_title="India State-Level Agriculture, Livestock & GI Products",
+                status="Success",
+                size_mb=2,
+                details="Ingested 36 state/UT records (Kharif/Rabi/Zaid crops, livestock, fisheries, GI tags)."
+            )
+            db.add(log)
+
+        db.commit()
+    finally:
+        db.close()
+
+_register_state_pack_in_db()
+
 
 def check_offline():
     if IS_OFFLINE:

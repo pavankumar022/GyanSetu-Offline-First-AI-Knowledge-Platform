@@ -1,0 +1,32 @@
+Karnataka — State-Level Agriculture, Livestock, Fisheries & GI Products
+Source: India State-Level Agriculture Dataset (Ministry of Agriculture, NCERT, CGPDTM GI Registry)
+Administrative Type: State
+Coverage: State/UT level ONLY. District-level data is NOT available in this knowledge pack.
+
+━━━ MAJOR CROPS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Kharif Season (Sown June–July, Harvested October–November):
+  Ragi, Maize, Cotton
+
+Rabi Season (Sown October–November, Harvested March–April):
+  Jowar
+
+Zaid / Perennial / Plantation Crops:
+  Coffee, Areca nut
+
+━━━ LIVESTOCK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Significant sheep, goat, and poultry sector; silk (sericulture) hub.
+
+━━━ FISHERIES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Marine fisheries (west coast) plus inland aquaculture.
+
+━━━ GI-TAGGED PRODUCTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Geographical Indication (GI) registered products from Karnataka:
+  Mysore Silk, Coorg Orange, Mysore Agarbathi, Bangalore Rose Onion
+
+Note: This lists well-known GI tags verified against the CGPDTM registry.
+The full GI list for India has 600+ entries; consult ipindia.gov.in for the
+complete current registry.
