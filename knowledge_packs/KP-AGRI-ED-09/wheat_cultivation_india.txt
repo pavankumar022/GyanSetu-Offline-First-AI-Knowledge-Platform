@@ -1,0 +1,39 @@
+Wheat Cultivation — National Advisory (All Wheat-Growing States of India)
+Source: ICAR-Indian Institute of Wheat and Barley Research (IIWBR), Karnal; NFSM-Wheat
+
+Major Wheat-Growing States (Rabi Crop — Kharif Season NOT suitable for wheat):
+• Top Producers (Area/Production): Uttar Pradesh, Punjab, Haryana, Madhya Pradesh, Rajasthan, Bihar, Gujarat, Uttarakhand.
+• Secondary Producers: Himachal Pradesh, Jammu & Kashmir, Maharashtra (Northern dry zones), Karnataka (Zones 3 & 8 only).
+• NOT Recommended for Wheat Cultivation: Coastal regions (Mumbai, Goa, Kerala, Tamil Nadu coast) — high humidity and warm winters prevent proper vernalization.
+
+Recommended Varieties by State/Zone:
+• Punjab / Haryana (Irrigated — High Input):
+  - PBW-1 Chapati (HD-2967), DBW-222 (WB02), HD-3086, WH-1105. Sowing: Nov 1–20. Yield: 55–65 q/ha.
+• Uttar Pradesh (Western — Irrigated):
+  - HD-2967, GW-496, DBW-187, WH-711. Sowing: Oct 25 – Nov 20. Yield: 50–60 q/ha.
+• Uttar Pradesh (Eastern — Rainfed / Late-sown):
+  - HI-8498, NW-1014, K-307, Raj-4120. Sowing: Dec 1–20 (late-sown tolerant varieties). Yield: 30–40 q/ha.
+• Madhya Pradesh / Rajasthan (Central Zone):
+  - HI-8498 (Durum/Hard wheat), GW-322, JW-3288, MP-3336. Sowing: Nov 10–Dec 5. Yield: 35–50 q/ha.
+• Karnataka (Northern Dry Zones 3 & 8 — Dharwad, Belagavi, Bagalkot, Vijayapura, Gadag):
+  - Irrigated: UAS-304, DWR-162, GW-322, DWR-2006. Rainfed: DWR-1006, Bijaga Yellow. Sowing: Oct 15 – Nov 15. Yield: 30–45 q/ha.
+• Bihar / Jharkhand (Eastern Zone):
+  - HD-2781, PBW-343, K-0307, DBW-14. Sowing: Nov 10–30. Yield: 35–45 q/ha.
+
+Fertilizer Recommendations (NPK — kg/ha):
+• Irrigated (5–6 waterings): 120 kg N : 60 kg P2O5 : 40 kg K2O. Apply 50% N at sowing + 50% N at CRI (25 days).
+• Rainfed / Limited Irrigation (1–2 waterings): 60 kg N : 30 kg P2O5 : 20 kg K2O — full dose as basal.
+• Late-sown (December): 80 kg N : 40 kg P2O5 : 30 kg K2O with top-dressing post-CRI.
+
+Critical Irrigation Stages (Priority order if only limited water available):
+1. Crown Root Initiation (CRI): 20–25 DAS — MOST CRITICAL, skip only in emergency.
+2. Tillering: 40–45 DAS.
+3. Jointing / Stem Elongation: 60–65 DAS.
+4. Boot Stage / Heading: 80–85 DAS.
+5. Dough / Grain Milking: 100–105 DAS.
+
+Pest & Disease Management:
+• Wheat Rust (Brown/Yellow/Black): Spray Propiconazole 25 EC @ 1 ml/L or Tebuconazole 250 EW @ 1 ml/L at first sign. Repeat at 15-day interval.
+• Aphids: Apply Thiamethoxam 25 WG @ 100g/ha or Imidacloprid 17.8 SL @ 150 ml/ha when >15 aphids/tiller appear.
+• Termites / Root Grubs: Seed treatment with Chlorpyriphos 20 EC @ 4 ml/kg seed before sowing.
+• Yellow Mosaic Virus (Barley Yellow Dwarf): Use certified disease-free seed; control aphid vector as above.

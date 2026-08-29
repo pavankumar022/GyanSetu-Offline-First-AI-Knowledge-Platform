@@ -138,27 +138,25 @@ export default function App() {
   };
 
   const fetchCloudPacks = async () => {
+    // Always fetches from local SQLite cache — works online and offline
     try {
       const res = await fetch(`${API_BASE}/packs`);
       if (res.ok) {
         const data = await res.json();
         setCloudPacks(data);
-      } else if (res.status === 503) {
-        setCloudPacks([]);
       }
     } catch (e) {
-      console.error('Error fetching cloud packs', e);
+      console.error('Error fetching packs', e);
     }
   };
 
   const fetchSyncHistory = async () => {
+    // Always fetches from local SQLite — works online and offline
     try {
-      const res = await fetch(`${API_BASE}/sync/history`);
+      const res = await fetch(`${API_BASE}/local/history`);
       if (res.ok) {
         const data = await res.json();
         setSyncHistory(data);
-      } else if (res.status === 503) {
-        setSyncHistory([]);
       }
     } catch (e) {
       console.error('Error fetching sync history', e);
@@ -176,14 +174,16 @@ export default function App() {
         const data = await res.json();
         setLocalStatus(prev => ({ ...prev, offline_mode: data.offline }));
         if (data.offline) {
-          showToast('Simulated Offline Mode enabled. Cloud server is unreachable.');
-          setCloudPacks([]);
-          setSyncHistory([]);
+          showToast('Simulated Offline Mode enabled — all features continue working from local storage.');
+          // Packs and history stay loaded — they come from local SQLite, not cloud
+          // Only cloud operations (sync, download) will be blocked
         } else {
-          showToast('Online mode active. Synchronized with simulated cloud server.');
-          fetchCloudPacks();
-          fetchSyncHistory();
+          showToast('Online mode active. Simulated cloud server is reachable.');
         }
+        // Always refresh — these endpoints work in both modes
+        fetchCloudPacks();
+        fetchSyncHistory();
+        fetchLocalStatus();
       }
     } catch (e) {
       console.error('Error toggling offline mode', e);
@@ -1246,14 +1246,15 @@ export default function App() {
                         </div>
 
                         <div className="pt-6 border-t border-outline-variant">
-                          <label className="block font-title-sm text-title-sm text-on-surface font-bold mb-2">Primary Agricultural Zone</label>
-                          <select className="w-full p-3 rounded-lg border border-outline-variant bg-surface font-body-md outline-none focus:border-primary">
-                            <option>Karnataka (Zone 3 & Zone 8 - Northern Dry & Transition)</option>
-                            <option>Karnataka (Zone 5 & Zone 6 - Southern Dry & Transition)</option>
-                            <option>Maharashtra (Western Ghats & Vidarbha)</option>
-                            <option>National All-India Baseline</option>
-                          </select>
-                          <p className="text-xs text-on-surface-variant mt-2">Customizes default vector search priority to the selected regional climate pack.</p>
+                          <label className="block font-title-sm text-title-sm text-on-surface font-bold mb-2">Knowledge Base Coverage</label>
+                          <div className="p-4 rounded-xl bg-surface-container border border-outline-variant flex items-center gap-3">
+                            <VerifiedIcon size={20} className="text-primary" />
+                            <div>
+                              <p className="font-body-md text-body-md font-bold text-on-surface">National All-India Baseline</p>
+                              <p className="text-xs text-on-surface-variant mt-0.5">Covers all agro-climatic zones, states, and national schemes across India (ICAR, Ministry of Agriculture)</p>
+                            </div>
+                          </div>
+                          <p className="text-xs text-on-surface-variant mt-2">Download additional regional packs from the Knowledge Packs tab to expand coverage.</p>
                         </div>
                       </div>
                     </div>

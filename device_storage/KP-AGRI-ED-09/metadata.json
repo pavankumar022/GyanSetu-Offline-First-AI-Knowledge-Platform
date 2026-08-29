@@ -3,29 +3,39 @@
   "title": "Agricultural Best Practices & Crop Data",
   "icon": "agriculture",
   "category": "Agriculture",
-  "version": "v1.8",
+  "version": "v2.0",
   "size_mb": 850,
-  "files_count": 4,
+  "files_count": 6,
   "files_metadata": [
     {
-      "path": "wheat_cultivation_karnataka.txt",
-      "size_bytes": 1458,
-      "hash": "b88cabc4942150f6ce51edffe27b7676"
+      "path": "wheat_cultivation_india.txt",
+      "size_bytes": 2713,
+      "hash": "7f8c2cd0b126ccd85c17e66203058c29"
+    },
+    {
+      "path": "rice_cultivation_india.txt",
+      "size_bytes": 1510,
+      "hash": "7dae3b438f64b51e6e9968348477e420"
+    },
+    {
+      "path": "pulses_india.txt",
+      "size_bytes": 1382,
+      "hash": "81d73af49441610ea5354a8ba7f382b4"
     },
     {
       "path": "agricultural_subsidies.txt",
-      "size_bytes": 1025,
-      "hash": "d67abf535e7867e560e0be64ddefe63b"
+      "size_bytes": 2617,
+      "hash": "f110b68cc5888dbc272107708e9a6746"
     },
     {
       "path": "soil_health.txt",
-      "size_bytes": 612,
-      "hash": "soil_v18_old"
+      "size_bytes": 1876,
+      "hash": "9dbd8adcb0fdc8227eacc0de7b0cf087"
     },
     {
       "path": "pest_control.txt",
-      "size_bytes": 461,
-      "hash": "pest_v18_old"
+      "size_bytes": 2055,
+      "hash": "7e65d5ee58a6ddcdd1f5419c53ea24e3"
     }
   ]
 }

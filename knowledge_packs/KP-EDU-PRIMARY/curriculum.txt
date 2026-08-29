@@ -1,3 +1,25 @@
-Primary Education Standards:
-- Standard 1 Reading: Identify all alphabets, read simple 3-letter words.
-- Standard 1 Math: Addition and subtraction of single digit numbers, recognize shapes.
+Primary Education Curriculum — National Curriculum Framework (NCF-2023)
+Source: NCERT; Ministry of Education, Government of India
+
+Foundational Stage (Age 3–8 / Pre-school to Grade 2):
+• Language (Hindi / English / Regional language):
+  - Identify and write all alphabets (Hindi: Devanagari 52 characters; English: 26).
+  - Read simple 3–5 letter words. Form basic sentences with subject + verb.
+• Numeracy:
+  - Count and write numbers 1–100. Addition and subtraction with single digits.
+  - Identify basic shapes (circle, square, triangle, rectangle) and patterns.
+• Life Skills: Personal hygiene, road safety rules, respect for elders, environmental awareness.
+
+Preparatory Stage (Age 8–11 / Grade 3–5):
+• Mathematics: Multi-digit addition/subtraction; tables 1–20; fractions and decimals introduction; area and perimeter of simple shapes.
+• Science: States of matter; plant life cycle; food and nutrition; water and air.
+• Social Studies: Indian geography basics (major rivers, mountains, states); civic duties; freedom movement (key events and leaders).
+
+Middle Stage (Age 11–14 / Grade 6–8):
+• Algebra introduction; Geometry theorems (Pythagoras, angles); Statistics basics.
+• Cell biology; Chemical reactions; Light and sound; Electricity basics.
+• Indian constitution; Governance; Economic systems.
+
+Mid-Day Meal (PM POSHAN) Scheme:
+• Provides free cooked meals to students in government schools — Grades 1–8.
+• Nutritional norms: Min 450 calories + 12g protein (primary); 700 calories + 20g protein (upper primary).

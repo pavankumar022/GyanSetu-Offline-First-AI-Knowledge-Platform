@@ -1,0 +1,16 @@
+{
+  "id": "KP-LEGAL-BASIC",
+  "title": "Basic Legal Rights & Procedures Manual",
+  "icon": "gavel",
+  "category": "Governance",
+  "version": "v3.4",
+  "size_mb": 620,
+  "files_count": 1,
+  "files_metadata": [
+    {
+      "path": "legal_rights.txt",
+      "size_bytes": 2113,
+      "hash": "c24cb7c0bc24388c67930d51d12855e0"
+    }
+  ]
+}

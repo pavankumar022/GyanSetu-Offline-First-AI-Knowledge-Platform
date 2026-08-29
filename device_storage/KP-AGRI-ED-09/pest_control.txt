@@ -1,4 +1,31 @@
-Integrated Pest Management & Organic Crop Protection:
-• Natural Predators: Conserve ladybird beetles and chrysoperla to biologically control aphids, jassids, and thrips.
-• Botanical Sprays: 5% Neem Seed Kernel Extract (NSKE) or Neem oil 1500 ppm @ 3–5 ml/litre acts as a powerful broad-spectrum repellent for chewing and sucking insects.
-• Trap Crops: Plant African marigolds as border trap crop around main field to manage root-knot nematodes and fruit borers.
+Integrated Pest Management (IPM) — National Advisory
+Source: National Centre for Integrated Pest Management (NCIPM), New Delhi; ICAR
+
+IPM Principles (Prefer in order listed below — chemical pesticide is LAST resort):
+1. Cultural Controls (Preventive — No cost):
+   • Crop rotation (break pest cycle: alternate cereals with pulses/oilseeds).
+   • Resistant/tolerant varieties (e.g. BPT-5204 rice resists stem borer; Swarna Sub1 tolerates flood stress).
+   • Deep summer ploughing: Exposes soil-borne pests and pupae to sun/birds. Do every 2–3 years.
+   • Destruction of crop stubble/residue immediately after harvest.
+
+2. Biological Controls (Eco-friendly):
+   • Conserve natural predators: Ladybird beetles, Chrysoperla (green lacewing), Spiders — these control aphids, jassids, thrips.
+   • Release Trichogramma cards (egg parasitoid) @ 1 lakh/acre at egg-laying stage — controls bollworm, stem borer, army worm.
+   • Apply Beauveria bassiana or Metarhizium anisopliae (entomopathogenic fungi) for soil-dwelling pests.
+   • Use Nuclear Polyhedrosis Virus (NPV) for Helicoverpa armigera (cotton bollworm, tomato fruit borer).
+
+3. Botanical / Biopesticides:
+   • 5% Neem Seed Kernel Extract (NSKE): Spray 5 kg kernels extracted in 10L water per acre. Controls aphids, whitefly, jassids.
+   • Neem oil 1500 ppm @ 3–5 ml/L: Broad-spectrum repellent.
+   • Garlic extract 5%: Fungicidal and repellent spray.
+
+4. Physical / Mechanical Controls:
+   • Yellow Sticky Traps: 10–15 per acre for whitefly and aphid monitoring and mass trapping.
+   • Pheromone Traps: 5 traps/acre for Spodoptera, Helicoverpa, pink bollworm monitoring.
+   • Light Traps: 1 trap per 5 acres for moth monitoring and mass capture (switch on 7 PM – 10 PM).
+
+5. Chemical Pesticide Use (Only as last resort when Economic Threshold Level crossed):
+   • Always use recommended dose — never exceed label rate.
+   • Wear PPE (gloves, mask, boots) during spraying.
+   • Observe Pre-Harvest Interval (PHI) strictly before harvesting crop.
+   • Do NOT spray during flowering — protects pollinators.

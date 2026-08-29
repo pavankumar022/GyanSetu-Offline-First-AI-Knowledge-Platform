@@ -1,0 +1,16 @@
+{
+  "id": "KP-HEALTH-RURAL",
+  "title": "Rural Healthcare First-Aid Guide",
+  "icon": "local_hospital",
+  "category": "Healthcare",
+  "version": "v1.0",
+  "size_mb": 1228,
+  "files_count": 1,
+  "files_metadata": [
+    {
+      "path": "first_aid.txt",
+      "size_bytes": 2004,
+      "hash": "d91ac689ed4ff2fece9babe70f9dd328"
+    }
+  ]
+}

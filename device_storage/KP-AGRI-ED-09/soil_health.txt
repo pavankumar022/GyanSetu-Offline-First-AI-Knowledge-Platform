@@ -1,4 +1,27 @@
-Soil Health and Nutrient Management:
-• Soil pH Rectification: For acidic soils (pH < 6.0), incorporate agricultural lime (calcium carbonate) @ 2–4 quintals/acre. For alkaline soils (pH > 8.2), apply agricultural gypsum @ 5 quintals/acre along with green manure.
-• Organic Matter Enrichment: Apply 10 tonnes of well-decomposed Farm Yard Manure (FYM) or 2 tonnes of vermicompost per hectare 3 weeks before sowing.
-• Bio-Fertilizers: Inoculate seed with Azotobacter/Azospirillum (for cereal crops) and Rhizobium (for pulses) @ 250g per 10kg seed to fix atmospheric nitrogen and cut chemical fertilizer usage by 25%.
+Soil Health and Nutrient Management — National Advisory
+Source: ICAR-National Bureau of Soil Survey & Land Use Planning (NBSS&LUP); Ministry of Agriculture Soil Health Card scheme
+
+Soil Health Card (SHC) Scheme:
+• Purpose: Government provides free soil testing every 2 years through Soil Testing Labs (STLs). Card recommends precise NPK and micronutrient doses.
+• How to get: Contact nearest agriculture office/KVK. Collect soil sample from 0–20 cm depth from 5 spots in the field. Mix and submit ~500g composite sample.
+
+pH Management by Region:
+• Acidic Soils (pH < 6.0) — Common in North-East India, Kerala, West Bengal, Assam:
+  - Apply Agricultural Lime (CaCO3) @ 2–4 quintals/acre. Incorporate 3 weeks before sowing.
+  - Use lime-tolerant crops: rice, maize, sugarcane.
+• Alkaline / Saline Soils (pH > 8.2) — Common in Punjab, Haryana, Rajasthan, UP (usar lands):
+  - Apply Gypsum (CaSO4) @ 5 quintals/acre before first ploughing.
+  - Grow salt-tolerant crops first: barley, sugarbeet, dhaincha (green manure).
+• Neutral / Loam (pH 6.5–7.5): Optimum. Most crops perform best. Maintain with organic matter.
+
+Organic Matter Improvement (All States):
+• Apply 8–10 tonnes of well-decomposed Farm Yard Manure (FYM) per hectare or 2 tonnes vermicompost 3 weeks before sowing.
+• Green Manuring: Grow Dhaincha (Sesbania bispinosa) or Sun hemp and incorporate at 40–45 days — adds 80–120 kg N/ha.
+
+Micronutrient Deficiency Corrections:
+• Zinc Deficiency (Most common — affects rice, wheat, maize in Punjab, Haryana, UP, Bihar, Karnataka):
+  - Apply Zinc Sulphate (ZnSO4) 21% @ 25 kg/ha to deficient soils. Foliar spray 0.5% ZnSO4 + 0.25% slaked lime at tillering.
+• Boron Deficiency (Sunflower, groundnut, cauliflower in South India):
+  - Apply Borax @ 1.5 kg/ha as basal dose.
+• Iron Deficiency (Calcareous soils of Rajasthan, UP):
+  - Spray FeSO4 @ 0.5% at active growth stage.

@@ -1,8 +1,35 @@
-Agricultural Subsidy and Support Schemes (Karnataka & National):
-• PM-KISAN: Direct income support of ₹6,000/year to all eligible landholder farmer families in three 4-monthly installments of ₹2,000.
-• Micro-Irrigation Subsidy (Pradhan Mantri Krishi Sinchayee Yojana):
-  - 90% government subsidy for Small & Marginal Farmers (< 2 hectares land holding) for drip and sprinkler irrigation installations.
-  - 45–55% subsidy for other category farmers.
-• Seed & Fertilizer Subsidy (Raitha Siri & NFSM): High-yielding and bio-fortified seeds distributed at 50% subsidy through local Raitha Samparka Kendras (RSK). Nano-urea and bio-fertilizers subsidized up to 50%.
-• Farm Mechanization Subsidy: Tractors, power tillers, rotavators, and multi-crop threshers available at 40% to 50% subsidy under Sub-Mission on Agricultural Mechanization (SMAM).
-• Mandatory Eligibility Documents: Aadhaar Card, Pahani / RTC land record document, FID (Farmer Registration & Unified Beneficiary Information System), and Aadhaar-linked bank account.
+Agricultural Subsidy and Support Schemes — National (All India)
+Source: Ministry of Agriculture & Farmers' Welfare, Government of India
+
+1. PM-KISAN (Pradhan Mantri Kisan Samman Nidhi):
+• Benefit: Direct income support of ₹6,000/year in three equal installments of ₹2,000 every 4 months.
+• Eligibility: All landholder farmer families (small, marginal, and medium) with cultivable land.
+• Exclusions: Institutional landholders; farmers who are/were constitutional post holders; serving/retired govt. employees drawing pension > ₹10,000/month; income-tax payers.
+• How to Apply: Visit nearest Common Service Centre (CSC) or PM-KISAN portal (pmkisan.gov.in) with Aadhaar, land record (Khata/Pahani/RTC), and Aadhaar-linked bank account.
+
+2. PM-KISAN Maandhan (PM Kisan Pension Yojana):
+• Benefit: ₹3,000/month pension at age 60.
+• Eligibility: Small & Marginal Farmers aged 18–40 years with landholding up to 2 ha.
+• Contribution: ₹55–₹200/month (age-based sliding scale) matched equally by government.
+
+3. Pradhan Mantri Fasal Bima Yojana (PMFBY — Crop Insurance):
+• Coverage: All food crops (cereal, millets, pulses), oilseeds, annual commercial/horticultural crops.
+• Premium: 2% of sum insured for Kharif crops; 1.5% for Rabi crops; 5% for annual horticultural crops.
+• Sum Insured: Based on Scale of Finance (district-level threshold yield). Government pays remaining premium.
+• Coverage Events: Natural calamities (drought, flood, hailstorm, cyclone), pest/disease outbreaks, prevented sowing.
+• How to Apply: Through bank at time of crop loan sanction, or via CSC/insurance company agent.
+
+4. Pradhan Mantri Krishi Sinchayee Yojana (PMKSY — Micro-Irrigation):
+• Subsidy: 90% for Small & Marginal Farmers (< 2 ha) for drip and sprinkler systems; 45–55% for others.
+• State Implementation: Apply through state Agriculture Department; physical verification required before installation.
+
+5. National Food Security Mission (NFSM):
+• Purpose: Technology dissemination; certified seed distribution at 50% subsidy.
+• Crops Covered: Rice, wheat, pulses, coarse cereals, oilseeds.
+• State Distribution: Through Raitha Samparka Kendra (Karnataka), Krishi Vigyan Kendra (KVK), block-level agriculture offices.
+
+6. Sub-Mission on Agricultural Mechanization (SMAM):
+• Subsidy: 40–50% for tractors, power tillers, rotavators, combine harvesters, seed drills, threshers.
+• Special Provision: Women farmers and SC/ST farmers get 10% additional subsidy.
+
+Required Documents for Most Schemes: Aadhaar Card, Land Record (Pahani/Khata/7-12 extract), Bank Passbook copy (Aadhaar-linked), Farmer Registration (eKYC on PM-KISAN portal).
