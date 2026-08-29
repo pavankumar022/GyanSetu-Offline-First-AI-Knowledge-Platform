@@ -3,7 +3,7 @@ import sys
 import shutil
 import hashlib
 from typing import List, Dict, Any
-from fastapi import FastAPI, Depends, HTTPException, BackgroundTasks, Header
+from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -64,7 +64,7 @@ class SyncLogRequest(BaseModel):
 class UpdatePackRequest(BaseModel):
     pack_id: str
     new_version: str
-    files: List[Dict[str, Any]] # [{"path": "...", "content": "..."}]
+    files: List[Dict[str, Any]]
 
 class ChatRequest(BaseModel):
     message: str
@@ -95,22 +95,67 @@ def write_device_file(pack_id: str, filename: str, content: str):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(content)
 
-# Seed cloud files (v2.0 and v2.1)
-write_cloud_file("KP-SCHOLAR-2024", "scholarships.txt", "1. National Merit Scholarship: Eligibility: Class 12 passed with >80%, family income < 4.5 LPA. Benefit: Rs. 10,000/year.\n2. Post-Matric Scholarship for SC/ST: Eligibility: SC/ST students, family income < 2.5 LPA. Benefit: Reimburses full tuition fees.")
-write_cloud_file("KP-HEALTH-RURAL", "first_aid.txt", "Rural Health Care Guidelines:\n- Heat Stroke: Move patient to cool shade, wipe with cool damp cloth, give ORS if conscious.\n- Snake Bite: Keep victim calm, immobilize bitten limb at or below heart level, clean wound, rush to hospital. Do NOT use tourniquet or suction.")
-write_cloud_file("KP-EDU-PRIMARY", "curriculum.txt", "Primary Education Standards:\n- Standard 1 Reading: Identify all alphabets, read simple 3-letter words.\n- Standard 1 Math: Addition and subtraction of single digit numbers, recognize shapes.")
-write_cloud_file("KP-LEGAL-BASIC", "legal_rights.txt", "1. Right to Information (RTI): Any citizen can file request to public authority. Response must be given within 30 days.\n2. Minimum Wages Act: Agricultural workers are entitled to minimum wage set by state authority. Violations can be filed at block office.")
+# Knowledge base texts
+WHEAT_KARNATAKA_DOC = """Wheat Cultivation Guidelines in Karnataka (Northern Dry & Transition Zones):
+• Suitable Agro-Climatic Zones: Zone 3 (Northern Dry Zone) and Zone 8 (Northern Transition Zone), covering Dharwad, Belagavi, Bagalkot, Vijayapura, and Gadag districts.
+• Recommended Varieties:
+  - Irrigated: UAS-304, DWR-162, GW-322, DWR-2006 (high yield, rust resistant).
+  - Rainfed / Dryland: DWR-1006, Bijaga Yellow, A-9-30-1 (durum wheat suited for black soils).
+• Sowing Period: Best window is October 15 to November 15. Avoid late sowing after Nov 30 to prevent heat-stress during grain filling.
+• Soil & Land Prep: Deep black cotton soils (Vertisols) or clayey loam with pH 6.5–7.8. Ensure fine tilth with 2 ploughings and harrowing.
+• Fertilizer (NPK per Hectare):
+  - Irrigated: 100 kg N, 50 kg P2O5, 50 kg K2O. Apply 50% N + full P & K at sowing; remaining 50% N at Crown Root Initiation (21-25 days).
+  - Rainfed: 50 kg N, 25 kg P2O5, 0 kg K2O as basal dose.
+• Critical Irrigation Stages (5-6 waterings):
+  1. Crown Root Initiation (CRI): 20–25 days after sowing (most critical).
+  2. Tillering Stage: 40–45 days.
+  3. Jointing / Stem Elongation: 60–65 days.
+  4. Flowering / Heading: 80–85 days.
+  5. Grain Milking / Dough Stage: 100–105 days.
+• Pest & Disease Management:
+  - Rust (Brown/Black): Spray Propiconazole 25 EC @ 1 ml/litre at initial symptom appearance.
+  - Termites / Root Grubs: Seed treatment with Chlorpyriphos 20 EC @ 4 ml per kg seed before sowing."""
 
-# Seed cloud agriculture pack files v2.0
-write_cloud_file("KP-AGRI-ED-09", "soil_health.txt", "Soil health maintenance: Add organic compost to clayey soils to improve aeration. Use bio-fertilizers like Rhizobium for leguminous crops to fix atmospheric nitrogen.")
-write_cloud_file("KP-AGRI-ED-09", "pest_control.txt", "Natural Pest Control: Neem oil spray acts as an effective pesticide for aphids and spider mites. Intercrop mustard with cabbage to deter diamondback moths.")
-write_cloud_file("KP-AGRI-ED-09", "multi_cropping.txt", "Multi-cropping systems: Maize can be successfully intercropped with cowpea or green gram. This practices increases land equivalent ratio and improves soil nutrients.")
+AGRI_SUBSIDY_DOC = """Agricultural Subsidy and Support Schemes (Karnataka & National):
+• PM-KISAN: Direct income support of ₹6,000/year to all eligible landholder farmer families in three 4-monthly installments of ₹2,000.
+• Micro-Irrigation Subsidy (Pradhan Mantri Krishi Sinchayee Yojana):
+  - 90% government subsidy for Small & Marginal Farmers (< 2 hectares land holding) for drip and sprinkler irrigation installations.
+  - 45–55% subsidy for other category farmers.
+• Seed & Fertilizer Subsidy (Raitha Siri & NFSM): High-yielding and bio-fortified seeds distributed at 50% subsidy through local Raitha Samparka Kendras (RSK). Nano-urea and bio-fertilizers subsidized up to 50%.
+• Farm Mechanization Subsidy: Tractors, power tillers, rotavators, and multi-crop threshers available at 40% to 50% subsidy under Sub-Mission on Agricultural Mechanization (SMAM).
+• Mandatory Eligibility Documents: Aadhaar Card, Pahani / RTC land record document, FID (Farmer Registration & Unified Beneficiary Information System), and Aadhaar-linked bank account."""
 
+SOIL_HEALTH_DOC = """Soil Health and Nutrient Management:
+• Soil pH Rectification: For acidic soils (pH < 6.0), incorporate agricultural lime (calcium carbonate) @ 2–4 quintals/acre. For alkaline soils (pH > 8.2), apply agricultural gypsum @ 5 quintals/acre along with green manure.
+• Organic Matter Enrichment: Apply 10 tonnes of well-decomposed Farm Yard Manure (FYM) or 2 tonnes of vermicompost per hectare 3 weeks before sowing.
+• Bio-Fertilizers: Inoculate seed with Azotobacter/Azospirillum (for cereal crops) and Rhizobium (for pulses) @ 250g per 10kg seed to fix atmospheric nitrogen and cut chemical fertilizer usage by 25%."""
 
-# Initial seeding of device storage
+PEST_CONTROL_DOC = """Integrated Pest Management & Organic Crop Protection:
+• Natural Predators: Conserve ladybird beetles and chrysoperla to biologically control aphids, jassids, and thrips.
+• Botanical Sprays: 5% Neem Seed Kernel Extract (NSKE) or Neem oil 1500 ppm @ 3–5 ml/litre acts as a powerful broad-spectrum repellent for chewing and sucking insects.
+• Trap Crops: Plant African marigolds as border trap crop around main field to manage root-knot nematodes and fruit borers."""
+
+SCHOLARSHIPS_DOC = """1. National Merit Scholarship: Eligibility: Class 12 passed with >80%, family income < 4.5 LPA. Benefit: ₹10,000/year.\n2. Post-Matric Scholarship for SC/ST: Eligibility: SC/ST students, family income < 2.5 LPA. Benefit: Reimburses full tuition fees."""
+FIRST_AID_DOC = """Rural Health Care Guidelines:\n- Heat Stroke: Move patient to cool shade, wipe with cool damp cloth, give ORS if conscious.\n- Snake Bite: Keep victim calm, immobilize bitten limb at or below heart level, clean wound, rush to hospital. Do NOT use tourniquet or suction."""
+CURRICULUM_DOC = """Primary Education Standards:\n- Standard 1 Reading: Identify all alphabets, read simple 3-letter words.\n- Standard 1 Math: Addition and subtraction of single digit numbers, recognize shapes."""
+LEGAL_DOC = """1. Right to Information (RTI): Any citizen can file request to public authority. Response must be given within 30 days.\n2. Minimum Wages Act: Agricultural workers are entitled to minimum wage set by state authority. Violations can be filed at block office."""
+
+# Seed Cloud Files
+write_cloud_file("KP-AGRI-ED-09", "wheat_cultivation_karnataka.txt", WHEAT_KARNATAKA_DOC)
+write_cloud_file("KP-AGRI-ED-09", "agricultural_subsidies.txt", AGRI_SUBSIDY_DOC)
+write_cloud_file("KP-AGRI-ED-09", "soil_health.txt", SOIL_HEALTH_DOC)
+write_cloud_file("KP-AGRI-ED-09", "pest_control.txt", PEST_CONTROL_DOC)
+
+write_cloud_file("KP-SCHOLAR-2024", "scholarships.txt", SCHOLARSHIPS_DOC)
+write_cloud_file("KP-HEALTH-RURAL", "first_aid.txt", FIRST_AID_DOC)
+write_cloud_file("KP-EDU-PRIMARY", "curriculum.txt", CURRICULUM_DOC)
+write_cloud_file("KP-LEGAL-BASIC", "legal_rights.txt", LEGAL_DOC)
+
+# Seed Initial Device Storage
 def seed_device_storage():
-    # 1. Scholarship pack is installed and up to date (v2.1)
-    write_device_file("KP-SCHOLAR-2024", "scholarships.txt", "1. National Merit Scholarship: Eligibility: Class 12 passed with >80%, family income < 4.5 LPA. Benefit: Rs. 10,000/year.\n2. Post-Matric Scholarship for SC/ST: Eligibility: SC/ST students, family income < 2.5 LPA. Benefit: Reimburses full tuition fees.")
+    import json
+    # Scholarship pack installed
+    write_device_file("KP-SCHOLAR-2024", "scholarships.txt", SCHOLARSHIPS_DOC)
     scholarship_meta = {
         "id": "KP-SCHOLAR-2024",
         "title": "Government Scholarship Schemes 2024",
@@ -119,17 +164,17 @@ def seed_device_storage():
         "version": "v2.1",
         "size_mb": 420,
         "files_count": 1,
-        "files_metadata": [{"path": "scholarships.txt", "size_bytes": 350000, "hash": "scholar_v2_hash"}]
+        "files_metadata": [{"path": "scholarships.txt", "size_bytes": len(SCHOLARSHIPS_DOC), "hash": hashlib.md5(SCHOLARSHIPS_DOC.encode()).hexdigest()}]
     }
     with open(os.path.join(DEVICE_STORAGE_DIR, "KP-SCHOLAR-2024", "metadata.json"), "w", encoding="utf-8") as f:
-        import json
         json.dump(scholarship_meta, f, indent=2)
-    index_file("KP-SCHOLAR-2024", "KP-SCHOLAR-2024/scholarships.txt", scholarship_meta["files_metadata"][0]["path"])
+    index_file("KP-SCHOLAR-2024", "KP-SCHOLAR-2024/scholarships.txt", SCHOLARSHIPS_DOC)
 
-    # 2. Agriculture pack is installed but older version (v1.8)
-    # File contents are slightly older or missing some v2.0 files
-    write_device_file("KP-AGRI-ED-09", "soil_health.txt", "Soil health maintenance: Add organic compost to clayey soils to improve aeration.")
-    write_device_file("KP-AGRI-ED-09", "pest_control.txt", "Natural Pest Control: Neem oil spray acts as an effective pesticide for aphids.")
+    # Agriculture pack installed with wheat, subsidies, soil health, pest control
+    write_device_file("KP-AGRI-ED-09", "wheat_cultivation_karnataka.txt", WHEAT_KARNATAKA_DOC)
+    write_device_file("KP-AGRI-ED-09", "agricultural_subsidies.txt", AGRI_SUBSIDY_DOC)
+    write_device_file("KP-AGRI-ED-09", "soil_health.txt", SOIL_HEALTH_DOC)
+    write_device_file("KP-AGRI-ED-09", "pest_control.txt", PEST_CONTROL_DOC)
     
     agri_meta = {
         "id": "KP-AGRI-ED-09",
@@ -138,33 +183,30 @@ def seed_device_storage():
         "category": "Agriculture",
         "version": "v1.8",
         "size_mb": 850,
-        "files_count": 2,
+        "files_count": 4,
         "files_metadata": [
-            {"path": "soil_health.txt", "size_bytes": 100000, "hash": "soil_v18_hash"},
-            {"path": "pest_control.txt", "size_bytes": 150000, "hash": "pest_v18_hash"}
+            {"path": "wheat_cultivation_karnataka.txt", "size_bytes": len(WHEAT_KARNATAKA_DOC), "hash": hashlib.md5(WHEAT_KARNATAKA_DOC.encode()).hexdigest()},
+            {"path": "agricultural_subsidies.txt", "size_bytes": len(AGRI_SUBSIDY_DOC), "hash": hashlib.md5(AGRI_SUBSIDY_DOC.encode()).hexdigest()},
+            {"path": "soil_health.txt", "size_bytes": len(SOIL_HEALTH_DOC), "hash": "soil_v18_old"},
+            {"path": "pest_control.txt", "size_bytes": len(PEST_CONTROL_DOC), "hash": "pest_v18_old"}
         ]
     }
     with open(os.path.join(DEVICE_STORAGE_DIR, "KP-AGRI-ED-09", "metadata.json"), "w", encoding="utf-8") as f:
         json.dump(agri_meta, f, indent=2)
         
-    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/soil_health.txt", "Soil health maintenance: Add organic compost to clayey soils to improve aeration.")
-    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/pest_control.txt", "Natural Pest Control: Neem oil spray acts as an effective pesticide for aphids.")
+    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/wheat_cultivation_karnataka.txt", WHEAT_KARNATAKA_DOC)
+    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/agricultural_subsidies.txt", AGRI_SUBSIDY_DOC)
+    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/soil_health.txt", SOIL_HEALTH_DOC)
+    index_file("KP-AGRI-ED-09", "KP-AGRI-ED-09/pest_control.txt", PEST_CONTROL_DOC)
 
-# Run seeding once
-try:
-    # Check if device database or directories are empty, seed them
-    if not get_installed_packs():
-        seed_device_storage()
-except Exception as e:
-    print(f"Error seeding device storage: {e}")
+# Reseed database & vector store
+seed_device_storage()
 
-
-# Middleware simulation: If IS_OFFLINE is true, return 503 error for cloud endpoints
 def check_offline():
     if IS_OFFLINE:
         raise HTTPException(status_code=503, detail="Simulated Offline Mode is enabled. Cannot reach server.")
 
-# ----------------- CLOUD ENDPOINTS (Subject to Offline Toggle) -----------------
+# ----------------- CLOUD ENDPOINTS -----------------
 
 @app.get("/api/packs")
 def list_packs(db: Session = Depends(get_db)):
@@ -248,67 +290,15 @@ def log_sync(req: SyncLogRequest, db: Session = Depends(get_db)):
     db.commit()
     return {"status": "logged", "id": log.id}
 
-@app.post("/api/server/update-pack")
-def update_pack_data(req: UpdatePackRequest, db: Session = Depends(get_db)):
-    # Debug/Demo endpoint to trigger a server-side pack change
-    check_offline()
-    pack = db.query(KnowledgePack).filter(KnowledgePack.id == req.pack_id).first()
-    if not pack:
-        raise HTTPException(status_code=404, detail="Knowledge pack not found")
-    
-    updated_files = []
-    for file_info in req.files:
-        path = file_info["path"]
-        content = file_info["content"]
-        write_cloud_file(req.pack_id, path, content)
-        
-        content_bytes = content.encode("utf-8")
-        size = len(content_bytes)
-        md5_hash = hashlib.md5(content_bytes).hexdigest()
-        
-        updated_files.append({
-            "path": path,
-            "size_bytes": size,
-            "hash": md5_hash
-        })
-    
-    existing_meta = {f["path"]: f for f in pack.files_metadata}
-    for uf in updated_files:
-        existing_meta[uf["path"]] = uf
-        
-    pack.files_metadata = list(existing_meta.values())
-    pack.version = req.new_version
-    pack.size_mb = max(10, pack.size_mb + 5)
-    
-    db.commit()
-    return {
-        "status": "success",
-        "pack_id": pack.id,
-        "new_version": pack.version,
-        "files_count": len(pack.files_metadata)
-    }
-
-# ----------------- LOCAL ON-DEVICE SIMULATION ENDPOINTS -----------------
-# (These run locally and NEVER fail, even when IS_OFFLINE is true)
+# ----------------- LOCAL ON-DEVICE ENDPOINTS -----------------
 
 @app.get("/api/local/status")
 def get_local_status(db: Session = Depends(get_db)):
     installed = get_installed_packs()
-    # Calculate storage stats:
-    # 3.1GB for Packs, 0.8GB for logs/chats, 0.3GB cache = 4.2GB
-    # Let's dynamically sum: base is 1.1GB (chats/cache) + sum of installed packs
     pack_sum_mb = sum(p.get("size_mb", 0) for p in installed)
-    pack_sum_gb = round(pack_sum_mb / 1000, 1) # e.g. 1.27GB
+    pack_sum_gb = round(pack_sum_mb / 1000, 1)
+    storage_used = 4.2
     
-    # Force to 4.2GB if standard setup to match Stitch visual numbers
-    # If updated, it increases slightly.
-    storage_used = round(3.0 + pack_sum_gb, 1)
-    if len(installed) == 2:
-        # Standard: Scholarship (420MB) + Agri (850MB) = 1.27GB.
-        # Plus 3.0GB base = 4.27GB -> rounded to 4.2GB or 4.3GB
-        storage_used = 4.2
-        
-    # Get last sync log
     last_log = db.query(SyncHistory).filter(SyncHistory.status == "Success").order_by(SyncHistory.timestamp.desc()).first()
     last_sync = "2 hours ago"
     if last_log:
@@ -336,21 +326,16 @@ def toggle_offline(req: ToggleOfflineRequest):
 
 @app.post("/api/local/chat")
 def local_chat(req: ChatRequest):
-    # This runs 100% offline
     result = query_offline_ai(req.message)
     return result
 
 @app.post("/api/local/sync-pack/{pack_id}")
 def local_sync_pack(pack_id: str, db: Session = Depends(get_db)):
-    # Local sync command triggers delta update download from the simulated cloud
-    check_offline() # Downloading a pack requires cloud access!
-    
-    # 1. Fetch pack details from server database
+    check_offline()
     pack = db.query(KnowledgePack).filter(KnowledgePack.id == pack_id).first()
     if not pack:
         raise HTTPException(status_code=404, detail="Knowledge Pack not found on server")
         
-    # 2. Execute delta sync
     result = perform_sync(
         pack_id=pack.id,
         pack_title=pack.title,
@@ -360,7 +345,6 @@ def local_sync_pack(pack_id: str, db: Session = Depends(get_db)):
         server_files=pack.files_metadata
     )
     
-    # 3. Write sync log
     log = SyncHistory(
         pack_id=pack.id,
         pack_title=pack.title,
@@ -386,7 +370,6 @@ def local_delete_pack(pack_id: str, db: Session = Depends(get_db)):
 
 @app.post("/api/local/clear-space")
 def local_clear_space(db: Session = Depends(get_db)):
-    # Clear sync history logs and reset storage settings
     db.query(SyncHistory).delete()
     db.commit()
     return {"status": "success", "message": "Cleared storage cache and sync history."}

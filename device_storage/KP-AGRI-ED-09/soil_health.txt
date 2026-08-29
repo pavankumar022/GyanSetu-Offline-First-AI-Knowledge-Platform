@@ -1,1 +1,4 @@
-Soil health maintenance: Add organic compost to clayey soils to improve aeration.
+Soil Health and Nutrient Management:
+• Soil pH Rectification: For acidic soils (pH < 6.0), incorporate agricultural lime (calcium carbonate) @ 2–4 quintals/acre. For alkaline soils (pH > 8.2), apply agricultural gypsum @ 5 quintals/acre along with green manure.
+• Organic Matter Enrichment: Apply 10 tonnes of well-decomposed Farm Yard Manure (FYM) or 2 tonnes of vermicompost per hectare 3 weeks before sowing.
+• Bio-Fertilizers: Inoculate seed with Azotobacter/Azospirillum (for cereal crops) and Rhizobium (for pulses) @ 250g per 10kg seed to fix atmospheric nitrogen and cut chemical fertilizer usage by 25%.

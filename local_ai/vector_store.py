@@ -2,7 +2,7 @@ import os
 import sqlite3
 import numpy as np
 from typing import List, Dict, Any
-from local_ai.embeddings import get_embedding, cosine_similarity
+from local_ai.embeddings import get_embedding, cosine_similarity, STOPWORDS
 
 DB_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "device_storage")
 DB_PATH = os.path.join(DB_DIR, "local_knowledge.db")
@@ -12,7 +12,6 @@ def init_store():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Create chunks table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS knowledge_chunks (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -22,19 +21,13 @@ def init_store():
         embedding BLOB NOT NULL
     )
     """)
-    
-    # Create index on pack_id
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_pack_id ON knowledge_chunks(pack_id)")
-    
     conn.commit()
     conn.close()
 
 def chunk_text(text: str, chunk_size: int = 500, overlap: int = 100) -> List[str]:
-    """Helper to split text into overlapping chunks."""
     words = text.split()
     chunks = []
-    
-    # Simple chunking by word count
     i = 0
     while i < len(words):
         chunk = " ".join(words[i:i + chunk_size])
@@ -43,14 +36,12 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 100) -> List[str
         if i >= len(words) - overlap:
             break
             
-    # If text is small, return it as a single chunk
     if not chunks and text.strip():
         chunks.append(text)
         
     return chunks
 
 def index_file(pack_id: str, filepath: str, text_content: str):
-    """Chunk and embed a single file, adding it to the local vector store."""
     init_store()
     chunks = chunk_text(text_content)
     
@@ -58,9 +49,7 @@ def index_file(pack_id: str, filepath: str, text_content: str):
     cursor = conn.cursor()
     
     for chunk in chunks:
-        # Generate embedding
         vector = get_embedding(chunk)
-        # Convert vector (numpy array) to float32 and save as binary
         vector_f32 = np.array(vector, dtype=np.float32)
         vector_bytes = vector_f32.tobytes()
         
@@ -73,7 +62,6 @@ def index_file(pack_id: str, filepath: str, text_content: str):
     conn.close()
 
 def remove_pack_indices(pack_id: str):
-    """Remove all chunks associated with a pack (used when deleting a pack)."""
     init_store()
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -82,7 +70,7 @@ def remove_pack_indices(pack_id: str):
     conn.close()
 
 def search_chunks(query: str, top_k: int = 3) -> List[Dict[str, Any]]:
-    """Compare query embedding against all chunks in SQLite database and return top results."""
+    """Hybrid Search: Vector Cosine Similarity + Keyword Salience Boosting."""
     init_store()
     query_vector = get_embedding(query)
     
@@ -92,23 +80,32 @@ def search_chunks(query: str, top_k: int = 3) -> List[Dict[str, Any]]:
     rows = cursor.fetchall()
     conn.close()
     
+    # Extract query content keywords (ignoring stopwords)
+    q_words = {w.lower().strip(".,;:!?()[]{}'\"") for w in query.split()} - STOPWORDS
+    q_words = {qw for qw in q_words if len(qw) > 2}
+    
     results = []
     for row in rows:
         cid, pack_id, filepath, text, emb_bytes = row
-        # Read vector back from binary bytes
         emb_vector = np.frombuffer(emb_bytes, dtype=np.float32)
         
-        # Calculate similarity
-        score = cosine_similarity(query_vector, emb_vector)
+        # Base vector similarity
+        base_score = cosine_similarity(query_vector, emb_vector)
+        
+        # Keyword match boost
+        text_lower = text.lower()
+        keyword_hits = sum(1 for qw in q_words if qw in text_lower)
+        
+        # Final combined score
+        final_score = base_score + (keyword_hits * 0.35)
         
         results.append({
             "id": cid,
             "pack_id": pack_id,
             "filepath": filepath,
             "text": text,
-            "score": score
+            "score": final_score
         })
         
-    # Sort results by similarity score descending
     results.sort(key=lambda x: x["score"], reverse=True)
     return results[:top_k]

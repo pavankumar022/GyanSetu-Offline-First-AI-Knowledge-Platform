@@ -5,17 +5,27 @@
   "category": "Agriculture",
   "version": "v1.8",
   "size_mb": 850,
-  "files_count": 2,
+  "files_count": 4,
   "files_metadata": [
     {
+      "path": "wheat_cultivation_karnataka.txt",
+      "size_bytes": 1458,
+      "hash": "b88cabc4942150f6ce51edffe27b7676"
+    },
+    {
+      "path": "agricultural_subsidies.txt",
+      "size_bytes": 1025,
+      "hash": "d67abf535e7867e560e0be64ddefe63b"
+    },
+    {
       "path": "soil_health.txt",
-      "size_bytes": 100000,
-      "hash": "soil_v18_hash"
+      "size_bytes": 612,
+      "hash": "soil_v18_old"
     },
     {
       "path": "pest_control.txt",
-      "size_bytes": 150000,
-      "hash": "pest_v18_hash"
+      "size_bytes": 461,
+      "hash": "pest_v18_old"
     }
   ]
 }
