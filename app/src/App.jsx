@@ -255,30 +255,71 @@ export default function App() {
     }
   };
 
+  const generateAIResponseForQuickAsk = async (queryText, chatId) => {
+    setIsGenerating(true);
+    try {
+      const res = await fetch(`${API_BASE}/local/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: queryText })
+      });
+      
+      if (res.ok) {
+        const data = await res.json();
+        setChatMessages(prev => ({
+          ...prev,
+          [chatId]: [
+            { sender: 'user', text: queryText },
+            { sender: 'ai', text: data.answer, citations: data.citations || [] }
+          ]
+        }));
+        
+        if (data.citations && data.citations.length > 0) {
+          setActiveCitation(data.citations[0]);
+        } else {
+          setActiveCitation(null);
+        }
+      } else {
+        setChatMessages(prev => ({
+          ...prev,
+          [chatId]: [
+            { sender: 'user', text: queryText },
+            { sender: 'ai', text: 'Error accessing local knowledge store. Please check your downloaded packs.', citations: [] }
+          ]
+        }));
+      }
+    } catch (e) {
+      setChatMessages(prev => ({
+        ...prev,
+        [chatId]: [
+          { sender: 'user', text: queryText },
+          { sender: 'ai', text: 'Local knowledge processor is unreachable. Ensure local backend is active.', citations: [] }
+        ]
+      }));
+    } finally {
+      setIsGenerating(false);
+      fetchLocalStatus();
+    }
+  };
+
   const handleQuickAsk = () => {
     if (!quickAskText.trim()) return;
     
     const newId = chats.length + 1;
     const title = quickAskText.length > 25 ? quickAskText.substring(0, 25) + '...' : quickAskText;
     setChats([{ id: newId, title: title, excerpt: quickAskText, date: 'Today' }, ...chats]);
-    setChatMessages({
-      ...chatMessages,
+    setChatMessages(prev => ({
+      ...prev,
       [newId]: [{ sender: 'user', text: quickAskText }]
-    });
+    }));
     setActiveChatId(newId);
+    const query = quickAskText;
     setQuickAskText('');
     setActiveTab('Ask Questions');
     
-    setTimeout(() => {
-      setCurrentMessage(quickAskText);
-    }, 100);
+    // Immediately generate response for the new chat
+    generateAIResponseForQuickAsk(query, newId);
   };
-
-  useEffect(() => {
-    if (activeTab === 'Ask Questions' && currentMessage) {
-      handleSendMessage();
-    }
-  }, [activeTab]);
 
   const handleDownloadPack = async (packId) => {
     try {

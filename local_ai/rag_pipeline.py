@@ -111,6 +111,21 @@ def query_offline_ai(query_text: str, top_k: int = 5) -> Dict[str, Any]:
             "detected_state": detected_state
         }
 
+    # Filter out chunks from other states if a specific state is detected
+    if detected_state:
+        target_state_slug = _slug(detected_state)
+        filtered_chunks = []
+        for chunk in raw_chunks:
+            filepath = chunk.get("filepath", "")
+            if "KP-AGRI-STATE" in filepath:
+                # Keep only if it belongs to the matched state
+                if f"{target_state_slug}.txt" in filepath.lower():
+                    filtered_chunks.append(chunk)
+            else:
+                # Keep general national/baseline packs
+                filtered_chunks.append(chunk)
+        raw_chunks = filtered_chunks
+
     # State boost (additive, preserves national fallback)
     if detected_state:
         boosted_chunks = _boost_state_chunks(raw_chunks, detected_state)
