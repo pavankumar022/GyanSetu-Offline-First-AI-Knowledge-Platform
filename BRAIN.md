@@ -45,3 +45,5 @@
 - Launched FastAPI backend server on `http://localhost:8001` and Vite frontend on `http://localhost:5173`.
 - Initialized Git repository, configured `.gitignore`, and pushed all project source code, design assets, and documentation to GitHub (`https://github.com/pavankumar022/GyanSetu-Offline-First-AI-Knowledge-Platform.git`).
 - Verified live end-to-end responses across frontend (`http://localhost:5173`) and backend (`http://localhost:8001`), confirming offline RAG chat and status APIs are active.
+- Fixed CSS styling by installing `tailwindcss@3.4.17` so that all custom Stitch design tokens, color variables (`primary-container`, `surface-container`), and dashboard layouts compile properly.
+- Enhanced the local AI RAG pipeline with Hybrid Search (Keyword Salience + Vector Similarity) and added verified agricultural advisory data for Karnataka wheat cultivation, irrigation schedules, and government subsidies.
