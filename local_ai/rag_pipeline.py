@@ -10,6 +10,10 @@ DATA INTEGRITY GUARANTEE:
   • Only information physically present in indexed docs is returned.
   • If the top score is below threshold → returns explicit out-of-scope message.
   • No hallucination, no guessing, no gap-filling.
+
+CITATION ACCURACY:
+  • generate_local_response() returns used_chunk_ids alongside the answer.
+  • Only chunks in used_chunk_ids are shown as citations to the user.
 """
 
 import os
@@ -51,6 +55,23 @@ _ABBREV_MAP = {
     "new delhi": "delhi",
     "pondicherry": "puducherry",
 }
+
+# Relevance threshold — hash-based embeddings produce low cosine sims (0.10-0.40 range)
+_RELEVANCE_THRESHOLD = 0.10
+
+
+def get_confidence_percentage(chunk: Dict[str, Any]) -> int:
+    """
+    Calculate confidence percentage (0-100%) from hybrid similarity score.
+    Scores >= 0.40 represent strong matches (>= 75% confidence).
+    """
+    score = chunk.get("score", 0.0)
+    if score >= 0.40:
+        return int(min(98, 75 + (score - 0.40) * 50))
+    elif score >= 0.20:
+        return int(40 + (score - 0.20) * 175)
+    else:
+        return int(max(0, score * 200))
 
 
 def _detect_state(query_lower: str) -> str | None:
@@ -98,7 +119,7 @@ def query_offline_ai(query_text: str, top_k: int = 5) -> Dict[str, Any]:
     query_lower = query_text.lower()
     detected_state = _detect_state(query_lower)
 
-    # Fetch top 25 candidate chunks across all 43 documents
+    # Fetch top 25 candidate chunks across all documents
     raw_chunks = search_chunks(query_text, top_k=25)
 
     if not raw_chunks:
@@ -135,16 +156,38 @@ def query_offline_ai(query_text: str, top_k: int = 5) -> Dict[str, Any]:
     # Take top_k after re-ranking
     chunks = boosted_chunks[:top_k]
 
-    # Threshold check
-    top_score = chunks[0]["score"]
-    if top_score < 0.20:
+    if not chunks:
         return {
             "answer": (
-                "This question appears to fall outside the scope of your currently installed knowledge packs. "
-                "I only provide verified, grounded answers based on your local data — not guesses.\n\n"
-                "*Tip: Try asking about specific states (e.g. 'Kharif crops in Gujarat'), crops "
-                "(wheat, rice, pulses), agricultural subsidies (PM-KISAN, PMFBY), soil health, "
-                "pest management, scholarships, rural healthcare, or legal rights (RTI, MGNREGS).*"
+                "I don't have any information on this topic in your downloaded knowledge packs. "
+                "Please check the Knowledge Packs tab and download the relevant pack."
+            ),
+            "citations": [],
+            "detected_state": detected_state
+        }
+
+    # ── Confidence Threshold (75% Minimum Retrieval Match) ────────────────────
+    # Design Decision: If the top chunk's similarity score is below 0.75 (75%),
+    # do NOT generate an ungrounded answer or cite mismatched sources.
+    # Return a helpful fallback suggesting known covered topics without citations.
+    top_confidence = get_confidence_percentage(chunks[0])
+    if top_confidence < 75:
+        return {
+            "answer": (
+                "I don't have verified local knowledge on this topic yet. "
+                "Try asking about:\n"
+                "🌾 **Crops**: wheat, rice/paddy, maize/corn, ragi, sugarcane, cotton, groundnut, "
+                "tur/pigeon pea, sunflower, barley, bajra/jowar (millet), soybean, chickpea/gram, "
+                "mustard, banana, tomato, onion, potato\n"
+                "🏛️ **Government Schemes**: PM-KISAN, PMFBY crop insurance, Kisan Credit Card (KCC), "
+                "PMKSY irrigation subsidy, Soil Health Card scheme, Karnataka state schemes "
+                "(Raitha Vidya Nidhi, Krishi Bhagya)\n"
+                "🏥 **Rural Health**: infant vaccination schedule, maternal/ASHA guidelines, "
+                "snake bite first aid, dehydration & ORS protocol, disease symptoms & PHC referral\n"
+                "🧪 **Soil & Pest**: organic pest control, Integrated Pest Management (IPM), "
+                "micronutrient deficiency correction, soil health\n"
+                "⚖️ **Legal Rights**: MGNREGS job guarantee, land records (Pahani/RTC), "
+                "farmer helplines & free legal aid"
             ),
             "citations": [],
             "detected_state": detected_state
@@ -152,7 +195,7 @@ def query_offline_ai(query_text: str, top_k: int = 5) -> Dict[str, Any]:
 
     # Granularity guard
     district_keywords = ["district", "block", "taluk", "tehsil", "mandal", "village", "locality",
-                         "street", "town", "city", "exact", "how many", "count", "tonnage"]
+                         "street", "town", "city", "exact", "count", "tonnage"]
     if any(kw in query_lower for kw in district_keywords) and detected_state:
         state_chunk_texts = [c["text"] for c in chunks if "KP-AGRI-STATE" in c.get("filepath", "")]
         if not any(kw in " ".join(state_chunk_texts).lower() for kw in district_keywords):
@@ -167,29 +210,38 @@ def query_offline_ai(query_text: str, top_k: int = 5) -> Dict[str, Any]:
                 "detected_state": detected_state
             }
 
-    # Generate grounded response
-    answer = generate_local_response(query_text, chunks)
+    # ── Generate synthesized response + get used chunk IDs ──────────────────
+    answer, used_chunk_ids = generate_local_response(query_text, chunks)
 
-    # Build citations (deduplicated by file)
+    # ── Build citations: ONLY chunks whose IDs were used in the answer ───────
+    used_id_set = set(used_chunk_ids)
+
+    # If synthesis returned no used IDs (edge case), fall back to top-1 chunk
+    if not used_id_set and chunks:
+        used_id_set = {chunks[0]["id"]}
+
     citations = []
     seen_paths = set()
+    # Iterate in ranked order so citations are ordered by relevance
     for chunk in chunks:
+        if chunk.get("id") not in used_id_set:
+            continue
         path = chunk["filepath"]
-        if path not in seen_paths:
-            seen_paths.add(path)
-            filename = os.path.basename(path)
-            title = filename.replace(".txt", "").replace("_", " ").title()
+        if path in seen_paths:
+            continue
+        seen_paths.add(path)
 
-            raw_score = chunk["score"]
-            capped_score = min(raw_score, 3.0)
-            confidence = int(min(98, max(60, (capped_score / 3.0) * 38 + 60)))
+        filename = os.path.basename(path)
+        title = filename.replace(".txt", "").replace("_", " ").title()
 
-            citations.append({
-                "title": title,
-                "filepath": path,
-                "excerpt": chunk["text"][:220] + "...",
-                "confidence": confidence
-            })
+        confidence = get_confidence_percentage(chunk)
+
+        citations.append({
+            "title": title,
+            "filepath": path,
+            "excerpt": chunk["text"][:220] + "...",
+            "confidence": confidence
+        })
 
     return {
         "answer": answer,

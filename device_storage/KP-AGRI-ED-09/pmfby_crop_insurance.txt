@@ -1,0 +1,26 @@
+Pradhan Mantri Fasal Bima Yojana (PMFBY) — Crop Insurance Scheme
+Source: Ministry of Agriculture & Farmers' Welfare, Government of India; PMFBY Portal (pmfby.gov.in)
+
+Scheme Overview & Objectives:
+• PMFBY provides comprehensive crop insurance against non-preventable natural risks (drought, dry spell, flood, inundation, hailstorm, cyclone, tempest, pest/disease outbreak, prevented sowing, post-harvest losses).
+• Covers loanee farmers (sanctioned crop loan from bank) and non-loanee farmers voluntarily.
+
+Farmer Premium Rates (Fixed Cap):
+• Kharif Crops (Food grains, Millets, Pulses, Oilseeds): Farmer pays a maximum of 2.0% of Sum Insured.
+• Rabi Crops (Wheat, Barley, Gram, Mustard): Farmer pays a maximum of 1.5% of Sum Insured.
+• Annual Commercial & Horticultural Crops (Sugarcane, Cotton, Potato, Onion, Banana): Farmer pays a maximum of 5.0% of Sum Insured.
+• Government Subsidy: The balance actuarial premium above farmer's share is subsidized 50:50 by Central and State Governments (90:10 for North-Eastern states).
+
+Sum Insured & Calculation:
+• Sum Insured per hectare is equal to the district-level Scale of Finance (SOF) fixed by the District Level Technical Committee (DLTC) for each crop.
+
+Coverage Stages & Claim Settlement:
+1. Prevented Sowing / Planting Risk: Up to 25% of Sum Insured paid if widespread rainfall deficit prevents sowing in >75% area of notified unit.
+2. Standing Crop Losses (Sowing to Harvest): Compensation based on Crop Cutting Experiments (CCE) yield loss compared to 7-year threshold yield.
+3. Localized Calamities (Hailstorm, Landslide, Inundation): Individual farm assessment. Intimate loss within 72 hours via Crop Insurance App or toll-free helpline (1800-200-5142).
+4. Post-Harvest Losses (Up to 14 days): Covers crops kept in "cut & spread" condition in the field for drying against cyclone, unseasonal rains, and hailstorm.
+
+How to Apply & Required Documents:
+• Enrollment Windows: Kharif cut-off date July 31; Rabi cut-off date December 31.
+• Application Channels: Nearest Bank branch, Common Service Centre (CSC), National Crop Insurance Portal (pmfby.gov.in), or authorized insurance company agent.
+• Required Documents: Land Record (Pahani / RTC / 7-12 extract), Aadhaar Card, Aadhaar-linked Bank Account Passbook, Sowing Certificate / Self-Declaration of crop sown.

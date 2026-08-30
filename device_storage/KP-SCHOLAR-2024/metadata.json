@@ -3,14 +3,14 @@
   "title": "Government Scholarship Schemes 2024",
   "icon": "account_balance",
   "category": "Education",
-  "version": "v2.1",
+  "version": "v4.0",
   "size_mb": 420,
   "files_count": 1,
   "files_metadata": [
     {
       "path": "scholarships.txt",
-      "size_bytes": 1877,
-      "hash": "f9f39fcd8830b049d06d79eeafa98ca6"
+      "size_bytes": 1952,
+      "hash": "1b5a73f234efe157acdcbfad1e930124"
     }
   ]
 }

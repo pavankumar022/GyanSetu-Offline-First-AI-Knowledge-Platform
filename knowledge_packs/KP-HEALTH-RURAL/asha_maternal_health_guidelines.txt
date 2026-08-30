@@ -1,0 +1,36 @@
+ASHA Worker Guidelines — Maternal Health, ANC Checkups & High-Risk Pregnancy SOP
+Source: National Health Mission (NHM), Ministry of Health and Family Welfare; ASHA Training Modules
+
+Mandatory Antenatal Care (ANC) Visits & Schedule:
+• Minimum 4 Mandatory ANC Visits for every pregnant woman:
+  1. 1st ANC Visit: Within 12 weeks of pregnancy (first trimester — early registration). Confirm pregnancy with Nishchay kit, issue MCP Card (Mother & Child Protection Card).
+  2. 2nd ANC Visit: Between 14 and 26 weeks (second trimester).
+  3. 3rd ANC Visit: Between 28 and 34 weeks (third trimester).
+  4. 4th ANC Visit: Between 36 weeks and delivery.
+
+Essential Clinical Tests at Every ANC Visit:
+• Weight measurement (expected weight gain 10–12 kg during pregnancy).
+• Blood Pressure (BP) checking (detect pre-eclampsia / hypertension if BP > 140/90 mmHg).
+• Hemoglobin (Hb) testing (detect anemia if Hb < 11 g/dL).
+• Abdominal palpation (fundal height, fetal heart rate FHR after 20 weeks).
+• Urine test for albumin (proteinuria) and sugar.
+
+Maternal Nutrition & Supplementation Protocol:
+• Iron & Folic Acid (IFA) Tablets: 1 red IFA tablet daily (100 mg elemental Iron + 500 mcg Folic Acid) starting from 4th month for 180 days. Double dose (2 tablets daily) if Hb < 11 g/dL (anemia).
+• Folic Acid: 1 tablet (5 mg) daily during first 3 months of pregnancy to prevent neural tube defects.
+• Calcium & Vitamin D3: 2 Calcium tablets (500 mg elemental Calcium + 250 IU Vit D3) daily from 14th week onwards for 180 days (never take Calcium and IFA tablets simultaneously — take 4 hours apart).
+• Tetanus Toxoid / Td Injections: Td-1 dose as early as possible in pregnancy; Td-2 dose 4 weeks after Td-1.
+
+High-Risk Pregnancy (HRP) Danger Signs — Immediate PHC / CHC Referral:
+1. Severe anemia (Hb < 7 g/dL) or extreme pallor.
+2. Severe headache, blurred vision, swelling of face/hands (signs of Pre-Eclampsia / Eclampsia).
+3. Vaginal bleeding or spotty discharge at any stage of pregnancy.
+4. High fever with chills (suspected malaria/pyelonephritis).
+5. High blood pressure (BP >= 140/90 mmHg).
+6. Convulsions / fits (Eclampsia emergency — administer Inj. Magnesium Sulfate 5g IM per buttock before transport).
+7. Premature labor pains or rupture of membranes (leaking water before 37 weeks).
+8. Absence of fetal movements after 24 weeks.
+
+Institutional Delivery Incentives (Janani Suraksha Yojana - JSY):
+• JSY Cash Incentive for Rural Institutional Delivery: ₹1,400 to pregnant mother + ₹600 to ASHA worker for accompanying patient.
+• Call 108 / 102 National Ambulance Service for free transport to FRU (First Referral Unit / CHC).

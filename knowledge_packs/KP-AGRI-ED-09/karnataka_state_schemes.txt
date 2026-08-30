@@ -1,0 +1,27 @@
+Karnataka State Farmer Schemes — Raitha Vidya Nidhi, Krishi Bhagya & Yashasvini
+Source: Department of Agriculture & Farmers Welfare, Government of Karnataka; FRUITS Portal (fruits.karnataka.gov.in)
+
+1. Chief Minister Raitha Vidya Nidhi Scholarship Scheme:
+• Objective: First-in-India scholarship scheme providing financial assistance for education to children of farmers in Karnataka.
+• Scholarship Amount per Student / Year:
+  - High School (Girls 8th-10th): ₹2,000/year.
+  - PUC / ITI / Diploma: ₹2,500/year (Boys) and ₹3,000/year (Girls).
+  - BA / BSc / BCom / Professional Degree: ₹5,000/year (Boys) and ₹5,500/year (Girls).
+  - MBBS / BE / BTech / Post-Graduate: ₹10,000/year (Boys) and ₹11,000/year (Girls).
+• Eligibility & Direct Benefit Transfer (DBT): Automatically disbursed via Direct Benefit Transfer (DBT) using FRUITS ID (Farmer Registration & Unified Beneficiary Information System).
+
+2. Krishi Bhagya Scheme (Rainfed Farming Support):
+• Target Areas: Dryland rainfed farming regions of Karnataka.
+• Benefits & Subsidies:
+  - Farm Ponds (Krishi Konda): 80% subsidy for General category farmers; 90% subsidy for SC/ST farmers.
+  - Poly-house / Shade-net: 50% subsidy for protected cultivation.
+  - Diesel / Solar Pump Sets: 50% subsidy for lifting water from farm ponds.
+  - Micro-irrigation (Drip/Sprinkler): 90% subsidy for small & marginal farmers.
+
+3. Yashasvini Health Insurance Scheme for Farmers:
+• Benefit: Cashless medical treatment up to ₹5.0 Lakh/year per farmer family for 823 surgical procedures at empanelled network hospitals across Karnataka.
+• Contribution: ₹500/year per family member in rural areas (₹300 for SC/ST families fully subsidized by Government).
+
+4. FRUITS Portal (Farmer Registration & Unified Beneficiary Information System):
+• Purpose: Single digital repository of all farmers in Karnataka linked with land records (Pahani / RTC) and Aadhaar.
+• FRUITS ID (e.g. FID-KA-12345): Eliminates physical document submission for all state agricultural schemes and PM-KISAN.

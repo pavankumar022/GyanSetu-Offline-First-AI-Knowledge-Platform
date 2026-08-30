@@ -431,7 +431,7 @@ export default function App() {
   };
 
   const filteredPacks = (cloudPacks.length > 0 ? cloudPacks : [
-    { id: 'KP-AGRI-ED-09', title: 'Agricultural Best Practices & Crop Data', icon: 'agriculture', category: 'Agriculture', version: 'v2.0', size_mb: 850 },
+    { id: 'KP-AGRI-ED-09', title: 'Agricultural Best Practices & Crop Data', icon: 'agriculture', category: 'Agriculture', version: 'v2.1', size_mb: 850 },
     { id: 'KP-SCHOLAR-2024', title: 'Government Scholarship Schemes 2024', icon: 'account_balance', category: 'Education', version: 'v2.1', size_mb: 420 },
     { id: 'KP-HEALTH-RURAL', title: 'Rural Healthcare First-Aid Guide', icon: 'local_hospital', category: 'Healthcare', version: 'v1.0', size_mb: 1228 },
     { id: 'KP-EDU-PRIMARY', title: 'Primary Education Curriculum Offline', icon: 'school', category: 'Education', version: 'v1.2', size_mb: 2450 },

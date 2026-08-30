@@ -1,0 +1,25 @@
+Land Records (Pahani / RTC / 7-12) Rights & Mutation Procedure Guide
+Source: Department of Revenue, Government of Karnataka; National Land Records Modernization Programme (NLRMP)
+
+Understanding Pahani / RTC (Record of Rights, Tenancy and Crops):
+• Pahani / RTC (Rights, Tenancy and Crops) is the primary legal document proving land ownership, survey number, extent of land (acres/guntas), crop sown, soil type, water source, and encumbrance/mortgage status.
+• Key Sections in RTC:
+  - Column 2: Land survey number and Hissa number.
+  - Column 3: Total land area and Khata number.
+  - Column 9: Name of registered owner / joint owners.
+  - Column 12: Details of crop grown during Kharif, Rabi, and Summer seasons.
+
+How to Download Certified Pahani / RTC Online:
+• Karnataka Online Portal: Bhoomi Portal (bhoomionline.karnataka.gov.in) or Kaveri 2.0 portal (kaveri.karnataka.gov.in).
+• Download Fee: ₹15 for digitally signed legal copy available 24/7.
+• CSC / Bangalore One / Karnataka One Centres: Farmers can get printed certified copies by providing District, Taluk, Hobli, Village name, and Survey number.
+• Other State Online Portals: Mahabhulekh (7/12 extract Maharashtra), Bhulekh UP (Uttar Pradesh), AnyRoR (Gujarat), Meebhoomi (Andhra Pradesh), Dharani (Telangana).
+
+Land Mutation & Title Transfer Rights:
+• Mutation (Janti / Khata Transfer): Process of updating owner's name in revenue records after sale, inheritance, gift, or partition.
+• Statutory Time Limit: Revenue Department must complete mutation within 30 days of registration/application under Sakala Act.
+• Inheritance Mutation: Submit death certificate, family tree (Vamshawruksha), and consent affidavit to Village Accountant (VA) / Revenue Inspector (RI).
+
+Resolving Land Disputes & Encroachments:
+• Boundary Survey (Tatsal Survey): Apply online for ADLR (Assistant Director of Land Records) survey to fix field boundaries.
+• Free Legal Assistance: Free legal aid for small/marginal farmers through District Legal Services Authority (DLSA) / Taluk Legal Services Committee.

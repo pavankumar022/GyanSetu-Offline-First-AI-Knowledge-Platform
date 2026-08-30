@@ -1,0 +1,20 @@
+Soil Health Card (SHC) Scheme — Comprehensive Soil Testing & Advisory
+Source: Ministry of Agriculture & Farmers' Welfare; National Project on Management of Soil Health & Fertility
+
+Scheme Overview & Cycle:
+• Soil Health Card (SHC) is a government report issued to farmers every 2 years.
+• Contains status of 12 soil parameters: pH, Electrical Conductivity (EC), Organic Carbon (OC), Primary Nutrients (N, P, K), Secondary Nutrients (Sulfur - S), and Micronutrients (Zinc - Zn, Iron - Fe, Copper - Cu, Manganese - Mn, Boron - B).
+
+Soil Sample Collection Protocol:
+• Grid Sampling: Soil samples collected from 2.5 ha grid in irrigated areas and 10 ha grid in rainfed areas.
+• Depth & Method: Sample taken from 0–15 cm depth (plough layer) at 5 V-shaped spots in zig-zag pattern across the field. Mix 5 sub-samples, reduce to 500 g composite sample, air-dry in shade, and submit to nearest Soil Testing Laboratory (STL).
+
+Customized Fertilizer & Ameliorant Advisory:
+• Recommends crop-wise precise NPK dosages based on soil test values (reduces fertilizer cost by 15–20%).
+• Soil Ameliorants:
+  - Acidic Soil Management (pH < 6.0): Recommends Agricultural Lime (CaCO3) @ 2–4 quintals/acre applied 3 weeks prior to sowing.
+  - Saline / Alkaline Soil Management (pH > 8.2): Recommends Gypsum (CaSO4) @ 5 quintals/acre incorporated before first ploughing.
+
+How Farmers Access Soil Health Cards:
+• Online Portal: Soil Health Card Portal (soilhealth.dac.gov.in). Search by Farmer Name, State, District, Village, or Aadhaar.
+• Local Access: Raitha Samparka Kendra (RSK), Krishi Vigyan Kendra (KVK), or District Agriculture Office. Soil testing is 100% FREE of cost for farmers.

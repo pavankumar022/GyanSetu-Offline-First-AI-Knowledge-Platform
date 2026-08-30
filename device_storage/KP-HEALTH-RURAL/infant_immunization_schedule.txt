@@ -1,0 +1,43 @@
+National Immunization Schedule (NIS) — Infant & Child Vaccination SOP
+Source: Ministry of Health and Family Welfare (MoHFW), Government of India; Universal Immunization Programme (UIP)
+
+Universal Immunization Schedule Timeline for Infants:
+1. At Birth (Within 24 Hours):
+   - BCG Vaccine: 0.1 ml Intradermal (Left upper arm) — protects against Tuberculosis.
+   - OPV Zero Dose: 2 drops Oral — protects against Poliomyelitis.
+   - Hepatitis B Birth Dose: 0.5 ml Intramuscular (Anterolateral mid-thigh) within 24 hours.
+
+2. At 6 Weeks (1.5 Months):
+   - OPV 1st Dose: 2 drops Oral.
+   - Pentavalent 1st Dose (DPT + Hep B + Hib): 0.5 ml Intramuscular (Mid-thigh). Protects against Diphtheria, Pertussis (Whooping Cough), Tetanus, Hepatitis B, and Haemophilus influenzae type B.
+   - Rotavirus Vaccine (RVV) 1st Dose: 5 drops Oral — protects against rotavirus diarrhea.
+   - fIPV 1st Dose (Fractional IPV): 0.1 ml Intradermal (Right upper arm).
+   - PCV 1st Dose (Pneumococcal Conjugate Vaccine): 0.5 ml Intramuscular.
+
+3. At 10 Weeks (2.5 Months):
+   - OPV 2nd Dose: 2 drops Oral.
+   - Pentavalent 2nd Dose: 0.5 ml Intramuscular.
+   - Rotavirus 2nd Dose: 5 drops Oral.
+
+4. At 14 Weeks (3.5 Months):
+   - OPV 3rd Dose: 2 drops Oral.
+   - Pentavalent 3rd Dose: 0.5 ml Intramuscular.
+   - Rotavirus 3rd Dose: 5 drops Oral.
+   - fIPV 2nd Dose: 0.1 ml Intradermal.
+   - PCV 2nd Dose: 0.5 ml Intramuscular.
+
+5. At 9–12 Months:
+   - Measles-Rubella (MR) 1st Dose: 0.5 ml Subcutaneous (Right upper arm).
+   - JE 1st Dose (Japanese Encephalitis — in endemic districts): 0.5 ml Subcutaneous.
+   - PCV Booster Dose: 0.5 ml Intramuscular.
+   - Vitamin A 1st Dose: 1 ml (1 Lakh IU) Oral liquid.
+
+6. At 16–24 Months:
+   - DPT 1st Booster: 0.5 ml Intramuscular.
+   - OPV Booster: 2 drops Oral.
+   - MR 2nd Dose: 0.5 ml Subcutaneous.
+   - Vitamin A 2nd Dose: 2 ml (2 Lakh IU) Oral (given every 6 months up to age 5).
+
+Vaccine Cold Chain & Adverse Events (AEFI):
+• Cold Chain Temperature: Maintain all vaccines at +2°C to +8°C in Ice-Lined Refrigerators (ILR).
+• AEFI Protocol: Report any fever, swelling, or severe reaction within 48 hours to Medical Officer PHC.

@@ -56,7 +56,7 @@ def seed_initial_data(db):
         title="Agricultural Best Practices & Crop Data",
         icon="agriculture",
         category="Agriculture",
-        version="v2.0",
+        version="v2.1",
         size_mb=850,
         description="Nation-wide guides on soil health, irrigation, pest management, and multi-cropping for all agro-climatic zones across India.",
         files_metadata=[

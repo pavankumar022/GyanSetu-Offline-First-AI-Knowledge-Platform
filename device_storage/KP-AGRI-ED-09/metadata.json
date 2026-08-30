@@ -3,39 +3,209 @@
   "title": "Agricultural Best Practices & Crop Data",
   "icon": "agriculture",
   "category": "Agriculture",
-  "version": "v2.0",
+  "version": "v4.0",
   "size_mb": 850,
-  "files_count": 6,
+  "files_count": 40,
   "files_metadata": [
     {
-      "path": "wheat_cultivation_india.txt",
-      "size_bytes": 2713,
-      "hash": "7f8c2cd0b126ccd85c17e66203058c29"
-    },
-    {
-      "path": "rice_cultivation_india.txt",
-      "size_bytes": 1510,
-      "hash": "7dae3b438f64b51e6e9968348477e420"
-    },
-    {
-      "path": "pulses_india.txt",
-      "size_bytes": 1382,
-      "hash": "81d73af49441610ea5354a8ba7f382b4"
-    },
-    {
       "path": "agricultural_subsidies.txt",
-      "size_bytes": 2617,
-      "hash": "f110b68cc5888dbc272107708e9a6746"
+      "size_bytes": 2715,
+      "hash": "02c2117e9a10783088b7e94eb1a0a00d"
     },
     {
-      "path": "soil_health.txt",
-      "size_bytes": 1876,
-      "hash": "9dbd8adcb0fdc8227eacc0de7b0cf087"
+      "path": "banana_cultivation_india.txt",
+      "size_bytes": 3319,
+      "hash": "64b83d5241bdac6c4a7e0701b28c06d9"
+    },
+    {
+      "path": "barley_cultivation_india.txt",
+      "size_bytes": 2126,
+      "hash": "6f49dd44fd369456215ecf75a4814467"
+    },
+    {
+      "path": "brinjal_chilli_okra_cabbage_cauliflower.txt",
+      "size_bytes": 4944,
+      "hash": "d5e4032a82eb4ea9ebf9633a7b90f370"
+    },
+    {
+      "path": "chickpea_gram_india.txt",
+      "size_bytes": 2825,
+      "hash": "c0ee71840d8e6cf1da465b3a26cbbd00"
+    },
+    {
+      "path": "cotton_cultivation_india.txt",
+      "size_bytes": 3077,
+      "hash": "12256ad716df0191b500c7e61e67e446"
+    },
+    {
+      "path": "groundnut_cultivation_india.txt",
+      "size_bytes": 3043,
+      "hash": "aabcf88026938613a04d8c9db24751ca"
+    },
+    {
+      "path": "integrated_pest_management_ipm.txt",
+      "size_bytes": 2054,
+      "hash": "e9b70180001c0789c609d2b306e00919"
+    },
+    {
+      "path": "jute_tobacco_cash_crops.txt",
+      "size_bytes": 3681,
+      "hash": "f2c31f21adc689f98db21514313b203e"
+    },
+    {
+      "path": "karnataka_raitha_siri_bhoochetana.txt",
+      "size_bytes": 1745,
+      "hash": "20838b6447349b0032ea8a8f07404078"
+    },
+    {
+      "path": "karnataka_state_schemes.txt",
+      "size_bytes": 2052,
+      "hash": "f0cc310bb476fad9362a57550fe1dd11"
+    },
+    {
+      "path": "kisan_credit_card_kcc.txt",
+      "size_bytes": 2328,
+      "hash": "fbe5b297cf7cd975adb2276d23c26a32"
+    },
+    {
+      "path": "maize_cultivation_karnataka.txt",
+      "size_bytes": 3351,
+      "hash": "0146eec250b20552775b0fcd96a3d58d"
+    },
+    {
+      "path": "mango_papaya_grapes_pomegranate_citrus.txt",
+      "size_bytes": 5608,
+      "hash": "fbf40607b73645c194e7e8b51dadd9ad"
+    },
+    {
+      "path": "micronutrient_deficiency_guide.txt",
+      "size_bytes": 2488,
+      "hash": "1e1f34b2e4811c16ee835736303c8730"
+    },
+    {
+      "path": "millet_bajra_jowar_india.txt",
+      "size_bytes": 2704,
+      "hash": "e34944b0e310111d9aad26b098a635e9"
+    },
+    {
+      "path": "moong_urad_lentil_pulses.txt",
+      "size_bytes": 3289,
+      "hash": "c7ac474b37af3006f67db7d2129989a2"
+    },
+    {
+      "path": "multi_cropping.txt",
+      "size_bytes": 165,
+      "hash": "4814744973ae3105dd705d6083962261"
+    },
+    {
+      "path": "mustard_rapeseed_india.txt",
+      "size_bytes": 2768,
+      "hash": "2f0720b5791ac80e5fa2d85931503400"
+    },
+    {
+      "path": "onion_cultivation_india.txt",
+      "size_bytes": 2837,
+      "hash": "a498eae18e6cbd11d22c2f817f3ea237"
+    },
+    {
+      "path": "organic_pest_control_methods.txt",
+      "size_bytes": 2500,
+      "hash": "7c7a9026f2be00be709b5523baec837f"
     },
     {
       "path": "pest_control.txt",
-      "size_bytes": 2055,
-      "hash": "7e65d5ee58a6ddcdd1f5419c53ea24e3"
+      "size_bytes": 2143,
+      "hash": "5d01096fceb814e7fccff5ceceadfa8b"
+    },
+    {
+      "path": "pigeon_pea_cultivation_india.txt",
+      "size_bytes": 3089,
+      "hash": "da48d1bf6649e2a6c3f72f6da0d82987"
+    },
+    {
+      "path": "plantation_crops_coffee_tea_coconut_arecanut.txt",
+      "size_bytes": 5225,
+      "hash": "bcfe0c21462cc4b79ac76cc1d4da3e4b"
+    },
+    {
+      "path": "pmfby_crop_insurance.txt",
+      "size_bytes": 2341,
+      "hash": "8ac296943542298b35749bbfd94b6a9a"
+    },
+    {
+      "path": "pmksy_irrigation_subsidy.txt",
+      "size_bytes": 1911,
+      "hash": "a1a2f2f9d97799bd0f831bcec2e0e714"
+    },
+    {
+      "path": "potato_cultivation_india.txt",
+      "size_bytes": 3047,
+      "hash": "2fe953c0736569451793b54048f1b03b"
+    },
+    {
+      "path": "pulses_india.txt",
+      "size_bytes": 1453,
+      "hash": "076e94de47fef709c30ac18ba5956f7f"
+    },
+    {
+      "path": "ragi_cultivation_karnataka.txt",
+      "size_bytes": 3077,
+      "hash": "7713fa6bd1ab7e227812a6d9467f3f82"
+    },
+    {
+      "path": "rice_cultivation_india.txt",
+      "size_bytes": 1581,
+      "hash": "375522eeb50535f0e51b5f8f19fa2265"
+    },
+    {
+      "path": "rice_cultivation_karnataka.txt",
+      "size_bytes": 3378,
+      "hash": "a0863e0dfe1f39528656d941b20f5631"
+    },
+    {
+      "path": "sesame_castor_oilseeds.txt",
+      "size_bytes": 3304,
+      "hash": "ab9bf326e5e755aae7148fd7356b14f7"
+    },
+    {
+      "path": "soil_health.txt",
+      "size_bytes": 1944,
+      "hash": "46ffcdccc0c24d6e8dc744f1fd317a1a"
+    },
+    {
+      "path": "soil_health_card_scheme.txt",
+      "size_bytes": 1693,
+      "hash": "a3e72743802c0775e7393ef11c536b61"
+    },
+    {
+      "path": "soybean_cultivation_india.txt",
+      "size_bytes": 2580,
+      "hash": "167b0127ff73f2b9e63721a8b91fcb6f"
+    },
+    {
+      "path": "sugarcane_cultivation_india.txt",
+      "size_bytes": 3516,
+      "hash": "7846c00fab0f3581c6795e3aa16ea47c"
+    },
+    {
+      "path": "sunflower_cultivation_india.txt",
+      "size_bytes": 3200,
+      "hash": "8a6ec64be15108c5b1c479489bd08d90"
+    },
+    {
+      "path": "tomato_cultivation_india.txt",
+      "size_bytes": 2911,
+      "hash": "81c16070dd171ae45aaad4abd8f40fc2"
+    },
+    {
+      "path": "wheat_cultivation_india.txt",
+      "size_bytes": 2841,
+      "hash": "3634649a247db0aadcd6ce096ddde0c6"
+    },
+    {
+      "path": "wheat_cultivation_karnataka.txt",
+      "size_bytes": 1502,
+      "hash": "5afee62c08b38ada7052fe838652e132"
     }
   ]
 }

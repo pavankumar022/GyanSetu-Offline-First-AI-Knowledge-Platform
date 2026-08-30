@@ -1,0 +1,29 @@
+Integrated Pest Management (IPM) Guidelines & Economic Threshold Levels
+Source: ICAR-National Centre for Integrated Pest Management (NCIPM); Directorate of Plant Protection, Quarantine & Storage (DPPQ&S)
+
+Principles & Hierarchy of IPM:
+• IPM integrates Cultural, Mechanical, Biological, and Chemical control methods to keep pest populations below the Economic Threshold Level (ETL), minimizing pesticide residues, cost, and environmental harm.
+
+Economic Threshold Levels (ETL) for Major Crop Pests:
+1. Rice / Paddy:
+   - Brown Plant Hopper (BPH): 10 BPH/hill at tillering stage; 20 BPH/hill at panicle stage.
+   - Yellow Stem Borer: 5% dead hearts at tillering or 1 egg mass/m2.
+   - Paddy Leaf Folder: 2 damaged leaves/hill at tillering.
+2. Cotton:
+   - Pink Bollworm: 8 adult moths/trap/night for 3 consecutive nights or 10% green boll damage.
+   - Whitefly: 6–8 nymphs or adults per leaf.
+   - Jassids: 2 nymphs/leaf.
+3. Maize / Corn:
+   - Fall Armyworm (FAW): 10% whorl damage at seedling/knee-high stage; 20% damage at tasseling.
+4. Chickpea / Tur (Gram Pod Borer):
+   - Helicoverpa armigera: 1 larva per meter row length or 5-8% pod damage.
+
+Cultural & Mechanical IPM Practices:
+• Deep Summer Ploughing: Exposes soil-inhabiting pupae, cutworms, and root-knot nematodes to extreme solar heat and predator birds.
+• Crop Rotation: Rotate host crops with non-host crops (e.g. rice followed by pulses or oilseeds) to break pest life cycles.
+• Trap Cropping: Plant Marigold around Tomato/Cotton (attracts Helicoverpa egg laying); plant Mustard around Cabbage/Cauliflower (attracts diamondback moth).
+• Synchronous Sowing: Community-wide sowing within a 10-day window avoids pest buildup on early/late sown fields.
+
+Judicious Chemical Insecticide Use (Last Resort):
+• Always select Green Triangle / Blue Triangle selective insecticides over broad-spectrum red label chemicals.
+• Spraying Etiquette: Spray early morning (7–10 AM) or late evening (4–6 PM) when honeybee pollinators are inactive. Wear protective mask, gloves, and apron.

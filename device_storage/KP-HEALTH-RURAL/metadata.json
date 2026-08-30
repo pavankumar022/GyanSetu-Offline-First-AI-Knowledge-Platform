@@ -3,14 +3,44 @@
   "title": "Rural Healthcare First-Aid Guide",
   "icon": "local_hospital",
   "category": "Healthcare",
-  "version": "v1.0",
+  "version": "v4.0",
   "size_mb": 1228,
-  "files_count": 1,
+  "files_count": 7,
   "files_metadata": [
     {
+      "path": "asha_maternal_health_guidelines.txt",
+      "size_bytes": 2665,
+      "hash": "ad87a06bffdda2c1b7f46bb3016a5073"
+    },
+    {
+      "path": "child_malnutrition_anemia_prevention.txt",
+      "size_bytes": 1795,
+      "hash": "cd71ed58b0f5e37c81cd9ca7fb2f4fc5"
+    },
+    {
+      "path": "dehydration_ors_protocol.txt",
+      "size_bytes": 2446,
+      "hash": "a951434e3c7bc9ecf5cb751d98e84e63"
+    },
+    {
       "path": "first_aid.txt",
-      "size_bytes": 2004,
-      "hash": "d91ac689ed4ff2fece9babe70f9dd328"
+      "size_bytes": 2083,
+      "hash": "b07cdc1905574efd5396a55edbd46cc1"
+    },
+    {
+      "path": "infant_immunization_schedule.txt",
+      "size_bytes": 2165,
+      "hash": "c3c1e0304bd4926a490d900e2716ea6a"
+    },
+    {
+      "path": "phc_referral_symptoms.txt",
+      "size_bytes": 1990,
+      "hash": "5d9e732bee7f625585049de229d316c3"
+    },
+    {
+      "path": "rural_first_aid_emergencies.txt",
+      "size_bytes": 2511,
+      "hash": "b37482cc950ef7b4c614a2a28b0aa866"
     }
   ]
 }

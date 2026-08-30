@@ -3,14 +3,34 @@
   "title": "Basic Legal Rights & Procedures Manual",
   "icon": "gavel",
   "category": "Governance",
-  "version": "v3.4",
+  "version": "v4.0",
   "size_mb": 620,
-  "files_count": 1,
+  "files_count": 5,
   "files_metadata": [
     {
+      "path": "agri_input_consumer_rights.txt",
+      "size_bytes": 1977,
+      "hash": "b33b30774f1f7baea6cec426420e9b30"
+    },
+    {
+      "path": "farmer_distress_legal_aid.txt",
+      "size_bytes": 1915,
+      "hash": "a3a2b44b1e0352440c4b3b0c391753ad"
+    },
+    {
+      "path": "land_records_pahani_rights.txt",
+      "size_bytes": 2070,
+      "hash": "e4036e7e77f43eb1331d328a30739a20"
+    },
+    {
       "path": "legal_rights.txt",
-      "size_bytes": 2113,
-      "hash": "c24cb7c0bc24388c67930d51d12855e0"
+      "size_bytes": 2207,
+      "hash": "97e30dc748ef71267a83defaa4b24a33"
+    },
+    {
+      "path": "mgnregs_full_guide.txt",
+      "size_bytes": 2105,
+      "hash": "5f846671d90014c67ba4895e0f1623ce"
     }
   ]
 }

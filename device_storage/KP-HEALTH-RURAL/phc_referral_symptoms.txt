@@ -1,0 +1,23 @@
+Common Rural Disease Symptoms & PHC Referral Protocols
+Source: National Health Mission (NHM); Integrated Disease Surveillance Programme (IDSP) & NVBDCP
+
+1. Malaria (Plasmodium vivax & Plasmodium falciparum):
+• Symptoms: High fever with sudden shivering chills, rigors, profuse sweating, severe headache, muscle pain, vomiting.
+• Diagnostic Test: Rapid Diagnostic Test (RDT) kit or peripheral blood smear slide at Sub-Centre / PHC.
+• Treatment / Referral: P. vivax: Chloroquine + Primaquine for 14 days. P. falciparum: Artemisinin-based Combination Therapy (ACT) for 3 days. Immediate PHC referral if altered sensorium, jaundice, or dark urine (Blackwater fever).
+
+2. Dengue & Chikungunya Vector-Borne Fevers:
+• Symptoms: Sudden high fever, retro-orbital pain (pain behind eyes), severe joint/muscle body break pain ("breakbone fever"), red petechial skin rashes.
+• Red-Flag Symptoms for Emergency PHC Referral: Abdominal pain, persistent vomiting, mucosal bleeding (bleeding gums/nose), sudden drop in blood pressure (Dengue Shock Syndrome).
+
+3. Tuberculosis (TB — Nikshay Programme):
+• Screening Symptoms: Persistent cough for >2 weeks, low-grade evening fever, night sweats, unexplained weight loss, hemoptysis (blood in sputum).
+• Action: Collect 2 sputum samples (spot + early morning) for CBNAAT / GeneXpert testing at PHC. Direct Benefit Transfer ₹500/month under Nikshay Poshan Yojana during DOTS treatment.
+
+4. Typhoid Fever (Enteric Fever):
+• Symptoms: Step-ladder pattern rising fever, abdominal discomfort, coated tongue, bradycardia, rose spots on chest.
+• Action: Refer to PHC for Widal test / Blood culture and 10-14 day antibiotic course (Cefixime / Azithromycin).
+
+5. Acute Respiratory Infection (ARI) & Pneumonia in Children:
+• Screening Signs: Fast breathing (RR > 50/min in 2-12 months; RR > 40/min in 1-5 years), chest indrawing (stridor), grunting, inability to feed.
+• Action: Immediate PHC referral for Amoxicillin syrup and oxygen support.
