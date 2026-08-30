@@ -1,44 +1,46 @@
-Rice (Paddy) Cultivation Guidelines — Karnataka Advisory
-Source: University of Agricultural Sciences (UAS), Mandya & Shivamogga; ICAR-NRRI Cuttack
+Rice (Paddy) Cultivation Guidelines — National & Regional Advisory
+Source: ICAR-National Rice Research Institute (NRRI); UAS Raichur & UAS Bengaluru
 
-Suitable Agro-Climatic Zones for Rice (Paddy) in Karnataka:
-• Key Zones: Zone 9 (Southern Transition Zone), Zone 10 (Coastal Zone), Zone 6 (Southern Dry Zone), and Canal Command Areas of Zone 3 (Northern Dry Zone).
-• Major Rice Districts: Mandya (Paddy heartland of Old Mysore), Shimoga, Davanagere, Mysuru, Hassan, Udupi, Dakshina Kannada, Uttara Kannada, Raichur, and Koppal (Tungabhadra left bank canal belt).
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Canal Command Area (Mandya, Raichur, Koppal, Bellary), Coastal Zone (Udupi, Dakshina Kannada), and Hill/Malnad Zone (Shivamogga, Uttara Kannada).
+• Recommended Varieties:
+  - Irrigated Canal Command: Gangavati Sona (RNR-15048), BPT-5204 (Sona Masuri), KMP-175, Tunga, MTU-1010. Yield: 5.5–6.5 tonnes/ha.
+  - Rainfed Coastal / Malnad: MO-4, Abhilash, Intan, Sahyadri Hybrids. Yield: 3.5–4.5 tonnes/ha.
 
-Recommended Rice (Paddy) Varieties for Karnataka:
-• Irrigated Canal Command (Mandya, Mysuru, Davanagere):
-  - KMP-175, Tanu (KMP-101), Jaya, Jyothi, BPT-5204 (Sona Masuri), RNR-15048 (Telangana Sona - low GI rice), MTU-1010. Yield: 55–70 q/ha.
-• Coastal High Rainfall Zone (Udupi, Mangaluru, Karwar):
-  - MO-4, Intan, Phalguna, Panchami, Sahyadri Hybrids (Sahyadri-3). Flood and submergence tolerant. Yield: 45–55 q/ha.
-• Rainfed Uplands / Malnad:
-  - Abhilash, Tunga, KHP-2, Sharavathi. Yield: 35–45 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to both Irrigated (Canal/Borewell) and Rainfed Lowland ecosystems.
+• Total Water Requirement: Approximately 1,200–1,400 mm total water over the crop cycle.
+• 1. Initial Phase (Nursery & Transplanting / Establishment: 0–20 Days After Transplanting - DAT):
+  - Water Frequency: Maintain continuous shallow standing water layer of 2–3 cm.
+  - Purpose & Sensitivity: Critical for seedling root establishment and weed suppression. Avoid drying out nursery or fresh transplants.
+• 2. Middle Phase (Tillering & Panicle Initiation: 20–70 DAT):
+  - Water Frequency: Alternate Wetting and Drying (AWD) — irrigate when water level drops to 15 cm below soil surface (every 4–5 days).
+  - Water-Critical Sub-Stage: Panicle Initiation to Flowering Stage (50–65 DAT) is the SINGLE most water-critical stage. Water deficit during panicle initiation causes up to 40–50% spikelet sterility and severe grain yield loss.
+• 3. Final Phase (Grain Filling & Maturity: 70–115 DAT):
+  - Water Frequency: Maintain 2–3 cm light water layer during milking/dough stage (70–90 DAT).
+  - Stop Irrigation Timing: STOP all irrigation 15–20 days before harvest to facilitate uniform grain ripening, soil hardening, and reduce lodging.
 
-Sowing & Transplanting Window for Rice (Paddy):
-• Kharif Season: Nursery sowing June 1 to June 30; Transplanting 21–25 days old nursery seedlings from June 25 to July 25. Seed rate: 25 kg/ha for transplanted paddy.
-• Summer Rice (Rabi/Summer): Nursery sowing Dec 15 to Jan 15; Transplanting Jan 10 to Feb 10.
+Fertilizer Requirement by Phase:
+• Irrigated Paddy Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 50 kg Potassium (K2O) + 25 kg Zinc Sulfate (ZnSO4).
+  - 1. Basal Dose (At Transplanting): Apply 50% Nitrogen (50 kg N) + 100% Phosphorus (50 kg P2O5) + 50% Potassium (25 kg K2O) + 25 kg Zinc Sulfate incorporated into soil during final puddling.
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (Active Tillering Stage - 21 to 25 DAT): Top-dress 25% Nitrogen (25 kg N).
+    * Round 2 (Panicle Initiation Stage - 40 to 45 DAT): Top-dress remaining 25% Nitrogen (25 kg N) + remaining 50% Potassium (25 kg K2O).
+  - 3. Final Phase: Foliar spray of 1% Potassium Nitrate (13-0-45) @ 10 g/litre at 5% flowering if flag leaf chlorosis appears.
+• Rainfed Paddy Fertilizer Schedule:
+  - Total Dose: 60 kg Nitrogen (N) : 30 kg Phosphorus (P2O5) : 30 kg Potassium (K2O). Apply 50% N + full P & K basal at sowing; top-dress remaining 50% N at 30 DAT after monsoon weeding.
 
-Soil & Land Preparation for Rice (Paddy):
-• Soil Type: Clay loams, silty clay, and heavy alluvial soils with pH 5.5–7.0.
-• Puddling & Land Prep: 2–3 wet ploughings in standing water followed by leveling using a wooden plank to minimize percolation water loss. Maintain 5 cm water depth during transplanting.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 120–140 days (approximately 4 to 4.5 months) from sowing/transplanting to harvest.
+• Variety Variance: Short-duration varieties (Gangavati Sona): 120–125 days; Medium-long duration varieties (BPT-5204): 135–145 days.
 
-Fertilizer Recommendations for Rice (Paddy) in Karnataka (NPK per Hectare):
-• Irrigated Transplanted Paddy: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 50 kg Potassium (K2O).
-  - Basal Dose: 50% Nitrogen + 100% Phosphorus + 50% Potassium at transplanting.
-  - Active Tillering Top-Dressing (25–30 Days After Transplanting - DAT): 25% Nitrogen.
-  - Panicle Initiation Top-Dressing (45–50 DAT): 25% Nitrogen + 50% Potassium.
-  - Zinc Sulfate: Apply Zinc Sulfate @ 20 kg/ha basal to treat Khaira disease (zinc deficiency).
-• Rainfed / Coastal Rice: 75 kg Nitrogen : 37.5 kg Phosphorus : 37.5 kg Potassium per hectare.
+Harvesting Details:
+• Signs of Maturity: 80–85% of panicles turn golden yellow; grain moisture drops to 20–25%; lower grains on panicle turn hard and clear.
+• Harvesting Method: Manual harvesting with serrated sickles at 5–10 cm above ground, or mechanical Combine Harvester.
+• Post-Harvest Handling: Field dry harvested bundles for 2–3 days; thresh immediately and sun-dry grains until moisture content drops to 12–13% before bagging for storage.
+• Expected Yield: Irrigated Paddy: 55–65 quintals/ha (22–26 q/acre). Rainfed Paddy: 35–45 quintals/ha (14–18 q/acre).
 
-Critical Irrigation & Growth Stages for Rice (Paddy):
-1. Nursery Stage: 0–25 days in nursery bed.
-2. Transplanting & Seedling Establishment: 0–10 DAT (maintain 2 cm standing water).
-3. Active Tillering Stage: 25–35 DAT (critical for tiller count).
-4. Panicle Initiation (PI): 45–50 DAT (MOST CRITICAL moisture stage — water deficit cuts yield by 50%).
-5. Flowering & Heading Stage: 65–70 DAT.
-6. Grain Filling & Dough Stage: 85–90 DAT.
-7. Water Drainage: Drain field completely 10–12 days prior to harvest.
-
-Pest & Disease Management for Rice (Paddy):
-• Paddy Blast (Magnaporthe oryzae): Spray Tricyclazole 75 WP @ 0.6 g/litre or Isoprothiolane 40 EC @ 1.5 ml/litre at neck blast emergence.
-• Brown Plant Hopper (BPH - Nilaparvata lugens): Spray Pymetrozine 50 WG @ 0.6 g/litre or Triflumezopyrim 10 SC @ 0.5 ml/litre at base of hills when BPH count >10 per hill.
-• Paddy Stem Borer (Scirpophaga incertulas): Apply Chlorantraniliprole 0.4% GR @ 4 kg/acre or Cartap hydrochloride 4G @ 7.5 kg/acre at 20 DAT.
+Growing Season:
+• Kharif Season (Main Monsoon): Sowing window June 1 to June 30; Transplanting July 1 to July 25 across Karnataka and South India.
+• Summer / Rabi Season (Irrigated): Sowing window December 15 to January 15; Transplanting January 10 to February 10 in canal command zones.

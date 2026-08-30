@@ -1,26 +1,46 @@
-Rice (Paddy) Cultivation — National Advisory
-Source: ICAR-National Rice Research Institute (NRRI), Cuttack; Directorate of Rice Development (DRD)
+Rice (Paddy) Cultivation Guidelines — National & Regional Advisory
+Source: ICAR-National Rice Research Institute (NRRI); UAS Raichur & UAS Bengaluru
 
-Major Rice-Growing States:
-• Kharif (Monsoon — June to November): West Bengal, Uttar Pradesh, Punjab, Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Bihar, Chhattisgarh, Maharashtra, Assam.
-• Rabi / Summer Rice: West Bengal (Boro), Odisha, Kerala backwater areas.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Canal Command Area (Mandya, Raichur, Koppal, Bellary), Coastal Zone (Udupi, Dakshina Kannada), and Hill/Malnad Zone (Shivamogga, Uttara Kannada).
+• Recommended Varieties:
+  - Irrigated Canal Command: Gangavati Sona (RNR-15048), BPT-5204 (Sona Masuri), KMP-175, Tunga, MTU-1010. Yield: 5.5–6.5 tonnes/ha.
+  - Rainfed Coastal / Malnad: MO-4, Abhilash, Intan, Sahyadri Hybrids. Yield: 3.5–4.5 tonnes/ha.
 
-Recommended Varieties by Region:
-• Punjab / Haryana (Irrigated Kharif):
-  - Pusa-44 (high yield — AVOID, long duration), PR-126, PR-121, PB-1509 (Basmati). Transplant: June 10–30 (after paddy nursery 25 days). Yield: 60–70 q/ha.
-• Uttar Pradesh:
-  - Swarna (MTU-7029), Sarjoo-52, NDR-359. Transplant: July 10–Aug 15.
-• West Bengal / Odisha / Bihar:
-  - Swarna Sub1 (flood-tolerant), Sambha Mahsuri, Lalat, IR-64. Yield: 40–55 q/ha.
-• Andhra Pradesh / Telangana:
-  - MTU-1010, BPT-5204 (Sona Masuri), NLR-34449. Yield: 50–65 q/ha.
-• Assam / North-East (Hill Rice):
-  - Joha (aromatic — local special), Disang, Ranjit. Direct-seeded in hill terraces.
+Water Requirement by Phase:
+• Crop Category: Suited to both Irrigated (Canal/Borewell) and Rainfed Lowland ecosystems.
+• Total Water Requirement: Approximately 1,200–1,400 mm total water over the crop cycle.
+• 1. Initial Phase (Nursery & Transplanting / Establishment: 0–20 Days After Transplanting - DAT):
+  - Water Frequency: Maintain continuous shallow standing water layer of 2–3 cm.
+  - Purpose & Sensitivity: Critical for seedling root establishment and weed suppression. Avoid drying out nursery or fresh transplants.
+• 2. Middle Phase (Tillering & Panicle Initiation: 20–70 DAT):
+  - Water Frequency: Alternate Wetting and Drying (AWD) — irrigate when water level drops to 15 cm below soil surface (every 4–5 days).
+  - Water-Critical Sub-Stage: Panicle Initiation to Flowering Stage (50–65 DAT) is the SINGLE most water-critical stage. Water deficit during panicle initiation causes up to 40–50% spikelet sterility and severe grain yield loss.
+• 3. Final Phase (Grain Filling & Maturity: 70–115 DAT):
+  - Water Frequency: Maintain 2–3 cm light water layer during milking/dough stage (70–90 DAT).
+  - Stop Irrigation Timing: STOP all irrigation 15–20 days before harvest to facilitate uniform grain ripening, soil hardening, and reduce lodging.
 
-Fertilizer (NPK — kg/ha for irrigated rice):
-• Transplanted: 120 kg N : 60 kg P2O5 : 60 kg K2O. Split N: 1/3 at transplanting, 1/3 at active tillering (25-30 DAT), 1/3 at panicle initiation.
-• Direct-Seeded: 100 kg N : 50 kg P2O5 : 50 kg K2O.
+Fertilizer Requirement by Phase:
+• Irrigated Paddy Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 50 kg Potassium (K2O) + 25 kg Zinc Sulfate (ZnSO4).
+  - 1. Basal Dose (At Transplanting): Apply 50% Nitrogen (50 kg N) + 100% Phosphorus (50 kg P2O5) + 50% Potassium (25 kg K2O) + 25 kg Zinc Sulfate incorporated into soil during final puddling.
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (Active Tillering Stage - 21 to 25 DAT): Top-dress 25% Nitrogen (25 kg N).
+    * Round 2 (Panicle Initiation Stage - 40 to 45 DAT): Top-dress remaining 25% Nitrogen (25 kg N) + remaining 50% Potassium (25 kg K2O).
+  - 3. Final Phase: Foliar spray of 1% Potassium Nitrate (13-0-45) @ 10 g/litre at 5% flowering if flag leaf chlorosis appears.
+• Rainfed Paddy Fertilizer Schedule:
+  - Total Dose: 60 kg Nitrogen (N) : 30 kg Phosphorus (P2O5) : 30 kg Potassium (K2O). Apply 50% N + full P & K basal at sowing; top-dress remaining 50% N at 30 DAT after monsoon weeding.
 
-Water Management:
-• Maintain 2–5 cm standing water during tillering to panicle initiation.
-• Drain 10 days before harvest. Alternate Wetting and Drying (AWD) can save 20–30% water while maintaining yield.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 120–140 days (approximately 4 to 4.5 months) from sowing/transplanting to harvest.
+• Variety Variance: Short-duration varieties (Gangavati Sona): 120–125 days; Medium-long duration varieties (BPT-5204): 135–145 days.
+
+Harvesting Details:
+• Signs of Maturity: 80–85% of panicles turn golden yellow; grain moisture drops to 20–25%; lower grains on panicle turn hard and clear.
+• Harvesting Method: Manual harvesting with serrated sickles at 5–10 cm above ground, or mechanical Combine Harvester.
+• Post-Harvest Handling: Field dry harvested bundles for 2–3 days; thresh immediately and sun-dry grains until moisture content drops to 12–13% before bagging for storage.
+• Expected Yield: Irrigated Paddy: 55–65 quintals/ha (22–26 q/acre). Rainfed Paddy: 35–45 quintals/ha (14–18 q/acre).
+
+Growing Season:
+• Kharif Season (Main Monsoon): Sowing window June 1 to June 30; Transplanting July 1 to July 25 across Karnataka and South India.
+• Summer / Rabi Season (Irrigated): Sowing window December 15 to January 15; Transplanting January 10 to February 10 in canal command zones.

@@ -1,32 +1,25 @@
-Potato Cultivation Guidelines — National & Regional Advisory
-Source: ICAR-Central Potato Research Institute (CPRI), Shimla; PAU Ludhiana & UAS Bengaluru
+Potato Cultivation Guidelines — National Advisory
+Source: ICAR-Central Potato Research Institute (CPRI), Shimla
 
-Suitable Agro-Climatic Zones for Potato:
-• Top Producing States: Uttar Pradesh (No. 1 potato producer in India — Agra, Farrukhabad, Mathura), West Bengal (Hooghly, Burdwan), Bihar, Gujarat (Deesa — top yield per ha), Punjab, Madhya Pradesh, and Karnataka (Hassan, Chikkaballapur, Kolar).
-• Soil & Climate: Well-drained friable sandy loams to alluvial soils with pH 5.2–6.4 (slightly acidic soil reduces scab disease). Requires cool winter climate (night temperature 15–20°C for tuberization).
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: UP (Agra No. 1), WB, Punjab, Gujarat, Karnataka (Hassan, Chikkaballapur).
+• Recommended Varieties: Kufri Pukhraj, Kufri Jyoti, Kufri Bahar, Kufri Chipsona-1. Yield: 30–40 tonnes/ha.
 
-Recommended Potato Varieties:
-• Short / Medium Duration Varieties: Kufri Pukhraj (most popular early variety 75–80 days), Kufri Jyoti (resistant to late blight), Kufri Chandramukhi, Kufri Lauvkar. Yield: 25–35 tonnes/ha.
-• Processing & Storage Varieties: Kufri Chipsona-1, Kufri Chipsona-3, Kufri Frysona (specially for chips/french fries — high dry matter, low sugar), Kufri Bahar. Yield: 30–40 tonnes/ha.
+Water Requirement by Phase:
+• Category: Irrigated Furrow / Drip. Total Water: 500–600 mm.
+• 1. Initial (0–25 DAP): Light irrigation at earthing up.
+• 2. Middle (25–65 DAP): Tuber Initiation & Bulking (35–55 DAP) is the SINGLE most water-critical stage.
+• 3. Final (65–90 DAP): STOP irrigation 10–12 days before haulm cutting.
 
-Sowing, Tuber Seed & Earthing Up for Potato:
-• Planting Seasons: Indo-Gangetic Plains: Oct 15 to Nov 15; Karnataka/Deccan Plateau: Kharif (June–July) and Rabi (Oct–Nov); Hills: March–April.
-• Tuber Seed Rate: Healthy certified seed tubers (weighted 40–50 g with 2–3 sprouts): 2.5–3.0 tonnes/ha (60 cm x 20 cm spacing).
-• Seed Treatment: Treat tubers in Boric Acid @ 3% solution for 30 minutes before cold storage / planting to prevent Black Scurf and Common Scab.
+Fertilizer Requirement by Phase:
+• Total Dose: 180 kg N : 100 kg P2O5 : 120 kg K2O. Basal: 50% N + full P & K. Top-dress 50% N at earthing up (30 DAP).
 
-Fertilizer Recommendations for Potato (NPK per Hectare):
-• Irrigated Potato Crop: 180 kg Nitrogen (N) : 100 kg Phosphorus (P2O5) : 120 kg Potassium (K2O).
-  - Basal Application: 50% Nitrogen + 100% Phosphorus + 100% Potassium at planting.
-  - Top-Dressing & Earthing Up (30–35 Days After Planting - DAP): Apply remaining 50% Nitrogen during earthing up (covering developing tubers with soil prevents greening due to solanine synthesis).
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 90–110 days (approximately 3 to 3.5 months) from tuber planting to harvest.
 
-Critical Irrigation & Growth Stages for Potato:
-1. Sprouting & Emergence Phase: 0–20 DAP.
-2. Vegetative Growth Stage: 20–35 DAP.
-3. Tuber Initiation & Earthing Up: 35–45 DAP (MOST CRITICAL water stage — maintain uniform soil moisture).
-4. Tuber Bulking / Development Stage: 50–75 DAP (requires regular light waterings every 7–8 days).
-5. Dehaulming & Maturity: 80–95 DAP (cut green haulms/vines 10–12 days prior to harvesting to harden tuber skin).
+Harvesting Details:
+• Maturity: Vines yellow and dry; skin hardens on tuber.
+• Expected Yield: 30–40 tonnes/ha (12–16 t/acre).
 
-Pest & Disease Management for Potato:
-• Late Blight (Phytophthora infestans — Major Disease): Spray Mancozeb 75 WP @ 2.5 g/litre as preventive spray at 30 DAP. If disease appears, spray Cymoxanil 8% + Mancozeb 64% WP (Moximate) @ 2 g/litre or Dimethomorph 50 WP @ 1 g/litre.
-• Potato Aphids (Myzus persicae — Virus Vector): Spray Thiamethoxam 25 WG @ 0.2 g/litre or Imidacloprid 17.8 SL @ 0.3 ml/litre.
-• Potato Tuber Moth (PTM) & Cutworms: Apply Chlorpyriphos 20 EC @ 2.5 ml/litre; store tubers in cool, dry place covered with Lantana / Eupatorium dried leaves.
+Growing Season:
+• Rabi Season: Planting Oct 15 to Nov 15.

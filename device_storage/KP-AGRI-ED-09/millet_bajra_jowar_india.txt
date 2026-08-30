@@ -1,33 +1,40 @@
 Millet Cultivation (Bajra Pearl Millet & Jowar Sorghum) — National Advisory
 Source: ICAR-Indian Institute of Millets Research (IIMR), Hyderabad; ICRISAT Patancheru
 
-Suitable Agro-Climatic Zones for Millets (Bajra & Jowar):
-• Pearl Millet (Bajra): Rajasthan (No. 1 bajra producing state), Maharashtra, Gujarat, Haryana, Uttar Pradesh, and Northern Dry Zone of Karnataka (Vijayapura, Bagalkot). Extremely drought-hardy, thrives in low rainfall (<400 mm) arid zones.
-• Sorghum (Jowar): Maharashtra (No. 1 jowar producing state), Karnataka (Northern dry zone — Solapur/Kalaburagi belt), Rajasthan, MP, Andhra Pradesh, and Telangana.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Bajra (Pearl Millet): Rajasthan (No. 1 state), Maharashtra, Gujarat, Haryana, UP, Northern Dry Zone of Karnataka (Vijayapura, Bagalkot). Hybrids: HHB-67, RHB-177, MPMH-17. Yield: 25–35 q/ha.
+• Jowar (Sorghum): Maharashtra (No. 1 state), Karnataka (Solapur/Kalaburagi dryland belt), MP, AP, Telangana. Varieties: CSV-22R, M35-1 (Maldandi), CSH-16, CSH-25. Yield: 25–45 q/ha.
 
-Recommended Millet Varieties:
-• Pearl Millet (Bajra) Hybrids: HHB-67 Improved, RHB-177, MPMH-17, Pioneer 86M84, Proagro 9444. Yield: 25–35 q/ha grain.
-• Sorghum (Jowar) Varieties:
-  - Rabi Jowar (Dryland): CSV-22R, M35-1 (Maldandi — premium grain & fodder quality), Phule Anuradha, CSV-29R. Yield: 20–28 q/ha.
-  - Kharif Jowar Hybrids: CSH-16, CSH-25, CSV-15. Yield: 35–45 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Arid/Semi-Arid Dryland farming; highly drought-hardy.
+• Total Water Requirement: Approximately 350–450 mm total water over the crop cycle.
+• 1. Initial Phase (Seedling Establishment: 0–20 Days After Sowing - DAS):
+  - Water Frequency: Rainfed crop relies on monsoon showers. One protective irrigation at 15 DAS if dry spell occurs.
+• 2. Middle Phase (Tillering / Knee-High to Flowering Stage: 20–60 DAS):
+  - Water Frequency: Irrigate at 30 DAS and 50 DAS if rainfall fails.
+  - Water-Critical Sub-Stage: Boot / Flowering Stage (45–55 DAS) is the SINGLE most water-critical stage. One protective irrigation at boot stage doubles grain yield during dry spells.
+• 3. Final Phase (Grain Dough & Maturity: 60–90 DAS):
+  - Water Frequency: Rainfed crop requires no late watering.
+  - Stop Irrigation Timing: STOP all irrigation 15 days before harvest when grain moisture drops below 15%.
 
-Sowing Seasons & Seed Rate for Millets (Bajra & Jowar):
-• Kharif Bajra / Jowar: Sowing window June 15 to July 15. Bajra seed rate: 4 kg/ha (45 cm x 15 cm spacing). Jowar seed rate: 8–10 kg/ha (45 cm x 15 cm spacing).
-• Rabi Jowar (Dryland Vertisols): September 15 to October 15 (sowing in conserved soil moisture after monsoons).
+Fertilizer Requirement by Phase:
+• Irrigated Bajra / Kharif Jowar Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 40 kg Potassium (K2O).
+  - 1. Basal Dose (At Sowing): Apply 50% Nitrogen (40 kg N) + 100% Phosphorus (40 kg P2O5) + 100% Potassium (40 kg K2O).
+  - 2. Top-Dressing / Middle Phase: Top-dress remaining 50% Nitrogen (40 kg N) at 30 DAS after weeding.
+  - 3. Final Phase: None needed.
+• Rainfed Rabi Jowar Fertilizer Schedule:
+  - Total Dose: 50 kg Nitrogen (N) : 25 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) as 100% basal dose at sowing in conserved soil moisture.
 
-Fertilizer Recommendations for Millets (Bajra & Jowar) (NPK per Hectare):
-• Bajra (Pearl Millet): 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 40 kg Potassium (K2O). Apply 50% N + full P & K at sowing; top dress 50% N at 30 DAS after weeding.
-• Jowar (Sorghum):
-  - Rainfed Rabi Jowar: 50 kg Nitrogen (N) : 25 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) as full basal dose at sowing.
-  - Irrigated Kharif Jowar: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 40 kg Potassium (K2O).
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 80–100 days (approximately 2.5 to 3.5 months) from sowing to harvest.
 
-Critical Irrigation & Growth Stages for Millets (Bajra & Jowar):
-1. Seedling Establishment: 0–15 Days After Sowing (DAS).
-2. Tillering / Knee-High Stage: 25–30 DAS.
-3. Boot Stage / Flowering: 45–55 DAS (MOST CRITICAL moisture stage — one protective irrigation doubles yield during dry spells).
-4. Grain Dough & Maturity: 75–90 DAS (harvest when grain moisture drops below 15%).
+Harvesting Details:
+• Signs of Maturity: Earheads turn straw yellow; grain becomes hard and firm; leaves yellow and dry out.
+• Harvesting Method: Cut earheads manually with sickles; cut remaining stalks for cattle fodder.
+• Post-Harvest Handling: Sun-dry earheads for 4–5 days on threshing floor; thresh using mechanical thresher and store grain at <12% moisture.
+• Expected Yield: Irrigated Bajra/Jowar: 35–45 quintals/ha (14–18 q/acre). Rainfed Dryland: 20–28 quintals/ha (8–11 q/acre).
 
-Pest & Disease Management for Millets (Bajra & Jowar):
-• Jowar Shoot Fly (Atherigona soccata): Early sowing within 7 days of monsoon onset; seed treatment with Imidacloprid 70 WS @ 10 g/kg seed before sowing.
-• Bajra Downy Mildew (Green Ear): Seed treatment with Metalaxyl 35 SD @ 6 g/kg seed; rogue out infected plants at 30 DAS.
-• Grain Mold (Fusarium / Curvularia on Jowar): Spray Propiconazole 25 EC @ 1 ml/litre at flowering if late rains occur.
+Growing Season:
+• Kharif Season: Sowing window June 15 to July 15.
+• Rabi Season (Dryland Vertisols Jowar): Sowing window September 15 to October 15 (sowing in conserved soil moisture after monsoons).

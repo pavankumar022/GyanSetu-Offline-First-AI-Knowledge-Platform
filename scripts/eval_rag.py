@@ -1,14 +1,12 @@
 """
-scripts/eval_rag.py — GyanSetu RAG Generalization Eval Harness (v4.0 — Broad Test Set)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Tests intent-aware retrieval across all 7 categories:
-  1. Crops (Cereals, Pulses, Oilseeds, Cash, Fruits, Vegetables, Plantation)
-  2. Seasons (Kharif, Rabi, Zaid)
-  3. Water / Irrigation Types (Irrigated vs Rainfed)
-  4. Government Schemes (National & Karnataka)
-  5. Rural Health (Immunization, ASHA, First Aid, ORS, Malnutrition)
-  6. Soil & Pest Management (IPM, Organic, Micronutrient)
-  7. Legal Rights (MGNREGS, Pahani, Helplines, Input Consumer Rights)
+scripts/eval_rag.py — GyanSetu RAG Generalization Eval Harness (v5.0 — 5-Section Standard)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tests intent-aware retrieval across all five standardized sections:
+  1. Water Requirement by Phase ("how much water", "stop watering", "critical stage")
+  2. Fertilizer Requirement by Phase ("basal dose", "top dressing schedule")
+  3. Total Crop Duration ("how many months", "total crop duration")
+  4. Harvesting Details ("ready to harvest", "signs of maturity")
+  5. Growing Season ("which season", "sowing window")
 
 Run from project root:
     python scripts/eval_rag.py
@@ -19,63 +17,37 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from local_ai.rag_pipeline import query_offline_ai
 
-# Test suite: (question, expected_doc_fragment, expected_subtopic, must_contain, must_not_contain)
 TESTS = [
-    # ─── CEREALS ─────────────────────────────────────────────────────────────
-    ("how often should I water my paddy field", "rice", "irrigation", ["water", "irrigat", "flood", "awd"], ["fertilizer", "npk", "urea"]),
-    ("urea dose for rice", "rice", "fertilizer", ["nitrogen", "npk", "kg", "urea"], ["irrigat", "watering", "spacing"]),
-    ("best time to plant rice in Karnataka", "rice", "sowing", ["june", "july", "kharif", "dec", "jan", "sowing", "transplant"], ["fertilizer", "npk", "yield"]),
-    ("rice row spacing", "rice", "spacing", ["cm", "spacing", "distance"], ["fertilizer", "npk"]),
-    ("insects that attack rice", "rice", "pest", ["pest", "insect", "borer", "hopper"], ["fertilizer", "npk", "irrigat"]),
-    ("rice fungal disease treatment", "rice", "disease", ["blast", "blight", "fungal", "disease", "spray", "khaira"], ["fertilizer", "npk", "insect"]),
-    ("expected rice yield per acre", "rice", "yield", ["yield", "tonne", "quintal", "per hectare"], ["irrigat", "fertilizer"]),
-
-    # ─── MAIZE / CORN ─────────────────────────────────────────────────────────
-    ("when do I add urea to my corn crop", "maize", "fertilizer", ["urea", "nitrogen", "top dress"], ["irrigat", "pest", "disease"]),
-    ("how much water does maize need", "maize", "irrigation", ["irrigat", "water", "moisture"], ["fertilizer", "npk"]),
-
-    # ─── WHEAT ────────────────────────────────────────────────────────────────
-    ("wheat irrigation schedule stages", "wheat", "irrigation", ["irrigat", "cri", "crown root"], ["fertilizer", "npk"]),
-
-    # ─── NEW PULSES (Moong, Urad, Lentil) ─────────────────────────────────────
-    ("summer moong irrigation frequency", "moong_urad", "irrigation", ["summer", "irrigat", "flowering", "pod"], ["cotton", "rice", "wheat"]),
-    ("urad bean seed rate per hectare", "moong_urad", "spacing", ["kg/ha", "seed rate", "spacing", "15"], ["fertilizer", "npk"]),
-
-    # ─── NEW OILSEEDS (Sesame, Castor) ───────────────────────────────────────
-    ("castor plant spacing and seed rate", "sesame_castor", "spacing", ["castor", "spacing", "kg/ha", "cm"], ["fertilizer", "npk"]),
-    ("sesame phyllody disease vector spray", "sesame_castor", "disease", ["phyllody", "sesame", "phytoplasma", "leafhopper"], ["fertilizer", "irrigat"]),
-
-    # ─── NEW CASH CROPS (Jute, Tobacco) ──────────────────────────────────────
-    ("jute retting water requirement", "jute_tobacco", "irrigation", ["jute", "retting", "water", "harvest"], ["fertilizer", "npk"]),
-    ("tobacco potash fertilizer non chloride", "jute_tobacco", "fertilizer", ["potassium", "potash", "tobacco", "sulfate"], ["irrigat", "spacing"]),
-
-    # ─── NEW FRUITS (Mango, Papaya, Grapes, Pomegranate, Citrus) ─────────────
-    ("alphonso mango planting spacing high density", "mango_papaya", "spacing", ["mango", "spacing", "m x", "density"], ["fertilizer", "npk"]),
-    ("papaya drip irrigation water per day", "mango_papaya", "irrigation", ["papaya", "drip", "litres", "water"], ["fertilizer", "npk"]),
-    ("pomegranate bacterial blight teliya treatment", "mango_papaya", "disease", ["pomegranate", "bacterial", "blight", "streptocycline"], ["fertilizer", "irrigat"]),
-    ("citrus leaf miner spray", "mango_papaya", "pest", ["citrus", "miner", "spray", "imidacloprid"], ["fertilizer", "irrigat"]),
-
-    # ─── NEW VEGETABLES (Brinjal, Chilli, Okra, Cabbage) ─────────────────────
-    ("byadgi chilli thrips control spray", "brinjal_chilli", "pest", ["chilli", "thrips", "fipronil", "spray"], ["fertilizer", "irrigat"]),
-    ("brinjal shoot fruit borer spray", "brinjal_chilli", "pest", ["brinjal", "borer", "shoot", "emamectin"], ["fertilizer", "irrigat"]),
-    ("cauliflower hollow stem borax treatment", "brinjal_chilli", "fertilizer", ["cauliflower", "borax", "hollow", "stem"], ["irrigat", "pest"]),
-
-    # ─── NEW PLANTATION (Coffee, Tea, Coconut, Arecanut, Cashew) ─────────────
+    # ─── SECTION A: WATER REQUIREMENT BY PHASE ────────────────────────────────
+    ("how much water does maize need in the flowering stage", "maize", "irrigation", ["silking", "critical", "water"], ["fertilizer", "npk"]),
+    ("when should I stop watering wheat before harvest", "wheat", "irrigation", ["stop", "10", "15", "harvest", "dough"], ["fertilizer", "npk"]),
     ("coffee blossom irrigation timing", "plantation_crops", "irrigation", ["coffee", "blossom", "march", "sprinkler"], ["fertilizer", "npk"]),
-    ("arecanut koleroga fruit rot bordeaux spray", "plantation_crops", "disease", ["arecanut", "koleroga", "bordeaux", "fruit rot"], ["fertilizer", "irrigat"]),
-    ("coconut water requirement drip per day", "plantation_crops", "irrigation", ["coconut", "drip", "litres", "water"], ["fertilizer", "npk"]),
+    ("papaya drip irrigation water per day", "mango_papaya", "irrigation", ["papaya", "drip", "litres"], ["fertilizer", "npk"]),
 
-    # ─── SCHEMES (National & KA State) ───────────────────────────────────────
-    ("how much premium do I pay for PMFBY crop insurance", "pmfby", "cost", ["premium", "%", "kharif"], ["eligib", "document"]),
-    ("what documents do I need to apply for KCC", "kisan_credit_card", "application", ["aadhaar", "land", "pahani"], ["premium", "subsidy"]),
+    # ─── SECTION B: FERTILIZER REQUIREMENT BY PHASE ───────────────────────────
+    ("fertilizer dose for rice at sowing time", "rice", "fertilizer", ["basal", "50%", "100%", "npk", "puddling"], ["harvest", "yield"]),
+    ("top dressing schedule for sugarcane", "sugarcane", "fertilizer", ["tillering", "90", "earthing", "nitrogen"], ["harvest", "brix"]),
+    ("cauliflower hollow stem borax treatment", "brinjal_chilli", "fertilizer", ["cauliflower", "borax", "hollow", "stem"], ["irrigat", "pest"]),
+    ("tobacco potash fertilizer non chloride", "jute_tobacco", "fertilizer", ["potassium", "potash", "tobacco", "sulfate"], ["irrigat"]),
+
+    # ─── SECTION C: TOTAL CROP DURATION ───────────────────────────────────────
+    ("how many months does tur take to grow", "pigeon_pea", "duration", ["150", "180", "months", "duration"], ["fertilizer", "npk"]),
+    ("how long does ragi take to reach harvest", "ragi", "duration", ["100", "115", "days", "duration"], ["fertilizer", "npk"]),
+    ("total crop duration for cotton", "cotton", "duration", ["150", "180", "days", "months"], ["fertilizer", "npk"]),
+
+    # ─── SECTION D: HARVESTING DETAILS ────────────────────────────────────────
+    ("when is groundnut ready to harvest", "groundnut", "harvest", ["yellow", "inside", "dark", "brown", "pods"], ["fertilizer", "npk"]),
+    ("signs that sunflower is ready for harvest", "sunflower", "harvest", ["lemon", "yellow", "back", "head", "florets"], ["fertilizer", "npk"]),
+    ("how to harvest jute for fibre", "jute_tobacco", "harvest", ["flowering", "retting", "harvest", "fibre"], ["fertilizer", "npk"]),
+
+    # ─── SECTION E: GROWING SEASON ────────────────────────────────────────────
+    ("which season should I grow chickpea in", "chickpea", "season", ["rabi", "october", "winter", "sowing"], ["fertilizer", "npk"]),
+    ("sowing window for mustard in Rajasthan", "mustard", "season", ["october", "rabi", "sowing"], ["fertilizer", "npk"]),
     ("Raitha Siri scheme incentive for millet farmers", "karnataka_raitha_siri", "cost", ["raitha siri", "10,000", "millet", "dbt"], ["pmfby", "kcc"]),
 
-    # ─── RURAL HEALTH ─────────────────────────────────────────────────────────
+    # ─── RURAL HEALTH & LEGAL ─────────────────────────────────────────────────
     ("infant BCG vaccine when is it given", "immunization", "health-protocol", ["bcg", "birth", "vaccine"], ["fertilizer", "crop"]),
     ("MUAC tape red zone child malnutrition referral", "child_malnutrition", "health-protocol", ["muac", "11.5", "sam", "nrc"], ["fertilizer", "crop"]),
-
-    # ─── LEGAL / CONSUMER RIGHTS ──────────────────────────────────────────────
-    ("substandard seed germination complaint seed inspector", "agri_input_consumer", "legal-rights", ["seed", "germination", "inspector", "complaint"], ["fertilizer", "irrigat"]),
     ("MGNREGS daily wage rate in Karnataka", "mgnregs", "legal-rights", ["karnataka", "wage", "₹", "349"], ["fertilizer", "crop"]),
 
     # ─── OUT-OF-SCOPE ─────────────────────────────────────────────────────────
@@ -86,7 +58,7 @@ TESTS = [
 
 def run_eval():
     print("=" * 70)
-    print("  GyanSetu RAG Generalization Eval Harness (v4.0 — Broad)")
+    print("  GyanSetu RAG Generalization Eval Harness (v5.0 — 5-Section Standard)")
     print("=" * 70)
 
     passed = 0

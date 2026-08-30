@@ -1,34 +1,37 @@
-Tur (Pigeon Pea / Arhar) Cultivation Guidelines — National & Karnataka Advisory
-Source: ICAR-Indian Institute of Pulses Research (IIPR), Kanpur; UAS Raichur & Kalaburagi Pulse Research Station
+Pigeon Pea (Tur / Arhar) Cultivation Guidelines — National Advisory
+Source: ICAR-IIPR Kanpur; ICRISAT Patancheru & UAS Raichur
 
-Suitable Agro-Climatic Zones for Tur (Pigeon Pea / Arhar):
-• Top Producing States: Maharashtra (No. 1 tur producing state), Karnataka (Kalaburagi — known as the "Pulse Bowl of Karnataka"), Madhya Pradesh, Uttar Pradesh, Gujarat, Telangana, and Andhra Pradesh.
-• Karnataka Tur Belts: Kalaburagi (GI tagged "Kalaburagi Red Gram"), Bidar, Yadgir, Raichur, Vijayapura, and Belagavi.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Karnataka (Kalaburagi — "Pulse Bowl of Karnataka", Bidar, Vijayapura), MP, Maharashtra, UP, Gujarat.
+• Recommended Varieties: GRG-811 (Bhima), Maruti (ICP-8863), BSMR-736, Asha (ICPL-87119), TS-3R. Yield: 18–25 q/ha.
 
-Recommended Tur (Pigeon Pea / Arhar) Varieties:
-• Wilt Resistant & High Yielding Varieties: GRG-811 (Bhima — wilt & sterility mosaic resistant variety developed by UAS Raichur), BSMR-736, Maruti (ICP-8863), TS-3R, ICPH-2671 (hybrid tur), WBG-26, BDN-711. Yield: 18–25 q/ha grain.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Dryland and Semi-Arid ecosystems (deep taproot makes it drought-hardy).
+• Total Water Requirement: Approximately 350–450 mm total water over the crop cycle.
+• 1. Initial Phase (Germination & Vegetative Growth: 0–45 Days After Sowing - DAS):
+  - Water Frequency: Rainfed crop relies on Kharif rains. Provide drainage to prevent waterlogging.
+• 2. Middle Phase (Branching, Nipping & Flowering: 45–120 DAS):
+  - Water Frequency: One protective irrigation at flower initiation (100–110 DAS) if rains recede.
+  - Water-Critical Sub-Stage: Flower Initiation Stage (105–115 DAS) is the SINGLE most water-critical stage. Water deficit causes massive flower shedding.
+• 3. Final Phase (Pod Bulking & Maturity: 120–165 DAS):
+  - Water Frequency: One protective irrigation at pod development stage (135 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 20 days before harvest when pods turn brown.
 
-Sowing Seasons & Seed Rate for Tur (Pigeon Pea / Arhar):
-• Kharif Season: Optimum window June 15 to July 15 (with arrival of monsoon). Seed rate: 12–15 kg seed/ha for pure cropping (90 cm x 30 cm spacing); 5 kg/ha for dibbling at wide spacing (120 cm x 30 cm).
-• Seed Treatment: Bio-fertilizer treatment with Rhizobium culture @ 200 g + Phosphate Solubilizing Bacteria (PSB) @ 200 g per 10 kg seed before sowing.
+Fertilizer Requirement by Phase:
+• Rainfed Tur Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 25 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) + 20 kg Elemental Sulfur.
+  - 1. Basal Dose (At Sowing): Apply 100% N, P, K, and S at sowing.
+  - 2. Top-Dressing / Middle Phase: Foliar spray of 2% Urea or 1% 19-19-19 at 50% flowering stage (110 DAS).
+  - 3. Final Phase: None needed.
 
-Soil & Land Preparation for Tur (Pigeon Pea / Arhar):
-• Soil Type: Deep well-drained black cotton soils (Vertisols) or medium loamy soils with pH 6.5–7.8. Deep taproot system withstands dryland moisture stress.
-• Land Prep: Deep ploughing to allow deep taproot development. Construct ridges and furrows to drain excess rainwater.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 150–180 days (approximately 5 to 6 months) from sowing to harvest.
 
-Fertilizer Recommendations for Tur (Pigeon Pea / Arhar) (NPK per Hectare):
-• Rainfed Tur (Kharif Pulse): 25 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) + 20 kg Elemental Sulfur per hectare.
-  - Basal Dose: 100% N, P, K, and S applied at time of sowing.
-  - Nipping Shoot Tops: Nipping / pruning the top growing tip at 45–50 Days After Sowing (DAS) forces lateral branching and increases pod count by 20–25%.
+Harvesting Details:
+• Signs of Maturity: 80% of pods turn golden brown; leaves turn yellow and drop off; seeds turn hard.
+• Harvesting Method: Cut plants at ground level with sickles.
+• Post-Harvest Handling: Bundle harvested stalks and dry in sun for 7–10 days; thresh by beating stalks against hard surface or pulse thresher.
+• Expected Yield: Rainfed Tur: 18–25 quintals/ha (7–10 q/acre). Irrigated Tur: 25–32 quintals/ha (10–13 q/acre).
 
-Critical Irrigation & Growth Stages for Tur (Pigeon Pea / Arhar):
-1. Germination & Seedling Phase: 0–20 DAS.
-2. Branching & Vegetative Growth: 30–50 DAS (nipping top tip at 45 DAS).
-3. Flower Bud Initiation & Peak Flowering: 75–90 DAS (MOST CRITICAL water requirement stage).
-4. Pod Formation & Grain Development: 105–130 DAS (protective irrigation during drought boosts grain weight).
-5. Harvest: 150–180 DAS (when 80% pods turn brown and dry).
-
-Pest & Disease Management for Tur (Pigeon Pea / Arhar):
-• Pod Borer (Helicoverpa armigera & Maruca vitrata): Install Pheromone traps @ 5/acre at flowering stage. Spray Chlorantraniliprole 18.5 SC @ 0.3 ml/litre or Indoxacarb 14.5 SC @ 0.5 ml/litre or Spinetoram 11.7 SC @ 0.8 ml/litre at 50% flowering stage.
-• Fusarium Wilt (Fusarium udum): Soil drenching or seed treatment with Trichoderma harzianum @ 10 g/kg seed; use wilt-resistant varieties GRG-811 or Maruti.
-• Sterility Mosaic Disease (SMD): Control vector mite by spraying Propargite 57 EC @ 2 ml/litre.
+Growing Season:
+• Kharif Season: Sowing window June 15 to July 15 with arrival of monsoon rains.

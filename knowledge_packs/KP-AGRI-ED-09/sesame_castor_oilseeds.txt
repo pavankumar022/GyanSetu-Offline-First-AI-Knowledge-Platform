@@ -1,51 +1,27 @@
-Sesame (Til) & Castor Cultivation Guidelines — National & Regional Advisory
-Source: ICAR-Directorate of Oilseeds Research (DOR), Hyderabad; JAU Junagadh & UAS Raichur
+Sesame (Til) & Castor Cultivation Guidelines — National Advisory
+Source: ICAR-DOR Hyderabad; JAU Junagadh & UAS Raichur
 
-Suitable Agro-Climatic Zones & Soil Requirements:
-• Zones & Regions: Gujarat (Saurashtra castor & sesame hub), Rajasthan, Madhya Pradesh, West Bengal, Karnataka (Raichur, Koppal, Bellary), Andhra Pradesh, and Tamil Nadu.
-• Soil & pH: Well-drained light sandy loams to medium red loamy soils with pH 6.5–7.8. Highly drought-tolerant oilseed crops; sensitive to soil salinity.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Sesame: RT-351, DS-5 (Karnataka). Castor: GCH-7, DCH-519, DCH-177. Yield: Sesame 8–12 q/ha; Castor 20–30 q/ha.
 
-Recommended Varieties by Season:
-• Sesame (Til) Varieties:
-  - Kharif / Summer: RT-351, TKG-22, GT-3, DS-5 (for Karnataka). Seed color: White/Brown. Yield: 8–12 q/ha.
-• Castor Varieties & Hybrids:
-  - Kharif Rainfed / Irrigated: GCH-7, GCH-9, DCH-519, DCH-177, 48-1 (Jwala). Yield: 20–30 q/ha.
+Water Requirement by Phase:
+• Crop Category: Rainfed Kharif; Drip / Furrow Irrigated Summer Sesame & Castor.
+• Total Water Requirement: Sesame 300 mm; Castor 500–600 mm.
+• 1. Initial Phase (Germination: 0–15 DAS): Light watering for summer crop; rainfed for Kharif.
+• 2. Middle Phase (Flowering & Capsule / Spike Bulking: 15–75 DAS): Main Spike Flowering (45 DAS) is the SINGLE most water-critical stage.
+• 3. Final Phase (Maturity: 75–120 DAS): STOP irrigation 15 days before harvest when leaves turn yellow.
 
-Sowing Seasons & Planting Window:
-• Kharif Season: June 15 to July 15 (with onset of monsoons).
-• Summer Sesame (Zaid): January 15 to February 15 (irrigated crop).
-• Rabi / Semi-Rabi Castor: August 15 to September 15.
+Fertilizer Requirement by Phase:
+• Sesame Dose: 40 kg N : 20 kg P2O5 : 20 kg K2O + 20 kg S (100% basal).
+• Castor Dose: 80 kg N : 40 kg P2O5 : 30 kg K2O (50% N basal, 25% at 30 DAS, 25% at 60 DAS).
 
-Row Spacing & Seed Rate:
-• Sesame (Til) Seed Rate: 4–5 kg seed/ha (30 cm x 10 cm spacing; 1.5–2.0 cm depth mixed with fine sand).
-• Castor Seed Rate: Hybrids: 5 kg/ha (90 cm x 60 cm spacing for rainfed; 120 cm x 90 cm for irrigated).
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 80–90 days for Sesame; 150–180 days (5 to 6 months) for Castor (multiple pickings).
 
-Irrigation Requirement & Water Management:
-• Water Type: Rainfed for Kharif; Light Drip / Furrow Irrigated for Summer Sesame & Irrigated Castor.
-• Critical Growth Stages needing Irrigation:
-  - Sesame: Flowering (30 DAS) and Capsule Formation (45–50 DAS). Stop irrigation when leaves start yellowing.
-  - Castor: Main Spike Flowering (45 DAS) and Secondary Spike Bulking (75–90 DAS). Extremely drought-hardy.
+Harvesting Details:
+• Signs of Maturity: Sesame leaves yellow; lower capsules turn yellow. Castor spikes turn light brown and dry.
+• Harvesting Method: Cut sesame plants and dry vertically; hand pick castor spikes in 3–4 pickings.
+• Expected Yield: Sesame: 8–12 q/ha. Castor: 20–30 q/ha.
 
-Fertilizer & NPK Recommendations (per Hectare):
-• Sesame (Til): 40 kg Nitrogen (N) : 20 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Elemental Sulfur per hectare.
-• Castor (Irrigated Hybrid): 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 30 kg Potassium (K2O) + 30 kg Sulfur per hectare. Split N in 3 doses (basal, 30 DAS, and 60 DAS).
-
-Growth Stages & Duration:
-1. Emergence & Seedling Phase: 0–10 Days After Sowing (DAS).
-2. Vegetative Branching: 15–35 DAS.
-3. Flowering & Spike/Capsule Formation: 40–60 DAS.
-4. Maturity & Harvest: 80–90 DAS for Sesame; 150–180 DAS for Castor (multiple spike pickings).
-
-Common Pest Control (Insect Pests):
-• Sesame Leaf & Pod Borer (Antigastra catalaunalis): Spray Quinalphos 25 EC @ 2 ml/litre or Chlorpyriphos 20 EC @ 2 ml/litre at 30 DAS.
-• Castor Semilooper & Capsule Borer (Conogethes punctiferalis): Handpick large caterpillars; spray Bacillus thuringiensis (Bt) @ 2 g/litre or Profenofos 50 EC @ 2 ml/litre.
-
-Common Disease Management (Fungal & Phytoplasma):
-• Sesame Phyllody (Phytoplasma — Leafhopper Vector): Rogue out infected bushy green floral structures; spray Dimethoate 30 EC @ 1.7 ml/litre water to control vector leafhoppers.
-• Castor Fusarium Wilt & Botrytis Gray Rot: Seed treatment with Trichoderma viride @ 10 g/kg seed; spray Carbendazim 50 WP @ 1 g/litre during rainy spells.
-
-Expected Yield:
-• Sesame: 8–12 q/ha. Castor: 20–30 q/ha.
-
-Top Producing States:
-• Gujarat (No. 1 castor & sesame producer in India), Rajasthan, Madhya Pradesh, West Bengal, Karnataka.
+Growing Season:
+• Kharif: June 15 to July 15. Summer Sesame: Jan 15 to Feb 15. Rabi Castor: August 15 to Sept 15.

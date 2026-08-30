@@ -97,9 +97,11 @@ def _slug(name: str) -> str:
     return name.lower().replace(" ", "_").replace("&", "and").replace(",", "")
 
 
-def _boost_state_chunks(chunks: List[Dict], state_name: str, boost: float = 2.5) -> List[Dict]:
+def _boost_state_chunks(chunks: List[Dict], state_name: str, boost: float = 0.30) -> List[Dict]:
     """
-    Apply a strong score boost to chunks from the target state's document.
+    Apply a moderate score boost to chunks from the target state's document.
+    Moderate boost (+0.30) allows dedicated crop/scheme guides in KP-AGRI-ED-09
+    to outrank raw state overviews when the user asks a crop-specific question.
     """
     target_filename = _slug(state_name) + ".txt"
     boosted = []

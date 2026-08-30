@@ -1,36 +1,40 @@
-Groundnut (Peanut) Cultivation Guidelines — National & Karnataka Advisory
-Source: ICAR-Directorate of Groundnut Research (DGR), Junagadh; UAS Dharwad & Raichur
+Groundnut (Peanut) Cultivation Guidelines — National Advisory
+Source: ICAR-Directorate of Groundnut Research (DGR), Junagadh; UAS Dharwad & TNAU
 
-Suitable Agro-Climatic Zones for Groundnut (Peanut):
-• Top Producing States: Gujarat (Saurashtra region — No. 1 groundnut producer), Rajasthan, Tamil Nadu, Andhra Pradesh (Rayalaseema / Anantapur), Karnataka, and Madhya Pradesh.
-• Karnataka Groundnut Belts: Chitradurga, Tumakuru, Kolar, Bellary, Raichur, Dharwad, Belagavi, and Vijayapura.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Gujarat (Saurashtra No. 1), AP (Anantapur), Rajasthan, Tamil Nadu, Karnataka (Chitradurga, Tumakuru, Vijayapura, Dharwad).
+• Recommended Varieties: K6 (Kadiri-6), GPBD-4, TMV-2, JL-24, DH-86, GGJ-22. Yield: 25–35 q/ha pods.
 
-Recommended Groundnut (Peanut) Varieties:
-• Rainfed Kharif Varieties: K6 (Kadiri-6), GPBD-4 (foliar disease resistant — high yielding variety from UAS Dharwad), TMV-2, JL-24, DH-86, G2-52. Yield: 18–25 q/ha pods.
-• Irrigated Rabi / Summer Varieties: TAG-24, TG-37A, Kadiri-9, ICGV-91114, Dharani (TCGS-888). Yield: 30–42 q/ha pods.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Kharif and Irrigated Summer/Rabi ecosystems.
+• Total Water Requirement: Approximately 500–600 mm total water over the crop cycle.
+• 1. Initial Phase (Germination & Vegetative Growth: 0–25 Days After Sowing - DAS):
+  - Water Frequency: Irrigate immediately after sowing; repeat at 12–15 DAS. Avoid standing water.
+• 2. Middle Phase (Flowering & Peg Penetration: 25–70 DAS):
+  - Water Frequency: Irrigate every 8–10 days.
+  - Water-Critical Sub-Stage: Peg Penetration & Pod Initiation (35–50 DAS) is the SINGLE most water-critical stage. Hard dry soil prevents peg entry into soil, reducing pod yield by 45%.
+• 3. Final Phase (Pod Bulking & Maturity: 70–105 DAS):
+  - Water Frequency: Irrigate at pod filling stage (75–80 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 10–12 days before harvest to facilitate soil drying and easy pod pulling without pod shedding.
 
-Sowing Seasons & Seed Rate for Groundnut (Peanut):
-• Kharif Season: June 15 to July 15 (with onset of monsoon). Seed rate: 100–125 kg kernel/ha (30 cm x 10 cm spacing).
-• Summer Groundnut (Irrigated): January 15 to February 15.
+Fertilizer Requirement by Phase:
+• Irrigated Groundnut Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 25 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) + 500 kg Gypsum (CaSO4).
+  - 1. Basal Dose (At Sowing): Apply 100% Nitrogen (25 kg N) + 100% Phosphorus (50 kg P2O5) + 100% Potassium (25 kg K2O) + 250 kg Gypsum at sowing time.
+  - 2. Top-Dressing / Middle Phase: Apply remaining 250 kg Gypsum per hectare at pegging stage (40 DAS) earthed up around root zone (Calcium essential for pod shell hardening and kernel development).
+  - 3. Final Phase: None needed.
+• Rainfed Groundnut Fertilizer Schedule:
+  - Total Dose: 15 kg N : 30 kg P2O5 : 15 kg K2O + 250 kg Gypsum basal at sowing.
 
-Soil & Land Preparation for Groundnut (Peanut):
-• Soil Type: Well-drained sandy loam, light red soils, and loamy soils with pH 6.0–7.5. Loose friable surface soil is essential for easy peg penetration and pod development. Avoid sticky clay soils.
-• Land Prep: 2 deep ploughings followed by harrowing to break clods into fine tilth.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 100–115 days (approximately 3.5 months) from sowing to harvest.
 
-Fertilizer Recommendations for Groundnut (Peanut) (NPK per Hectare):
-• Rainfed Groundnut (Kharif): 25 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 25 kg Potassium (K2O).
-  - Basal Application: Apply 100% N, P, and K at time of sowing.
-  - Gypsum Application (MOST CRITICAL): Apply Gypsum @ 500 kg/ha at pegging stage (35–40 Days After Sowing - DAS) near plant rows and incorporate lightly. Gypsum provides essential Calcium for pod filling and Sulfur for oil synthesis (prevents pops/empty pods).
-• Irrigated Summer Groundnut: 40 kg Nitrogen (N) : 80 kg Phosphorus (P2O5) : 40 kg Potassium (K2O) + Gypsum @ 500 kg/ha.
+Harvesting Details:
+• Signs of Maturity: Leaves yellow and drop; inside of pod shell turns dark brown to blackish; kernel seeds turn full pink.
+• Harvesting Method: Manual pulling of plants or tractor-driven digger/shaker.
+• Post-Harvest Handling: Sun-dry pulled plants in field for 3 days; strip pods and sun-dry pods until kernel moisture drops to 8–9%.
+• Expected Yield: Irrigated Summer Groundnut: 30–40 quintals/ha (12–16 q/acre). Rainfed Kharif: 18–25 quintals/ha (7–10 q/acre).
 
-Critical Irrigation & Growth Stages for Groundnut (Peanut):
-1. Germination & Vegetative Growth: 0–25 DAS.
-2. Flowering Stage: 25–30 DAS.
-3. Peg Penetration Stage: 35–45 DAS (DO NOT perform inter-cultivation or hoeing after pegging starts — breaks tender pegs entering soil).
-4. Pod Development & Filling Stage: 50–75 DAS (MOST CRITICAL moisture stage — water stress causes pops/empty shells).
-5. Pod Maturation & Harvest: 95–110 DAS (harvest when inside shell turns dark brown).
-
-Pest & Disease Management for Groundnut (Peanut):
-• Tikka Leaf Spot (Cercospora arachidicola & Cercosporidium personatum): Spray Hexaconazole 5 EC @ 1 ml/litre or Chlorothalonil 75 WP @ 2 g/litre or Tebconazole @ 1 ml/litre at 40 DAS.
-• Collar Rot / Root Rot (Aspergillus niger): Seed treatment with Trichoderma viride @ 10 g/kg seed or Mancozeb 75 WP @ 3 g/kg seed before sowing.
-• Red Hairy Caterpillar & Spodoptera: Spray Chlorpyriphos 20 EC @ 2 ml/litre or Novaluron 10 EC @ 1 ml/litre.
+Growing Season:
+• Kharif Season: Sowing window June 15 to July 15.
+• Summer / Rabi Season (Irrigated): Sowing window January 15 to February 15.

@@ -56,14 +56,21 @@ _BROAD_PATTERNS = [
 _SUBTOPIC_KEYWORDS: Dict[str, List[str]] = {
     "irrigation":   ["irrigat", "water", "watering", "flood", "awd", "drip",
                      "moisture", "sinchayee", "litre", "liter", "mm", "rainfed",
-                     "how often", "how frequently", "days between"],
+                     "how often", "how frequently", "days between", "stop irrigation", "water requirement",
+                     "flowering", "silking", "tasseling", "critical", "stage"],
     "fertilizer":   ["fertilizer", "npk", "nitrogen", "phosphorus", "potassium",
                      "urea", "dap", "fym", "manure", "dose", "top dress", "basal",
                      "kg/ha", "kg per hectare", "micronutrient", "zinc", "boron",
-                     "iron", "sulfur", "n:p:k", "n :p:k"],
+                     "iron", "sulfur", "n:p:k", "n :p:k", "top-dressing"],
     "sowing":       ["sow", "planting", "nursery", "transplant", "season", "timing",
                      "when to", "optimal", "window", "june", "july", "october",
-                     "november", "kharif", "rabi", "zaid", "germination"],
+                     "november", "kharif", "rabi", "zaid", "germination", "sowing window"],
+    "duration":     ["duration", "days", "months", "growth duration", "maturity duration",
+                     "sowing to harvest", "total crop duration", "how long", "take to grow"],
+    "harvest":      ["harvesting", "harvest", "maturity", "readiness", "moisture",
+                     "yellow", "pods rattle", "yield", "post-harvest", "reap", "signs of maturity"],
+    "season":       ["season", "kharif", "rabi", "zaid", "summer", "growing season",
+                     "monsoon", "winter", "sowing window"],
     "spacing":      ["spacing", "distance", "row", "seed rate", "pit size",
                      "cm x cm", "plant per", "population", "density"],
     "varieties":    ["variet", "hybrid", "cultivar", "recommended", "improved",
@@ -156,6 +163,7 @@ def _sentence_relevance(sentence: str, query_keywords: set, subtopic_keywords: L
     Score a sentence by:
     - query keyword overlap (base relevance)
     - sub-topic keyword hit bonus (ensures sub-topic specificity)
+    - stage/phase exact match bonus (e.g. flowering, silking, basal, top-dressing)
     """
     sent_lower = sentence.lower()
     kw_hits = sum(1 for kw in query_keywords if kw in sent_lower)
@@ -166,7 +174,16 @@ def _sentence_relevance(sentence: str, query_keywords: set, subtopic_keywords: L
         st_hits = sum(1 for kw in subtopic_keywords if kw in sent_lower)
         subtopic_bonus = min(st_hits * 0.3, 0.6)  # cap bonus at 0.6
 
-    return kw_score + subtopic_bonus
+    # Stage/phase term direct match bonus
+    stage_terms = {"flowering", "silking", "tasseling", "knee-high", "sowing", "basal",
+                   "top-dressing", "harvest", "maturity", "dough", "initial", "middle",
+                   "final", "cri", "pegging", "buttoning", "blossom"}
+    matched_stages = query_keywords.intersection(stage_terms)
+    stage_bonus = 0.0
+    if matched_stages and any(term in sent_lower for term in matched_stages):
+        stage_bonus = 0.50
+
+    return kw_score + subtopic_bonus + stage_bonus
 
 
 def _extract_relevant_sentences(

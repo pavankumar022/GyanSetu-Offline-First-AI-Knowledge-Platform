@@ -1,29 +1,39 @@
 Barley Cultivation Guidelines — National & Regional Advisory
 Source: ICAR-Indian Institute of Wheat and Barley Research (IIWBR), Karnal; Directorate of Barley Development
 
-Suitable Agro-Climatic Zones for Barley:
-• Top Producing States: Rajasthan (No. 1 barley producing state in India), Uttar Pradesh, Madhya Pradesh, Haryana, Punjab, Himachal Pradesh, and Uttarakhand.
-• Soil & Climate: Well-drained loam to clay loam soils with pH 6.5–8.0. Highly drought-tolerant and alkali/salt-tolerant cereal crop compared to wheat.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Rajasthan (No. 1 barley state), Uttar Pradesh, Madhya Pradesh, Haryana, Punjab, Himachal Pradesh, Uttarakhand.
+• Recommended Varieties: Malt Barley: DWRB-101, DWRB-182, BCU-73. Dual Purpose: RD-2035, RD-2715, HUB-113. Yield: 40–55 q/ha.
 
-Recommended Barley Varieties:
-• Malt Barley Varieties (Brewing Industry): DWRB-101, DWRB-182, DWRB-92, BCU-73. Yield: 45–55 q/ha.
-• Feed & Dual-Purpose Varieties (Grain + Fodder): RD-2035, RD-2552, RD-2715, HUB-113, BCO-56. Yield: 40–50 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Arid and Irrigated Alkali/Saline soils (highly drought-tolerant cereal).
+• Total Water Requirement: Approximately 250–350 mm total water over crop cycle (2 to 3 irrigations).
+• 1. Initial Phase (Germination & Seedling Phase: 0–25 Days After Sowing - DAS):
+  - Water Frequency: Pre-sowing irrigation followed by first irrigation at 25–30 DAS.
+  - Water-Critical Sub-Stage: Crown Root Initiation (CRI) at 25–30 DAS is the SINGLE most water-critical stage.
+• 2. Middle Phase (Tillering & Jointing Stage: 30–75 DAS):
+  - Water Frequency: Irrigate once at Tillering / Jointing stage (45–50 DAS). Avoid over-watering.
+• 3. Final Phase (Heading & Milking Stage: 75–100 DAS):
+  - Water Frequency: Light irrigation at Heading stage (75 DAS) if soil is dry.
+  - Stop Irrigation Timing: STOP all irrigation 15 days before harvest when grain moisture drops below 15%.
 
-Sowing Seasons & Seed Rate for Barley:
-• Rabi Season: Optimum sowing window October 25 to November 15. Seed rate: 100 kg/ha for rainfed/irrigated grain crop; 120 kg/ha for dual-purpose fodder crop (22.5 cm row spacing).
+Fertilizer Requirement by Phase:
+• Irrigated Malt Barley Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 60 kg Nitrogen (N) : 30 kg Phosphorus (P2O5) : 20 kg Potassium (K2O).
+  - 1. Basal Dose (At Sowing): Apply 50% Nitrogen (30 kg N) + 100% Phosphorus (30 kg P2O5) + 100% Potassium (20 kg K2O).
+  - 2. Top-Dressing / Middle Phase: Top-dress remaining 50% Nitrogen (30 kg N) at first irrigation (25–30 DAS). Avoid late N top-dressing (increases protein above 12% malt limit).
+  - 3. Final Phase: None needed during final maturity phase.
+• Rainfed Barley Fertilizer Schedule:
+  - Total Dose: 40 kg Nitrogen (N) : 20 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) as 100% basal dose at sowing.
 
-Fertilizer Recommendations for Barley (NPK per Hectare):
-• Irrigated Malt Barley: 60 kg Nitrogen (N) : 30 kg Phosphorus (P2O5) : 20 kg Potassium (K2O). Apply 50% N + full P & K at sowing; top dress 50% N at first irrigation (25–30 DAS). Avoid excess N which increases grain protein above malt limits (>12%).
-• Rainfed Barley: 40 kg Nitrogen (N) : 20 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) as full basal dose at sowing.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 110–125 days (approximately 3.5 to 4 months) from sowing to harvest.
 
-Critical Irrigation & Growth Stages for Barley:
-1. Germination & Seedling Phase: 0–15 Days After Sowing (DAS).
-2. Crown Root Initiation (CRI): 25–30 DAS (most critical watering stage).
-3. Tillering & Jointing Stage: 45–55 DAS.
-4. Flowering & Heading Stage: 70–75 DAS.
-5. Grain Milking & Maturity: 90–105 DAS (harvest when moisture drops below 12%).
+Harvesting Details:
+• Signs of Maturity: Stems and ears turn light golden yellow; grain becomes hard and moisture drops below 12%.
+• Harvesting Method: Manual sickle harvesting or Combine Harvester.
+• Post-Harvest Handling: Thresh and store at <11% moisture to prevent mold and preserve malting quality.
+• Expected Yield: Irrigated Barley: 45–55 quintals/ha (18–22 q/acre). Rainfed Barley: 25–35 quintals/ha (10–14 q/acre).
 
-Pest & Disease Management for Barley:
-• Yellow Rust & Stripe Rust: Spray Propiconazole 25 EC @ 1 ml/litre water at initial symptom appearance.
-• Barley Aphids: Spray Thiamethoxam 25 WG @ 0.2 g/litre or Imidacloprid 17.8 SL @ 0.3 ml/litre.
-• Covered Smut: Seed treatment with Carboxin 75 WP @ 2.5 g/kg seed before sowing.
+Growing Season:
+• Rabi Season: Optimum sowing window October 25 to November 15 across Rajasthan, UP, Haryana, and Punjab.

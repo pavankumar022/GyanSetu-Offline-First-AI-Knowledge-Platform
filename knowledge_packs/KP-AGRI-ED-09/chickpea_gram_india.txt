@@ -1,30 +1,37 @@
 Chickpea (Gram / Chana) Cultivation Guidelines — National Advisory
 Source: ICAR-Indian Institute of Pulses Research (IIPR), Kanpur; ICRISAT Patancheru
 
-Suitable Agro-Climatic Zones for Chickpea (Gram / Chana):
-• Top Producing States: Madhya Pradesh (No. 1 chickpea producing state), Maharashtra, Rajasthan, Uttar Pradesh, Karnataka (Kalaburagi/Vijayapura/Bidar dryland belt), Andhra Pradesh, and Gujarat.
-• Soil & Climate: Well-drained medium to heavy black cotton soils (Vertisols) or clay loams with pH 6.0–8.0. Requires cool winter dry climate; sensitive to excess moisture and soil salinity.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Madhya Pradesh (No. 1 state), Maharashtra, Rajasthan, UP, Karnataka (Kalaburagi, Vijayapura, Bidar), AP, Gujarat.
+• Recommended Varieties: Desi: JG-11, JAKI-9218, Digvijay, RVG-202. Kabuli: KAK-2, JGK-1, MNK-1 (for Karnataka). Yield: 18–28 q/ha.
 
-Recommended Chickpea (Gram / Chana) Varieties:
-• Desi Chickpea Varieties: JG-11 (most popular variety in South India), JG-16, JAKI-9218, Digvijay, Vijay, RVG-202, BMN-60. Yield: 18–25 q/ha.
-• Kabuli Chickpea Varieties (Large Seeded): KAK-2, JGK-1, Vihar, MNK-1 (specially suited for Karnataka), PKV-Kabuli-4. Yield: 20–28 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Rabi Dryland Vertisols & Limited Irrigation ecosystems.
+• Total Water Requirement: Approximately 250–300 mm total water over the crop cycle (1 to 2 irrigations).
+• 1. Initial Phase (Germination & Seedling Phase: 0–20 Days After Sowing - DAS):
+  - Water Frequency: Sown in conserved soil moisture after monsoons. Avoid early heavy watering.
+• 2. Middle Phase (Branching & Pre-Flowering: 20–60 DAS):
+  - Water Frequency: One light irrigation at pre-flowering stage (45 DAS).
+  - Water-Critical Sub-Stage: Pre-Flowering Stage (45–50 DAS) is the SINGLE most water-critical stage. Note: Avoid watering during peak flowering (causes flower drop).
+• 3. Final Phase (Pod Development: 60–90 DAS):
+  - Water Frequency: One light irrigation at early pod filling (75 DAS) if soil is dry.
+  - Stop Irrigation Timing: STOP all irrigation 20 days before harvest when pods turn straw yellow.
 
-Sowing Seasons & Seed Rate for Chickpea (Gram / Chana):
-• Rabi Season: Optimum sowing window October 15 to November 15. Seed rate: Desi Gram: 65–75 kg/ha (30 cm x 10 cm spacing). Kabuli Gram: 90–100 kg/ha (37.5 cm x 10 cm spacing).
-• Seed Treatment: Trichoderma viride @ 4 g/kg seed + Rhizobium culture @ 200 g/ha + PSB culture @ 200 g/ha before sowing to prevent root rot and wilt.
+Fertilizer Requirement by Phase:
+• Rainfed Chickpea Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 20 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Sulfur.
+  - 1. Basal Dose (At Sowing): Apply 100% N, P, K, and S at sowing. Pulse root nodules fix atmospheric nitrogen.
+  - 2. Top-Dressing / Middle Phase: Foliar spray of 2% DAP or 1% 19-19-19 at pre-flowering stage (45 DAS).
+  - 3. Final Phase: None needed.
 
-Fertilizer Recommendations for Chickpea (Gram / Chana) (NPK per Hectare):
-• Rabi Rainfed Chickpea: 20 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Elemental Sulfur per hectare.
-  - Basal Application: Apply 100% N, P, K, and S at sowing. Chickpea is a pulse crop that fixes atmospheric nitrogen through root nodules; excess N suppresses nodulation.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 100–115 days (approximately 3.5 months) from sowing to harvest.
 
-Critical Irrigation & Growth Stages for Chickpea (Gram / Chana):
-1. Germination & Seedling Establishment: 0–15 Days After Sowing (DAS).
-2. Branching & Nipping Phase: 30–40 DAS (nipping shoot tips at 35 DAS forces lateral branching and pod setting).
-3. Pre-Flowering Stage: 45–50 DAS (critical moisture stage — one irrigation if dry).
-4. Pod Development & Grain Filling: 70–85 DAS (avoid heavy watering during peak flowering — causes flower drop).
-5. Maturity & Harvest: 100–115 DAS (plants turn dry straw yellow).
+Harvesting Details:
+• Signs of Maturity: Leaves turn yellow and drop off; pods turn dry straw yellow; seeds rattle inside pods when shaken.
+• Harvesting Method: Cut plants at ground level with sickles or uproot manually.
+• Post-Harvest Handling: Field dry for 3–5 days; thresh by threshing machine or tractor rolling; dry seeds to 10% moisture.
+• Expected Yield: Desi Chickpea: 18–25 quintals/ha (7–10 q/acre). Kabuli Chickpea: 20–28 quintals/ha (8–11 q/acre).
 
-Pest & Disease Management for Chickpea (Gram / Chana):
-• Gram Pod Borer (Helicoverpa armigera): Install Pheromone traps @ 5/acre at 45 DAS. Spray Chlorantraniliprole 18.5 SC @ 0.3 ml/litre or Indoxacarb 14.5 SC @ 0.5 ml/litre or Emamectin benzoate 5 SG @ 0.4 g/litre at 50% flowering.
-• Fusarium Wilt (Fusarium oxysporum f. sp. ciceris): Seed treatment with Carbendazim 12% + Mancozeb 63% WP (Saaf) @ 2 g/kg seed; use wilt-resistant varieties JG-11 or JAKI-9218.
-• Dry Root Rot (Rhizoctonia bataticola): Soil drenching or seed treatment with Trichoderma viride @ 5 g/kg seed.
+Growing Season:
+• Rabi Season (Winter Crop): Sowing window October 15 to November 15 across South India & Central India.

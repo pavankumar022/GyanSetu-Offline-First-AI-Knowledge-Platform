@@ -1,39 +1,47 @@
-Wheat Cultivation — National Advisory (All Wheat-Growing States of India)
-Source: ICAR-Indian Institute of Wheat and Barley Research (IIWBR), Karnal; NFSM-Wheat
+Wheat Cultivation Guidelines — National & Regional Advisory
+Source: ICAR-Indian Institute of Wheat and Barley Research (IIWBR), Karnal; UAS Dharwad & PAU Ludhiana
 
-Major Wheat-Growing States (Rabi Crop — Kharif Season NOT suitable for wheat):
-• Top Producers (Area/Production): Uttar Pradesh, Punjab, Haryana, Madhya Pradesh, Rajasthan, Bihar, Gujarat, Uttarakhand.
-• Secondary Producers: Himachal Pradesh, Jammu & Kashmir, Maharashtra (Northern dry zones), Karnataka (Zones 3 & 8 only).
-• NOT Recommended for Wheat Cultivation: Coastal regions (Mumbai, Goa, Kerala, Tamil Nadu coast) — high humidity and warm winters prevent proper vernalization.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Indo-Gangetic Plains (Punjab, Haryana, UP, Bihar), Central Zone (MP, Rajasthan), Peninsular Zone (Karnataka - Belagavi, Dharwad, Bagalkot, Vijayapura, Hassan).
+• Recommended Varieties:
+  - Irrigated Timely Sown: HD-2967, HD-3086 (Pusa Gautami), DBW-187 (Karan Vandana), PBW-550, UAS-304 (Karnataka). Yield: 55–65 q/ha.
+  - Rainfed / Limited Water: HI-1544, C-306, MACS-6222, UAS-428 (Durum wheat for South India). Yield: 25–35 q/ha.
 
-Recommended Varieties by State/Zone:
-• Punjab / Haryana (Irrigated — High Input):
-  - PBW-1 Chapati (HD-2967), DBW-222 (WB02), HD-3086, WH-1105. Sowing: Nov 1–20. Yield: 55–65 q/ha.
-• Uttar Pradesh (Western — Irrigated):
-  - HD-2967, GW-496, DBW-187, WH-711. Sowing: Oct 25 – Nov 20. Yield: 50–60 q/ha.
-• Uttar Pradesh (Eastern — Rainfed / Late-sown):
-  - HI-8498, NW-1014, K-307, Raj-4120. Sowing: Dec 1–20 (late-sown tolerant varieties). Yield: 30–40 q/ha.
-• Madhya Pradesh / Rajasthan (Central Zone):
-  - HI-8498 (Durum/Hard wheat), GW-322, JW-3288, MP-3336. Sowing: Nov 10–Dec 5. Yield: 35–50 q/ha.
-• Karnataka (Northern Dry Zones 3 & 8 — Dharwad, Belagavi, Bagalkot, Vijayapura, Gadag):
-  - Irrigated: UAS-304, DWR-162, GW-322, DWR-2006. Rainfed: DWR-1006, Bijaga Yellow. Sowing: Oct 15 – Nov 15. Yield: 30–45 q/ha.
-• Bihar / Jharkhand (Eastern Zone):
-  - HD-2781, PBW-343, K-0307, DBW-14. Sowing: Nov 10–30. Yield: 35–45 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Irrigated (Indo-Gangetic Plains) and Rainfed / Limited Irrigation (Peninsular India).
+• Total Water Requirement: Approximately 450–500 mm total water over the crop cycle (requires 4 to 6 irrigations).
+• 1. Initial Phase (Germination & Seedling Establishment: 0–25 Days After Sowing - DAS):
+  - Water Frequency: Pre-sowing irrigation (Palewa) followed by first crop irrigation at 20–25 DAS.
+  - Water-Critical Sub-Stage: Crown Root Initiation (CRI) at 20–25 DAS is the SINGLE MOST CRITICAL stage. Water stress at CRI reduces root establishment and tillering, causing up to 30% yield loss.
+• 2. Middle Phase (Tillering, Jointing & Flowering: 25–85 DAS):
+  - Water Frequency: Irrigate every 15–20 days at key phenological stages (Tillering at 40–45 DAS, Jointing at 60–65 DAS, Flowering at 80–85 DAS).
+  - Sensitivity: Water stress at flowering causes poor spikelet pollination and grain abortion.
+• 3. Final Phase (Milking & Grain Dough Maturity: 85–120 DAS):
+  - Water Frequency: Irrigate at Milking Stage (95–100 DAS) and Dough Stage (105–110 DAS) under warm weather.
+  - Stop Irrigation Timing: STOP all irrigation 10–15 days before harvest when grain turns firm and turns golden yellow.
 
-Fertilizer Recommendations (NPK — kg/ha):
-• Irrigated (5–6 waterings): 120 kg N : 60 kg P2O5 : 40 kg K2O. Apply 50% N at sowing + 50% N at CRI (25 days).
-• Rainfed / Limited Irrigation (1–2 waterings): 60 kg N : 30 kg P2O5 : 20 kg K2O — full dose as basal.
-• Late-sown (December): 80 kg N : 40 kg P2O5 : 30 kg K2O with top-dressing post-CRI.
+Fertilizer Requirement by Phase:
+• Irrigated Wheat Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 120 kg Nitrogen (N) : 60 kg Phosphorus (P2O5) : 40 kg Potassium (K2O).
+  - 1. Basal Dose (At Sowing): Apply 50% Nitrogen (60 kg N) + 100% Phosphorus (60 kg P2O5) + 100% Potassium (40 kg K2O) drilled 2–3 cm below seed depth.
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (First Irrigation / CRI Stage - 20 to 25 DAS): Top-dress 25% Nitrogen (30 kg N).
+    * Round 2 (Second Irrigation / Jointing Stage - 40 to 45 DAS): Top-dress remaining 25% Nitrogen (30 kg N).
+  - 3. Final Phase: Spray 2% Urea solution or 1% Potassium Nitrate (13-0-45) at heading stage (75 DAS) if flag leaf shows early yellowing.
+• Rainfed Wheat Fertilizer Schedule:
+  - Total Dose: 60 kg Nitrogen (N) : 30 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) as 100% basal application at sowing.
 
-Critical Irrigation Stages (Priority order if only limited water available):
-1. Crown Root Initiation (CRI): 20–25 DAS — MOST CRITICAL, skip only in emergency.
-2. Tillering: 40–45 DAS.
-3. Jointing / Stem Elongation: 60–65 DAS.
-4. Boot Stage / Heading: 80–85 DAS.
-5. Dough / Grain Milking: 100–105 DAS.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 110–135 days (approximately 3.5 to 4.5 months) from sowing to harvest.
+• Variety Variance: North India Irrigated: 130–140 days; South India / Karnataka Rabi Wheat: 105–115 days due to warmer winter temperatures.
 
-Pest & Disease Management:
-• Wheat Rust (Brown/Yellow/Black): Spray Propiconazole 25 EC @ 1 ml/L or Tebuconazole 250 EW @ 1 ml/L at first sign. Repeat at 15-day interval.
-• Aphids: Apply Thiamethoxam 25 WG @ 100g/ha or Imidacloprid 17.8 SL @ 150 ml/ha when >15 aphids/tiller appear.
-• Termites / Root Grubs: Seed treatment with Chlorpyriphos 20 EC @ 4 ml/kg seed before sowing.
-• Yellow Mosaic Virus (Barley Yellow Dwarf): Use certified disease-free seed; control aphid vector as above.
+Harvesting Details:
+• Signs of Maturity: Crop stems and spike heads turn golden yellow; straw becomes dry and brittle; grain moisture drops below 14% (grain hardens and resists denting by thumbnail).
+• Harvesting Method: Manual cutting with sickles close to ground level or mechanical Combine Harvester.
+• Post-Harvest Handling: Sun-dry harvested crop on threshing floor for 3–4 days; thresh and dry grain to <12% moisture before storage in airtight bins.
+• Expected Yield: Irrigated Wheat: 50–60 quintals/ha (20–24 q/acre). Rainfed Wheat: 25–35 quintals/ha (10–14 q/acre).
+
+Growing Season:
+• Rabi Season (Winter Crop):
+  - Indo-Gangetic Plains (Punjab, Haryana, UP): Sowing window November 1 to November 20.
+  - Peninsular India (Karnataka, MP, Maharashtra): Sowing window October 15 to November 10 (earlier sowing takes advantage of post-monsoon soil moisture).

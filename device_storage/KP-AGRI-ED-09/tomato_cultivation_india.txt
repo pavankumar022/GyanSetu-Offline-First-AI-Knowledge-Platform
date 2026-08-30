@@ -1,32 +1,25 @@
-Tomato Cultivation Guidelines — National & Regional Advisory
-Source: ICAR-Indian Institute of Horticultural Research (IIHR), Bengaluru; TNAU Coimbatore & IARI New Delhi
+Tomato Cultivation Guidelines — National & Karnataka Advisory
+Source: ICAR-IIHR Bengaluru; IARI New Delhi
 
-Suitable Agro-Climatic Zones for Tomato:
-• Top Producing States: Andhra Pradesh (No. 1 tomato producer), Madhya Pradesh, Karnataka (Kolar — tomato hub of Karnataka, Chikkaballapur, Belagavi), Odisha, Gujarat, Maharashtra, and Tamil Nadu.
-• Soil & Climate: Well-drained sandy loams to red loamy soils rich in organic matter with pH 6.0–7.0. Optimum growth temperature 21–24°C; sensitive to frost and waterlogging.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Karnataka (Kolar No. 1, Chikkaballapur), AP, MP, Maharashtra, WB.
+• Recommended Varieties: Arka Rakshak, Arka Samrat, Pusa Ruby, PKM-1, Heemsena. Yield: 50–75 tonnes/ha.
 
-Recommended Tomato Varieties & Hybrids:
-• IIHR Arka Varieties (TLCV & Bacterial Wilt Resistant): Arka Rakshak (triple disease resistant hybrid — TLCV, ToMV, Bacterial Wilt), Arka Samrat, Arka Vikas, Arka Abhed. Yield: 75–100 tonnes/ha.
-• Commercial Hybrids: US-440, Syngenta Abhinav, Heemonso, Pusa Ruby, Pusa-120. Yield: 60–80 tonnes/ha.
+Water Requirement by Phase:
+• Category: Irrigated Drip / Staking. Total Water: 400–600 mm.
+• 1. Initial (0–20 DAT): Drip irrigate every 2–3 days.
+• 2. Middle (20–60 DAT): Flowering & Fruit Development (30–50 DAT) is the SINGLE most water-critical stage. Water stress causes blossom end rot and fruit cracking.
+• 3. Final (60–100 DAT): Irrigate every 4–5 days during picking. Stop 7 days before final clearing.
 
-Sowing, Nursery & Transplanting for Tomato:
-• Planting Seasons: Autumn-Winter (sowing Sept–Oct); Spring-Summer (sowing Jan–Feb); Kharif (sowing June–July).
-• Nursery & Seed Rate: Hybrid tomato seed rate: 100–125 g/ha. Open pollinated varieties: 250 g/ha. Transplant 25–30 day old nursery seedlings at 60 cm x 45 cm spacing (determinate) or 90 cm x 45 cm (indeterminate staked).
+Fertilizer Requirement by Phase:
+• Total Dose: 180 kg N : 120 kg P2O5 : 150 kg K2O. Basal: 50% N + 100% P + 50% K. Top-dress remaining 50% N and K in 3 split fertigation rounds at 20, 40, 60 DAT.
 
-Fertilizer Recommendations for Tomato (NPK per Hectare):
-• Irrigated Hybrid Tomato: 180 kg Nitrogen (N) : 120 kg Phosphorus (P2O5) : 150 kg Potassium (K2O).
-  - Basal Application: 50% Nitrogen + 100% Phosphorus + 50% Potassium at transplanting.
-  - 30 Days After Transplanting (DAT): 25% Nitrogen + 25% Potassium.
-  - 45 DAT (Flowering & Fruit Set): 25% Nitrogen + 25% Potassium.
-  - Calcium & Boron Foliar Spray: Spray Calcium Nitrate @ 5 g/litre + Boron @ 1 g/litre at fruit development to prevent Blossom End Rot (BER) and fruit cracking.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 110–130 days (approximately 3.5 to 4 months) from transplanting to final harvest.
 
-Critical Irrigation & Growth Stages for Tomato:
-1. Nursery & Transplanting Phase: 0–25 days.
-2. Vegetative Growth & Staking: 25–40 DAT (staking indeterminate varieties with eucalyptus poles/twine prevents soil rot).
-3. Flowering & Fruit Set Stage: 45–60 DAT (MOST CRITICAL water requirement stage; uneven watering causes fruit cracking).
-4. Fruit Development & Harvesting: 70–120 DAT (pick green mature for long distance transport; red ripe for local market).
+Harvesting Details:
+• Maturity: Breaker stage (pinkish red at blossom end) for distant transport; full red for local market.
+• Expected Yield: 50–75 tonnes/ha (20–30 t/acre).
 
-Pest & Disease Management for Tomato:
-• Tomato Pinworm (Tuta absoluta) & Fruit Borer (Helicoverpa armigera): Install Pheromone traps @ 8/acre. Spray Chlorantraniliprole 18.5 SC @ 0.3 ml/litre or Spinotoram 11.7 SC @ 0.8 ml/litre.
-• Tomato Leaf Curl Virus (TLCV — Whitefly Vector): Control whitefly vector by installing yellow sticky traps @ 20/acre; spray Cyantraniliprole 10.26 OD @ 1.8 ml/litre; grow resistant hybrid Arka Rakshak.
-• Early Blight (Alternaria solani) & Late Blight: Spray Mancozeb 75 WP @ 2.5 g/litre or Azoxystrobin @ 1 ml/litre.
+Growing Season:
+• Kharif: June–July; Rabi: Oct–Nov; Summer: Jan–Feb.

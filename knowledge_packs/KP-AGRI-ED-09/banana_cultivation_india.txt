@@ -1,37 +1,28 @@
 Banana Cultivation Guidelines — National & Regional Advisory
-Source: ICAR-National Research Centre for Banana (NRCB), Tiruchirappalli; IIHR Bengaluru & TNAU Coimbatore
+Source: ICAR-National Research Centre for Banana (NRCB), Tiruchirappalli; IIHR Bengaluru
 
-Suitable Agro-Climatic Zones for Banana:
-• Top Producing States: Andhra Pradesh (No. 1 banana producing state in India), Maharashtra (Jalgaon — "Banana City"), Tamil Nadu, Gujarat, Karnataka (Mysuru, Nanjangud, Mandya, Shimoga), Uttar Pradesh, and Kerala.
-• Soil & Climate: Well-drained rich clay loam or alluvial soils with pH 6.5–7.5 and high organic content. Requires warm tropical climate (26–35°C); highly sensitive to frost, wind damage, and waterlogging.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: AP, Maharashtra (Jalgaon hub), Tamil Nadu, Karnataka (Mysuru, Nanjangud, Hassan).
+• Recommended Varieties: Grand Naine (G9 - Tissue culture), Robusta, Dwarf Cavendish, Elakki (Yelakki Rasabale). Yield: 60–80 tonnes/ha.
 
-Recommended Banana Varieties:
-• Grand Naine (G9 — Tissue Culture, export quality, uniform bunch): Most popular commercial variety across India. Bunch weight: 25–35 kg. Yield: 70–90 tonnes/ha.
-• Regional Specialty Varieties:
-  - Nanjangud Rasabale (GI Tagged specialty of Karnataka — aromatic dessert banana).
-  - Robusta / Harichhal (Cavendish group), Elakki / Yelakki Bale (Ney Poovan — small aromatic sweet banana popular in Karnataka & Tamil Nadu), Red Banana, Nendran (Kerala chips banana), Poovan.
+Water Requirement by Phase:
+• Crop Category: Suited to High-Water Drip / Basin Irrigated orchards.
+• Total Water Requirement: Approximately 1,800–2,000 mm total water over the 11–12 month crop cycle.
+• 1. Initial Phase (Establishment: 0–3 Months After Planting - MAP): Drip 10–15 litres/plant/day every 2 days.
+• 2. Middle Phase (Grand Vegetative Growth & Bunch Emergence: 4–8 MAP): Drip 20–25 litres/plant/day. Flowering / Bunch Emergence Stage (6–7 MAP) is the SINGLE most water-critical stage.
+• 3. Final Phase (Bunch Development & Maturity: 9–11 MAP): Drip 15–20 L/day. STOP irrigation 10 days before harvesting bunch.
 
-Planting Season, Spacing & Propagation for Banana:
-• Planting Windows: June–July (Kharif monsoon) or October–November. Tissue culture plantlets or sword suckers (weighted 1.5–2.0 kg).
-• Spacing & Pit Size:
-  - Grand Naine (G9): 1.8 m x 1.5 m (spacing for 3,700 plants/ha) or high density planting 1.5 m x 1.5 m.
-  - Yelakki / Robusta: 2.0 m x 2.0 m. Pit size: 60 cm x 60 cm x 60 cm filled with topsoil + 10 kg FYM + 250 g Neem cake.
+Fertilizer Requirement by Phase:
+• Irrigated Banana Fertilizer Schedule (NPK per Plant / Year):
+  - Total Dose: 200 g Nitrogen (N) : 50 g Phosphorus (P2O5) : 300 g Potassium (K2O) + 10 kg FYM per plant.
+  - Split in 6 equal bi-monthly fertigation doses from 2nd month to 8th month.
 
-Fertilizer Recommendations for Banana (NPK per Plant / per Hectare):
-• NPK Dose per Plant: 200 g Nitrogen (N) : 50 g Phosphorus (P2O5) : 300 g Potassium (K2O).
-  - Nitrogen: Apply N in 4 split doses (at 30, 60, 90, and 120 days after planting).
-  - Phosphorus: Apply 100% P at planting.
-  - Potassium: Apply K in 3 split doses (at 60, 120, and 180 days — shoot emergence/bunch formation stage).
-  - Micronutrient Spray: Spray NRCB Banana Special / IIHR Banana Special @ 5 g/litre water at 3rd, 5th, and 7th months to boost bunch weight.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 330–365 days (approximately 11 to 12 months) from planting to harvest.
 
-Critical Irrigation & Growth Stages for Banana:
-1. Vegetative Growth Phase: 0–4 months (requires 25–30 litres water/plant/day).
-2. Flower Inflorescence Initiation (Shooting): 7–9 months (MOST CRITICAL water requirement — 40 litres water/plant/day; avoid water deficit).
-3. Bunch Development & Fruit Filling: 9–11 months (propping / staking with bamboo poles to prevent leaning under bunch weight).
-4. Harvest: 11–13 months from planting (harvest when fingers turn plump and angles disappear).
+Harvesting Details:
+• Signs of Maturity: Fruit angles become rounded; top leaves yellow; fingers turn bright green and plump.
+• Expected Yield: Grand Naine: 60–80 tonnes/ha (25–32 t/acre). Yelakki: 35–45 tonnes/ha.
 
-Pest & Disease Management for Banana:
-• Panama Wilt (Fusarium oxysporum f. sp. cubense — TR4 / Tropical Race 4): Drench soil with Carbendazim 50 WP @ 2 g/litre; use disease-free tissue culture G9 plantlets.
-• Sigatoka Leaf Spot (Mycosphaerella musicola): Spray Propiconazole 25 EC @ 1 ml/litre + Mineral Oil @ 1% or Chlorothalonil @ 2 g/litre at initial leaf spot symptoms.
-• Banana Pseudostem Borer & Rhizome Weevil: Application of Neem cake @ 250 g/plant; inject Chlorpyriphos 20 EC @ 2 ml/litre into pseudostem.
-• Banana Bunchy Top Virus (BBTV): Eradicate vector banana aphid (Pentalonia nigronervosa) by spraying Imidacloprid 17.8 SL @ 0.3 ml/litre.
+Growing Season:
+• Planting Window: June to August (monsoon onset) or October–November.

@@ -1,40 +1,45 @@
-Maize (Corn) Cultivation Guidelines — Karnataka & All-India Advisory
-Source: ICAR-Indian Institute of Maize Research (IIMR), Ludhiana; University of Agricultural Sciences (UAS), Dharwad & Bengaluru
+Maize (Corn) Cultivation Guidelines — Karnataka & National Advisory
+Source: ICAR-Indian Institute of Maize Research (IIMR), Ludhiana; UAS Dharwad & UAS Bengaluru
 
-Suitable Agro-Climatic Zones for Maize (Corn):
-• Karnataka Zones: Zone 3 (Northern Dry Zone), Zone 8 (Northern Transition Zone), Zone 4 (Central Dry Zone), and Zone 5 (Eastern Dry Zone). Key districts: Davanagere (Maize bowl of Karnataka), Haveri, Belagavi, Chamarajanagar, Shimoga, Chitradurga, and Bellary.
-• National Scope: Karnataka is the No. 1 maize-producing state in India, followed by Madhya Pradesh, Maharashtra, Bihar, Telangana, Andhra Pradesh, and Rajasthan.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Northern Transition Zone (Belagavi, Dharwad), Northern Dry Zone (Haveri, Davanagere - Maize hub of Karnataka), Southern Transition Zone (Shivamogga, Hassan).
+• Recommended Varieties & Hybrids:
+  - High Yielding Hybrids: MAH-14-138, Nithyashree (NAH-2049), Dekalb 9081, Pioneer 3396, COH(M)-6, CP-818. Yield: 65–85 q/ha grain.
 
-Recommended Maize (Corn) Hybrids & Varieties:
-• Irrigated Hybrids: MAH-14-138, MAH-14-5, Nithyashree (NAH-1137), Deccan-103, CP-818, Pioneer 30V92, Bio 9681, NK-6240. Yield: 65–85 q/ha.
-• Rainfed / Dryland Hybrids: MAH-14-138, Amber Popcorn, Sweet Corn hybrid Priya, Bio-9637. Yield: 45–60 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Irrigated and Rainfed Kharif/Rabi ecosystems. Extremely sensitive to waterlogging.
+• Total Water Requirement: Approximately 500–600 mm total water over the crop cycle.
+• 1. Initial Phase (Germination & Seedling Phase: 0–20 Days After Sowing - DAS):
+  - Water Frequency: Light irrigation immediately after sowing; repeat every 6–8 days in dry weather.
+  - Purpose & Sensitivity: Waterlogging at seedling stage destroys root respiration and causes seedling mortality. Provide drainage furrows.
+• 2. Middle Phase (Knee-High, Flowering, Tasseling & Silking Stage: 20–70 DAS):
+  - Water Frequency: Irrigate every 8–10 days in rainless spells.
+  - Water-Critical Sub-Stage: Flowering, Tasseling & Silking Stage (45–60 DAS) is the SINGLE most water-critical stage for irrigation. Moisture stress during flowering and silking causes poor pollination, tassel drying, and unfilled cob tips (up to 50% yield drop).
+• 3. Final Phase (Grain Dough & Cob Maturity: 70–110 DAS):
+  - Water Frequency: Irrigate at Early Dough stage (75–80 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 15 days before harvest when black layer forms at the base of kernel grains.
 
-Sowing Period & Seasons for Maize (Corn):
-• Kharif (Monsoon): Best sowing window is June 15 to July 15 (with onset of monsoon rains). Seed rate: 20 kg/ha for hybrid maize, 8 kg/ha for sweet corn.
-• Rabi (Irrigated Winter): October 15 to November 30.
-• Spring / Summer (Irrigated): January 15 to February 28.
+Fertilizer Requirement by Phase:
+• Irrigated Maize Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 150 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 40 kg Potassium (K2O) + 25 kg Zinc Sulfate.
+  - 1. Basal Dose (At Sowing): Apply 33% Nitrogen (50 kg N) + 100% Phosphorus (75 kg P2O5) + 100% Potassium (40 kg K2O) + 25 kg ZnSO4 in band 5 cm away from seed row.
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (Knee-High Stage - 25 to 30 DAS): Top-dress 33% Nitrogen (50 kg N).
+    * Round 2 (Tasseling / Pre-Flowering Stage - 45 to 50 DAS): Top-dress remaining 33% Nitrogen (50 kg N).
+  - 3. Final Phase: None needed during final maturity phase.
+• Rainfed Maize Fertilizer Schedule:
+  - Total Dose: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 30 kg Potassium (K2O). Apply 50% N + full P & K basal; top-dress 50% N at knee-high stage after rain.
 
-Soil & Land Preparation for Maize (Corn):
-• Soil Type: Well-drained fertile red loamy soils, medium to deep black cotton soils (Vertisols) with pH 6.0–7.5.
-• Land Prep: Deep ploughing followed by 2 cross-harrowings to obtain fine tilth. Construct ridges and furrows at 60 cm spacing. Sensitive to waterlogging — establish 15 cm deep drainage furrows every 4 rows.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 100–120 days (approximately 3.5 to 4 months) from sowing to harvest.
+• Variety Variance: Early hybrids: 90–100 days; Full season commercial hybrids: 110–120 days.
 
-Fertilizer Recommendations for Maize (Corn) (NPK per Hectare):
-• Irrigated Hybrid Maize: 150 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 40 kg Potassium (K2O).
-  - Basal Dose: Apply 25% Nitrogen + full Phosphorus + full Potassium at time of sowing.
-  - Knee-High Stage Top-Dressing (25–30 Days): Apply 50% Nitrogen.
-  - Tasseling Stage Top-Dressing (45–50 Days): Apply remaining 25% Nitrogen.
-  - Micronutrients: Apply Zinc Sulfate @ 25 kg/ha as basal application to prevent White Bud deficiency in maize.
-• Rainfed Maize (Corn): 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 25 kg Potassium (K2O) per hectare.
+Harvesting Details:
+• Signs of Maturity: Husk leaves turn dry and bleached white; maize kernels become hard and glossy; black layer forms at kernel attachment point to cob.
+• Harvesting Method: Manual de-husking and cob snapping or Combine Harvester with corn header.
+• Post-Harvest Handling: Sun-dry harvested cobs for 4–5 days; shell cobs using power sheller and dry kernels to 12% moisture.
+• Expected Yield: Irrigated Maize: 65–85 quintals/ha (26–34 q/acre). Rainfed Maize: 40–55 quintals/ha (16–22 q/acre).
 
-Critical Irrigation & Growth Stages for Maize (Corn):
-1. Germination & Seedling Establishment: 0–15 Days After Sowing (DAS).
-2. Knee-High Stage: 25–30 DAS (critical for first nitrogen top-dressing).
-3. Tasseling Stage (Male Flowering): 45–50 DAS (MOST CRITICAL for moisture — water stress at tasseling reduces yield up to 40%).
-4. Silking Stage (Female Flowering): 55–60 DAS.
-5. Grain Dough & Filling Stage: 75–80 DAS (maintain moist soil).
-6. Physiological Maturity & Harvest: 100–115 DAS (husks turn dry straw yellow).
-
-Pest & Disease Management for Maize (Corn):
-• Fall Armyworm (FAW - Spodoptera frugiperda): Spray Emamectin benzoate 5 SG @ 0.4 g/litre or Chlorantraniliprole 18.5 SC @ 0.4 ml/litre into leaf whorls at knee-high stage (20–25 DAS). Repeat after 15 days if whorl damage exceeds 10%.
-• Turcicum Leaf Blight: Spray Mancozeb 75 WP @ 2.5 g/litre or Azoxystrobin 23 SC @ 1 ml/litre at initial leaf spot symptoms.
-• Maize Stem Borer (Chilo partellus): Apply Carbofuran 3G granules @ 3 kg/acre inside leaf whorls at 20 DAS.
+Growing Season:
+• Kharif Season (Monsoon): Sowing window June 15 to July 15.
+• Rabi Season (Irrigated): Sowing window October 15 to November 20 (higher yield potential due to cool nights and clear sunshine).

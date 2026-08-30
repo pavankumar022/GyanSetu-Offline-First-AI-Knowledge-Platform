@@ -1,31 +1,39 @@
 Mustard & Rapeseed Cultivation Guidelines — National Advisory
-Source: ICAR-Directorate of Rapeseed-Mustard Research (DRMR), Bharatpur; SKRAU Bikaner & PAU Ludhiana
+Source: ICAR-Directorate of Rapeseed-Mustard Research (DRMR), Bharatpur; PAU & CCSHAU
 
-Suitable Agro-Climatic Zones for Mustard & Rapeseed:
-• Top Producing States: Rajasthan (No. 1 mustard producing state in India, accounting for >45% production), Madhya Pradesh, Haryana, Uttar Pradesh, West Bengal, Punjab, and Gujarat.
-• Soil & Climate: Well-drained sandy loam to medium clay loam soils with pH 6.5–8.0. Requires cool dry winter climate (Rabi crop); sensitive to frost during flowering.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Rajasthan (No. 1 state), MP, Haryana, UP, West Bengal, Assam, Punjab, Gujarat.
+• Recommended Varieties: Pusa Mustard-25 (NPJ-112), Pusa Mustard-30, RH-749, Giriraj (DRMRIJ-31), NRCDR-2. Yield: 20–28 q/ha.
 
-Recommended Mustard & Rapeseed Varieties:
-• Indian Mustard (Rai) Varieties: Pusa Mustard-25 (NPJ-112), Pusa Mustard-28, DRMRIJ-31 (Giriraj), RH-749, NRCDR-02, PM-30 (low erucic acid). Yield: 20–28 q/ha seed with 38–42% oil content.
-• Yellow Sarson / Toria Varieties: NRCYS-05, YSH-04, PT-303, T-9. Yield: 15–22 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Rabi & Irrigated Semi-Arid ecosystems (low water requirement).
+• Total Water Requirement: Approximately 250–350 mm total water over the crop cycle (requires 2 to 3 irrigations).
+• 1. Initial Phase (Germination & Rosette Stage: 0–30 Days After Sowing - DAS):
+  - Water Frequency: Pre-sowing irrigation followed by first irrigation at 30–35 DAS.
+  - Water-Critical Sub-Stage: Flowering / Rosette Stage (30–35 DAS) is the SINGLE most water-critical stage. First irrigation at 30 DAS is mandatory for branch initiation.
+• 2. Middle Phase (Flowering & Pod Formation: 30–75 DAS):
+  - Water Frequency: Second irrigation at pod filling stage (60–65 DAS).
+• 3. Final Phase (Pod Maturation: 75–110 DAS):
+  - Water Frequency: Rainfed crop requires no late watering.
+  - Stop Irrigation Timing: STOP all irrigation 20 days before harvest when siliquae pods turn yellow.
 
-Sowing Seasons & Seed Rate for Mustard & Rapeseed:
-• Rabi Season: Optimum sowing window October 1 to October 25 (sowing when temperature drops to 25–28°C). Seed rate: 4–5 kg seed/ha (45 cm x 15 cm spacing; 2–3 cm depth).
-• Seed Treatment: Trichoderma viride @ 6 g/kg seed or Metalaxyl 35 SD @ 6 g/kg seed to prevent seedling blight and white rust.
+Fertilizer Requirement by Phase:
+• Irrigated Mustard Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 40 kg Potassium (K2O) + 40 kg Elemental Sulfur (Gypsum @ 250 kg/ha).
+  - 1. Basal Dose (At Sowing): Apply 50% Nitrogen (40 kg N) + 100% Phosphorus (40 kg P2O5) + 100% Potassium (40 kg K2O) + 100% Sulfur.
+  - 2. Top-Dressing / Middle Phase: Top-dress remaining 50% Nitrogen (40 kg N) at first irrigation (30–35 DAS).
+  - 3. Final Phase: None needed.
+• Rainfed Mustard Fertilizer Schedule:
+  - Total Dose: 40 kg N : 20 kg P2O5 : 20 kg K2O + 20 kg S as 100% basal dose.
 
-Fertilizer Recommendations for Mustard & Rapeseed (NPK per Hectare):
-• Irrigated Mustard: 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 40 kg Potassium (K2O) + 40 kg Elemental Sulfur per hectare.
-  - Basal Application: Apply 50% Nitrogen + full Phosphorus + full Potassium + full Sulfur at sowing. Sulfur is MOST CRITICAL for oil synthesis in mustard.
-  - Top-Dressing (30–35 Days After Sowing): Apply remaining 50% Nitrogen at first irrigation (rosette stage).
-• Rainfed Mustard: 40 kg Nitrogen (N) : 20 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Elemental Sulfur per hectare.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 105–125 days (approximately 3.5 to 4 months) from sowing to harvest.
 
-Critical Irrigation & Growth Stages for Mustard & Rapeseed:
-1. Germination & Rosette Stage: 0–25 Days After Sowing (DAS).
-2. Stem Elongation / Branching Stage: 30–35 DAS (MOST CRITICAL for first irrigation).
-3. Flowering & Siliqua (Pod) Formation Stage: 50–65 DAS (second irrigation stage).
-4. Pod Filling & Maturity: 80–100 DAS (harvest when 75% pods turn golden yellow).
+Harvesting Details:
+• Signs of Maturity: 75% of pods (siliquae) turn yellowish-brown; seeds turn hard and brown/black.
+• Harvesting Method: Cut plants close to ground with sickles early morning to avoid seed shattering.
+• Post-Harvest Handling: Stack harvested plants on threshing floor to dry for 4–5 days; thresh by beating or thresher; dry seeds to 8% moisture.
+• Expected Yield: Irrigated Mustard: 20–28 quintals/ha (8–11 q/acre). Rainfed Mustard: 12–16 quintals/ha (5–7 q/acre).
 
-Pest & Disease Management for Mustard & Rapeseed:
-• Mustard Aphid (Lipaphis erysimi — Major Pest): Spray Dimethoate 30 EC @ 1.7 ml/litre water or Imidacloprid 17.8 SL @ 0.3 ml/litre or Thiamethoxam 25 WG @ 0.2 g/litre when aphid population exceeds 20/plant at flowering.
-• White Rust (Albugo candida) & Alternaria Blight: Spray Mancozeb 75 WP @ 2.5 g/litre or Metalaxyl 8% + Mancozeb 64% WP (Ridomil Gold) @ 2 g/litre at 45 DAS.
-• Painted Bug & Sawfly: Apply Chlorpyriphos 20 EC @ 2 ml/litre at early seedling stage.
+Growing Season:
+• Rabi Season: Sowing window October 1 to October 25 (timely sowing avoids aphid infestation).

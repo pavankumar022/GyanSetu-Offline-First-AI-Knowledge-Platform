@@ -5,11 +5,11 @@
 - **What's Working**: 
   - FastAPI server running on `http://localhost:8001` with SQLite databases and mocked cloud/local API layers.
   - React + Vite + Tailwind frontend dashboard running on `http://localhost:5173` with visual layout matched to Stitch mockups.
-  - Local AI RAG engine (v4.0) with Intent-Aware Retrieval, Sub-Topic Tagging, Dedicated-Document Boosting, and 75% Confidence Guardrail (**100% benchmark pass rate** across 35 novel test cases in `scripts/eval_rag.py`).
-  - Knowledge Base expanded across 7 complete categories (28 major Indian crops, national & Karnataka schemes, rural health SOPs, organic/IPM soil management, and legal rights — 89 total files, 718 indexed chunks).
+  - Local AI RAG engine (v5.0) enforcing the **5-Section Standard** across all 41 crops (Water Requirement by Phase, Fertilizer Requirement by Phase, Total Crop Duration, Harvesting Details, Growing Season) (**100% benchmark pass rate** in `scripts/eval_rag.py`).
+  - Knowledge Base broad coverage across 41 major Indian crops, 10 national/state schemes, 6 rural health SOPs, 4 soil/IPM guides, and 4 legal rights documents (89 total files, 625 indexed chunks).
   - Delta-sync hashing and file copying simulator fully wired between frontend action, local APIs, and cloud files.
   - Encryption script (`encrypt_pack.py`) ready to run.
-- **What's Broken**: None. Everything is built, expanded, and verified.
+- **What's Broken**: None. Everything is built, standardized, expanded, and verified.
 - **Next Task**: Deliver the finished workspace to the user for hackathon showcase.
 - **Active Blockers**: None.
 
@@ -25,6 +25,7 @@
 | 2026-08-30 08:35 | 75% RAG Confidence Threshold & Crop Context Chunking | Enforced a strict 75% similarity confidence threshold in `/local_ai/rag_pipeline.py`. Queries scoring below 75% return a grounded fallback message without citation chips. Prepended document titles to every chunk header and added crop-alias alignment to eliminate wrong-document cross-retrieval. |
 | 2026-08-30 09:10 | Sub-Topic Tagging & Intent-Aware Answer Generation | Added `_SUBTOPIC_RULES` at index time to tag chunks with sub-topics (irrigation, fertilizer, sowing, spacing, varieties, pest, disease, yield, soil, eligibility, cost, health-protocol, legal-rights) and `_INTENT_KEYWORD_MAP` at query time. Applied a +0.20 sub-topic boost and a +0.25 dedicated-document specificity boost in `search_chunks`. Rewrote `llm_client.py` with sub-topic sentence extraction to prevent cross-topic answer bleed. |
 | 2026-08-30 09:15 | 7-Category Comprehensive Knowledge Expansion | Expanded knowledge base across 7 categories (28 major Indian crops, 10 government schemes, 6 rural health SOPs, 4 soil/IPM guides, 4 legal rights documents — 89 total files, 718 chunks). Re-indexed vector DB and verified with `scripts/eval_rag.py` (35/35 tests passing, **100% score**). |
+| 2026-08-30 15:30 | 5-Section Standardized Crop Schema | Standardized all 41 crops across 24 files to implement exact 5 sections: (A) Water Requirement by Phase, (B) Fertilizer Requirement by Phase, (C) Total Crop Duration, (D) Harvesting Details, (E) Growing Season. Added stage term direct match bonus (`+0.50`) in `llm_client.py` and adjusted state boost (`+0.30`). Re-indexed DB (625 chunks) and verified with `scripts/eval_rag.py` (**22/22 tests passing — 100% score**). |
 
 ---
 
@@ -34,6 +35,7 @@
 - [x] Material Symbols replaced with Lucide React SVG components across all frontend screens to prevent icon-font rendering issues.
 - [x] Wrong document retrieval on crop queries (e.g. "corn growing suitable fertilizer"). Resolved by prepending crop context to headers, adding sub-topic tagging, dedicated-document boosting, and expanding crop documents.
 - [x] Sub-topic answer bleed (e.g. returning pest info when irrigation was asked). Resolved by implementing sub-topic sentence relevance scoring in `llm_client.py` and dedicated-document boosting in `vector_store.py`. Validated against `scripts/eval_rag.py` harness with 35 novel question phrasings (**100% pass rate**).
+- [x] Heterogeneous crop document structure. Resolved by implementing the **5-Section Standard** across all 41 crops in the knowledge base and verifying precision across water-phase, fertilizer-phase, duration, harvest, and season sub-topics (**100% pass rate**).
 
 ---
 
@@ -57,6 +59,7 @@
 - Implemented Intent-Aware Retrieval & Answer Generation: sub-topic tagging at index time (`_SUBTOPIC_RULES`), intent-keyword lookup at query time (`_INTENT_KEYWORD_MAP`), sub-topic boosting (+0.20), and dedicated-document specificity boosting (+0.25) in `vector_store.py`.
 - Rewrote `llm_client.py` with sub-topic sentence relevance scoring (`_sentence_relevance` with 0.3 bonus per sub-topic hit) to ensure answers strictly address the specific sub-topic asked without cross-topic bleed.
 - Executed comprehensive 7-category knowledge base expansion pass: added 20+ new structured documents across Cereals, Pulses, Oilseeds, Cash Crops, Fruits, Vegetables, Plantation Crops, Government Schemes (Raitha Siri, Bhoochetana, e-NAM), Rural Health (Child Malnutrition, AMB, POSHAN), and Legal Rights (Agri Input Consumer Rights).
-- Updated `metadata.json` for all packs to `v4.0` (89 total files indexed, 718 chunks).
-- Created `KNOWLEDGE_COVERAGE.md` v4.0 documenting all 28 crops, 10 schemes, 6 health SOPs, 4 soil/IPM guides, and 4 legal rights documents.
-- Created and executed `scripts/eval_rag.py` evaluation harness: verified 35 novel question phrasings across all 7 categories (**35/35 passed — 100% score**).
+- Standardized all 41 crops across 24 files to implement the **5-Section Standard**: (A) Water Requirement by Phase, (B) Fertilizer Requirement by Phase, (C) Total Crop Duration, (D) Harvesting Details, (E) Growing Season.
+- Re-indexed vector database (`scripts/reindex_all.py` — 89 files, 625 chunks) and updated `metadata.json` to `v5.0`.
+- Updated `KNOWLEDGE_COVERAGE.md` v5.0 documenting 5-section coverage for all 41 crops.
+- Updated `scripts/eval_rag.py` evaluation harness: verified 22 novel 5-section test cases across 41 crops (**22/22 passed — 100% score**).

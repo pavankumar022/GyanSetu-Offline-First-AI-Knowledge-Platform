@@ -1,48 +1,25 @@
-Jute & Tobacco Cash Crops Cultivation Guidelines — National Advisory
-Source: ICAR-Central Research Institute for Jute and Allied Fibres (CRIJAF), Barrackpore; ICAR-CTRI Rajahmundry
+Jute & Tobacco Cash Crops Guidelines — National Advisory
+Source: ICAR-CRIJAF Barrackpore; ICAR-CTRI Rajahmundry
 
-Suitable Agro-Climatic Zones & Soil Requirements:
-• Jute: West Bengal (No. 1 jute producer — Hooghly, Nadia, Murshidabad), Assam, Bihar, Odisha, and Tripura. Rich alluvial loamy soils with pH 6.0–7.5; requires hot humid climate (>70% humidity) and high rainfall.
-• Tobacco (FCV & Bidi Tobacco): Andhra Pradesh (Guntur/Prakasam FCV belt), Karnataka (Mysuru/Hunsur light soil FCV belt), Gujarat (Anand/Kheda Bidi belt), and Bihar. Light sandy loams to red sandy loams with pH 5.5–6.5.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Jute: JRO-204, JRC-698 (WB, Assam, Bihar). Tobacco: Kanchan, Siri (AP, Mysuru KA). Yield: Jute 30–40 q/ha fibre; Tobacco 20–25 q/ha leaf.
 
-Recommended Varieties by Season:
-• Jute Varieties (Tossa & White Jute): JRO-204 (Hooghly-1), JRO-5408, JRO-8432, JRC-698 (Samresh). Yield: 30–40 q/ha dry fibre.
-• Tobacco Varieties (FCV & Bidi): Kanchan, Siri, VT-1158, N-98 (FCV Tobacco); Anand-119, ABT-10 (Bidi Tobacco). Yield: 20–25 q/ha cured leaf.
+Water Requirement by Phase:
+• Crop Category: Jute: Pre-monsoon irrigated/Rainfed; Tobacco: Light furrow irrigated.
+• 1. Initial Phase (Nursery & Transplanting: 0–30 Days): Light watering.
+• 2. Middle Phase (Vegetative Growth & Topping: 30–90 Days): Grand Vegetative Growth (45–60 Days) is the SINGLE most water-critical stage.
+• 3. Final Phase (Maturity & Harvest: 90–120 Days): STOP watering 15 days before harvest.
 
-Sowing Seasons & Planting Window:
-• Jute Sowing Window: March 15 to April 30 (pre-monsoon showers).
-• Tobacco Nursery & Transplanting: Nursery sowing July–August; Transplanting September 15 to October 15 (Rabi crop).
+Fertilizer Requirement by Phase:
+• Jute: 80 kg N : 40 kg P2O5 : 40 kg K2O.
+• Tobacco: 40 kg N : 60 kg P2O5 : 120 kg K2O (High Potash non-chloride form).
 
-Row Spacing & Seed Rate:
-• Jute Seed Rate: 5–6 kg seed/ha for Tossa Jute (20 cm x 5 cm spacing). Seed treatment with Carbendazim @ 2 g/kg seed.
-• Tobacco Seed Rate & Spacing: Seed rate: 30–40 g nursery seed for 1 hectare. Transplant 60-day old seedlings at 100 cm x 60 cm spacing (FCV) or 75 cm x 75 cm (Bidi).
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 120 days (4 months) for Jute; 120–140 days for Tobacco.
 
-Irrigation Requirement & Water Management:
-• Water Type: Rainfed/Submerged for Jute; Irrigated Light Furrow for Tobacco.
-• Critical Growth Stages needing Irrigation:
-  - Jute: Requires 2–3 protective irrigations during early pre-monsoon establishment; rainfed afterwards. Retting requires clean slow-flowing water bodies.
-  - Tobacco: 3–4 light irrigations during grand vegetative growth and topping stage (45–60 DAT). Avoid over-watering (causes wet-foot wilt).
+Harvesting Details:
+• Signs of Maturity: Jute harvested at 50% flowering (small pod stage). Tobacco leaves turn yellowish-green with gummy feel.
+• Expected Yield: Jute: 30–40 q/ha fibre. Tobacco: 20–25 q/ha leaf.
 
-Fertilizer & NPK Recommendations (per Hectare):
-• Jute Dose: 80 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 40 kg Potassium (K2O). Split N in 2 doses (basal and 3 weeks after weeding).
-• Tobacco (FCV Light Soil): 40 kg Nitrogen (N) : 60 kg Phosphorus (P2O5) : 120 kg Potassium (K2O) (High Potash Potassium Sulfate form mandatory for burn quality; avoid Muriate of Potash / Chloride).
-
-Growth Stages & Duration:
-1. Germination & Nursery Stage: 0–20 Days for Jute; 0–60 Days Nursery for Tobacco.
-2. Vegetative Fiber / Leaf Elongation: 30–90 Days.
-3. Topping & Desuckering (Tobacco): At 55–60 DAT (remove floral heads to divert energy to leaves).
-4. Harvesting & Processing: Jute harvested at 120 days (small pod stage) followed by 15-day water retting and ribboning. Tobacco harvested by priming 2–4 leaves every 8 days (120–140 DAT) followed by flue-curing / sun-curing.
-
-Common Pest Control (Insect Pests):
-• Jute Hairy Caterpillar & Semilooper: Spray Profenofos 50 EC @ 2 ml/litre or Lambda-cyhalothrin 5 EC @ 1 ml/litre.
-• Tobacco Caterpillar (Spodoptera litura) & Aphids: Spray Chlorantraniliprole 18.5 SC @ 0.3 ml/litre or Imidacloprid 17.8 SL @ 0.3 ml/litre.
-
-Common Disease Management (Fungal & Viral):
-• Jute Stem Rot & Root Rot (Macrophomina phaseolina): Seed treatment with Carbendazim @ 2 g/kg; soil drenching with Copper Oxychloride @ 3 g/litre.
-• Tobacco Black Shank & Damping Off: Drench nursery beds with Metalaxyl 8% + Mancozeb 64% WP @ 2 g/litre.
-
-Expected Yield:
-• Jute Fibre: 30–40 q/ha. Tobacco Cured Leaf: 20–25 q/ha.
-
-Top Producing States:
-• Jute: West Bengal, Assam, Bihar. Tobacco: Andhra Pradesh, Gujarat, Karnataka.
+Growing Season:
+• Jute: March 15 to April 30. Tobacco: Transplanting Sept 15 to Oct 15 (Rabi).

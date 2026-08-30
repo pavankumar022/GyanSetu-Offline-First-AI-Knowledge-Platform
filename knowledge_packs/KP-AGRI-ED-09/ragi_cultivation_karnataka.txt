@@ -1,37 +1,40 @@
-Ragi (Finger Millet) Cultivation Guidelines — Karnataka & All-India Advisory
-Source: ICAR-Indian Institute of Millets Research (IIMR), Hyderabad; UAS Bengaluru (Project on Small Millets)
+Ragi (Finger Millet) Cultivation Guidelines — Karnataka & South India Advisory
+Source: ICAR-IIMR Hyderabad; UAS Bengaluru & GKVK
 
-Suitable Agro-Climatic Zones for Ragi (Finger Millet):
-• Karnataka Zones: Zone 4 (Central Dry Zone), Zone 5 (Eastern Dry Zone), Zone 6 (Southern Dry Zone). Key districts: Tumakuru, Kolar, Chikkaballapur, Ramanagara, Hassan, Mandya, Bengaluru Rural, and Chitradurga.
-• National Scope: Karnataka is the leading producer of Ragi in India (accounting for over 55% of national ragi production), followed by Uttarakhand, Tamil Nadu, Andhra Pradesh, Odisha, and Maharashtra.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Southern Dry Zone (Tumakuru, Kolar, Chikkaballapur, Ramanagara - Ragi belt), Southern Transition Zone (Hassan, Mandya), Central Dry Zone (Chitradurga).
+• Recommended Varieties: GPU-28, GPU-48, KMR-301, KMR-630, ML-365, MR-6, Indaf-8. Yield: 35–45 q/ha.
 
-Recommended Ragi (Finger Millet) Varieties:
-• Rainfed / Dryland Varieties: GPU-28, GPU-48, KMR-301, ML-365, MR-6 (drought resistant), Indaf-8, GPU-67. Yield: 25–35 q/ha grain + 4–5 tonnes/ha valuable fodder.
-• Irrigated Varieties: GPU-28, GPU-45, KMR-204, Indaf-9. Yield: 40–50 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Dryland and Irrigated Semi-Arid ecosystems. Highly drought-tolerant.
+• Total Water Requirement: Approximately 400–450 mm total water over the crop cycle.
+• 1. Initial Phase (Nursery & Transplanting / Direct Sowing: 0–20 Days After Sowing - DAS):
+  - Water Frequency: Light watering after transplanting / sowing; repeat every 5–6 days in dry spells.
+• 2. Middle Phase (Tillering & Earhead Emergence: 20–65 DAS):
+  - Water Frequency: Irrigate every 8–10 days if rain fails.
+  - Water-Critical Sub-Stage: Flowering & Earhead Emergence Stage (45–55 DAS) is the SINGLE most water-critical stage. Moisture stress causes chaffy un-filled earheads.
+• 3. Final Phase (Grain Dough & Maturity: 65–100 DAS):
+  - Water Frequency: Light irrigation at dough stage (75 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 15 days before harvest when earheads turn brown.
 
-Sowing & Transplanting Period for Ragi (Finger Millet):
-• Kharif Season: Optimum window is July 1 to August 15. Direct seeding rate: 5 kg/ha. Transplanted ragi nursery: 3 kg/ha (transplant 20-day old seedlings at 25 cm x 10 cm spacing).
-• Early Kharif: June 15 to June 30 (for long duration varieties like Indaf-8).
+Fertilizer Requirement by Phase:
+• Irrigated Ragi Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 50 kg Potassium (K2O).
+  - 1. Basal Dose (At Transplanting): Apply 50% Nitrogen (50 kg N) + 100% Phosphorus (50 kg P2O5) + 50% Potassium (25 kg K2O).
+  - 2. Top-Dressing / Middle Phase: Top-dress remaining 50% Nitrogen (50 kg N) + remaining 50% Potassium (25 kg K2O) at 30 DAT after weeding.
+  - 3. Final Phase: None needed.
+• Rainfed Ragi Fertilizer Schedule:
+  - Total Dose: 50 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 25 kg Potassium (K2O). Apply 50% N + full P & K basal; top-dress 50% N at 30 DAS after rains.
 
-Soil & Land Preparation for Ragi (Finger Millet):
-• Soil Type: Well-drained red sandy loams, gravelly light red soils, and loamy soils with pH 5.5–7.5. Excellent drought tolerance; handles low fertility dryland soils.
-• Land Prep: 2 ploughings to obtain friable seedbed. Incorporate 7.5 tonnes/ha FYM 3 weeks before sowing.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 100–115 days (approximately 3.5 months) from sowing/transplanting to harvest.
 
-Fertilizer Recommendations for Ragi (Finger Millet) (NPK per Hectare):
-• Rainfed Ragi (Dryland): 50 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 25 kg Potassium (K2O).
-  - Basal Application: Apply 50% Nitrogen + 100% Phosphorus + 100% Potassium at sowing.
-  - Top-Dressing (30 Days After Sowing): Apply remaining 50% Nitrogen after weeding/thinning.
-• Irrigated Ragi: 100 kg Nitrogen (N) : 50 kg Phosphorus (P2O5) : 50 kg Potassium (K2O) per hectare.
-• Bio-Fertilizers: Seed treatment with Azospirillum @ 200 g/ha + Aspergillus awamori (PSB) @ 200 g/ha increases nutrient uptake.
+Harvesting Details:
+• Signs of Maturity: Earheads turn dark brown; leaves turn yellow; grains become hard when pressed between fingers.
+• Harvesting Method: Cut mature earheads with sickles; harvest remaining straw later for nutritious cattle fodder.
+• Post-Harvest Handling: Sun-dry earheads for 3–4 days; thresh by beating with sticks or using mechanical ragi thresher; dry grain to 12% moisture.
+• Expected Yield: Irrigated Ragi: 35–45 quintals/ha (14–18 q/acre). Rainfed Ragi: 22–30 quintals/ha (9–12 q/acre).
 
-Critical Irrigation & Growth Stages for Ragi (Finger Millet):
-1. Germination & Seedling Phase: 0–15 Days After Sowing (DAS).
-2. Tillering & Branching Stage: 30–35 DAS (critical period for inter-cultivation and weeding).
-3. Earhead Emergence / Flowering Stage: 50–60 DAS (MOST CRITICAL for rainfed ragi — one protective irrigation during drought doubles yield).
-4. Grain Filling & Dough Stage: 75–80 DAS.
-5. Maturity & Harvest: 105–120 DAS (earheads turn brown and hard).
-
-Pest & Disease Management for Ragi (Finger Millet):
-• Ragi Blast (Pyricularia grisea — Leaf, Neck, Finger Blast): Spray Carbendazim 50 WP @ 1 g/litre or Mancozeb 75 WP @ 2 g/litre at earhead emergence.
-• Ragi Stem Borer & Aphids: Spray Dimethoate 30 EC @ 1.7 ml/litre or Quinalphos 25 EC @ 2 ml/litre.
-• Foot Rot / Wilt: Seed treatment with Trichoderma viride @ 4 g/kg seed before sowing.
+Growing Season:
+• Kharif Season (Main Monsoon): Sowing window July 1 to July 31; Transplanting July 15 to August 15 across Karnataka.
+• Summer Season (Irrigated): Sowing window January 15 to February 15.

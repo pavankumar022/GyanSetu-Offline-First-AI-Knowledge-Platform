@@ -1,38 +1,43 @@
-Sunflower Cultivation Guidelines — National & Karnataka Advisory
-Source: ICAR-Indian Institute of Oilseeds Research (IIOR), Hyderabad; UAS Bangalore & UAS Dharwad (Oilseeds Scheme)
+Sunflower Cultivation Guidelines — National & Regional Advisory
+Source: ICAR-Indian Institute of Oilseeds Research (IIOR), Hyderabad; UAS Raichur
 
-Suitable Agro-Climatic Zones for Sunflower:
-• Top Producing States: Karnataka (No. 1 sunflower producing state in India, contributing >50% of national production), Odisha, Maharashtra, Telangana, Bihar, Andhra Pradesh, and Punjab.
-• Karnataka Sunflower Belts: Vijayapura, Bagalkot, Koppal, Raichur, Bellary, Dharwad, Belagavi, Chitradurga, and Gadag.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Karnataka (Vijayapura, Koppal, Raichur, Bellary - No. 1 sunflower state), Maharashtra, AP, Telangana, Odisha, Punjab.
+• Recommended Varieties & Hybrids: KBSH-41, KBSH-44, KBSH-53, DRSH-1, RSFH-1887, MORDEN. Yield: 18–25 q/ha seed.
 
-Recommended Sunflower Hybrids & Varieties:
-• High Yielding Hybrids: KBSH-41, KBSH-44, KBSH-53, DRSF-108, Sunbred-275, PAC-36, RSFH-130, DRSH-1 (hybrids developed by UAS Bangalore & IIOR). Yield: 20–28 q/ha seed with 40–44% oil content.
-• Varieties / Short Duration: Morden (short duration 80–85 days suitable for late sowing or intercropping). Yield: 12–16 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Rainfed Kharif/Rabi Vertisols and Irrigated Summer ecosystems.
+• Total Water Requirement: Approximately 500–600 mm total water over the crop cycle (requires 4 to 5 irrigations).
+• 1. Initial Phase (Germination & Seedling Phase: 0–20 Days After Sowing - DAS):
+  - Water Frequency: Pre-sowing irrigation followed by first watering at 15–20 DAS.
+• 2. Middle Phase (Buttoning, Flowering & Seed Setting: 20–70 DAS):
+  - Water Frequency: Irrigate every 10–12 days.
+  - Water-Critical Sub-Stage: Flowering & Seed Development (45–65 DAS) is the SINGLE most water-critical stage. Moisture stress causes empty seed hulls ("chaffiness") and severe oil drop.
+• 3. Final Phase (Seed Dough & Maturation: 70–95 DAS):
+  - Water Frequency: Light irrigation at seed dough stage (75–80 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 15 days before harvest when back of sunflower head turns lemon yellow.
 
-Sowing Seasons & Seed Rate for Sunflower:
-• Kharif Season: July 1 to August 15. Seed rate: 5 kg hybrid seed/ha (60 cm x 30 cm spacing).
-• Rabi / Winter Season: October 15 to November 30.
-• Summer Season (Irrigated): January 15 to February 28.
+Fertilizer Requirement by Phase:
+• Irrigated Sunflower Hybrid Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 60 kg Nitrogen (N) : 60 kg Phosphorus (P2O5) : 30 kg Potassium (K2O) + 20 kg Elemental Sulfur + 2 kg Solubor (Boron).
+  - 1. Basal Dose (At Sowing): Apply 50% Nitrogen (30 kg N) + 100% Phosphorus (60 kg P2O5) + 100% Potassium (30 kg K2O) + 20 kg Sulfur.
+  - 2. Top-Dressing / Middle Phase:
+    * Top-dress remaining 50% Nitrogen (30 kg N) at 30 DAS (buttoning stage).
+    * Foliar spray of Solubor (Boron 20%) @ 0.2% (2 g/litre) at ray floret opening stage (50 DAS) to maximize seed set.
+  - 3. Final Phase: None needed.
+• Rainfed Sunflower Fertilizer Schedule:
+  - Total Dose: 40 kg N : 40 kg P2O5 : 20 kg K2O as 100% basal dose at sowing.
 
-Soil & Land Preparation for Sunflower:
-• Soil Type: Well-drained medium to deep black clay soils (Vertisols) or alluvial loams with pH 6.5–8.0. Deep taproot absorbs subsoil moisture during drought.
-• Land Prep: Plough land 2 times followed by harrowing to secure level seedbed.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 90–105 days (approximately 3 to 3.5 months) from sowing to harvest.
 
-Fertilizer Recommendations for Sunflower (NPK per Hectare):
-• Rainfed Sunflower (Kharif): 60 kg Nitrogen (N) : 60 kg Phosphorus (P2O5) : 30 kg Potassium (K2O) + 25 kg Elemental Sulfur per hectare.
-  - Basal Application: 50% Nitrogen + 100% Phosphorus + 100% Potassium + 100% Sulfur at sowing.
-  - Top-Dressing (30 Days After Sowing): 50% Nitrogen at buttoning stage.
-• Irrigated Sunflower: 90 kg Nitrogen (N) : 90 kg Phosphorus (P2O5) : 60 kg Potassium (K2O) + 30 kg Elemental Sulfur per hectare.
-• Boron Foliar Spray (MOST CRITICAL for seed setting): Spray Solubor (Boron 20%) @ 2 g/litre water on head/flower disc at ray floret stage (50 DAS) to prevent hollow seed formation and boost seed setting by 25%.
+Harvesting Details:
+• Signs of Maturity: Back of capitulum head turns golden yellow; ray florets wither and drop off; seeds turn hard and dark.
+• Harvesting Method: Cut sunflower heads manually with sickles.
+• Post-Harvest Handling: Sun-dry heads for 3–4 days; thresh using mechanical sunflower thresher; dry seeds to 8–9% moisture content.
+• Expected Yield: Irrigated Sunflower: 20–25 quintals/ha (8–10 q/acre). Rainfed Sunflower: 12–16 quintals/ha (5–7 q/acre).
 
-Critical Irrigation & Growth Stages for Sunflower:
-1. Germination & Seedling Phase: 0–15 Days After Sowing (DAS).
-2. Buttoning / Head Initiation Stage: 30–35 DAS (first top-dressing stage).
-3. Flowering / Anthesis Stage: 50–55 DAS (MOST CRITICAL stage — hand pollination using cloth disc or placing honeybee hives @ 2 hives/acre boosts seed set by 30%).
-4. Seed Filling & Development Stage: 70–85 DAS (maintain adequate soil moisture).
-5. Harvest: 90–105 DAS (harvest when back of sunflower head turns golden yellow and bracts turn brown).
-
-Pest & Disease Management for Sunflower:
-• Alternaria Leaf Blight (Alternaria helianthi): Spray Mancozeb 75 WP @ 2.5 g/litre or Propiconazole 25 EC @ 1 ml/litre at 45 DAS and repeat 15 days later.
-• Sunflower Necrosis Disease (SND): Control thrips vector by spraying Imidacloprid 17.8 SL @ 0.3 ml/litre or Fipronil 5 SC @ 1 ml/litre at 20 DAS.
-• Head Rot (Sclerotinia sclerotiorum): Spray Carbendazim 50 WP @ 1 g/litre; avoid overhead sprinkler irrigation during flowering.
+Growing Season:
+• Kharif Season: Sowing window June 15 to July 15.
+• Rabi Season: Sowing window September 15 to October 15.
+• Summer Season (Irrigated): Sowing window January 15 to February 15.

@@ -1,38 +1,41 @@
-Cotton Cultivation Guidelines — National & Karnataka Advisory
-Source: ICAR-Central Institute for Cotton Research (CICR), Nagpur; UAS Dharwad (Department of Agronomy & Entomology)
+Cotton Cultivation Guidelines — National & Regional Advisory
+Source: ICAR-Central Institute for Cotton Research (CICR), Nagpur; UAS Dharwad
 
-Suitable Agro-Climatic Zones for Cotton:
-• Top Producing States: Gujarat (No. 1 cotton producing state), Maharashtra, Telangana, Rajasthan, Karnataka, Andhra Pradesh, Haryana, Punjab, and Madhya Pradesh.
-• Karnataka Cotton Belts: Dharwad (Cotton hub), Haveri, Belagavi, Raichur, Kalaburagi, Bellary, Vijayapura, and Mysore.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Gujarat (No. 1 state), Maharashtra, Telangana, Rajasthan, Karnataka (Dharwad, Haveri, Belagavi, Raichur), AP, Punjab, Haryana.
+• Recommended Varieties: Bt Hybrids: Rasi 659, Bunny Bt, DHH-11. Desi/Rainfed: Jayadhar, DLSa-17. Yield: 25–35 q/ha seed cotton.
 
-Recommended Cotton Hybrids & Varieties:
-• Bt Cotton Hybrids (Bollgard II / BG-II): Rasi 659, Bunny Bt, Kanaka Bt, DHH-11, Pioneer 30V92, Bio 9681, ATM-Bt. Yield: 25–35 q/ha seed cotton.
-• Rainfed / Desi Cotton Varieties: Jayadhar (herbaceum rainfed for black cotton soils), Suvin (extra-long staple), DLSa-17. Yield: 15–22 q/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to Irrigated (Gujarat/North India) and Rainfed Vertisols (Deccan Plateau).
+• Total Water Requirement: Approximately 700–900 mm total water over the crop cycle.
+• 1. Initial Phase (Germination & Seedling Phase: 0–35 Days After Sowing - DAS):
+  - Water Frequency: Pre-sowing irrigation followed by light watering every 10–12 days. Provide drainage in heavy clay.
+• 2. Middle Phase (Square Formation & Flowering: 35–110 DAS):
+  - Water Frequency: Irrigate every 12–15 days in rainless spells.
+  - Water-Critical Sub-Stage: Peak Flowering & Boll Formation (60–90 DAS) is the SINGLE most water-critical stage. Water shortage causes up to 40% flower bud and young boll shedding.
+• 3. Final Phase (Boll Development & Bursting: 110–160 DAS):
+  - Water Frequency: Light irrigation during late boll maturation (110–130 DAS).
+  - Stop Irrigation Timing: STOP all irrigation 20–25 days before first picking when bolls begin to burst open naturally.
 
-Sowing Seasons & Spacing for Cotton:
-• Kharif Season (Rainfed / Irrigated): May 15 to June 30 (with arrival of pre-monsoon or monsoon showers).
-• Row Spacing & Seed Rate: Bt Cotton Hybrids: 90 cm x 60 cm (2.25 kg seed/ha). Desi Cotton: 60 cm x 30 cm (10 kg seed/ha).
+Fertilizer Requirement by Phase:
+• Irrigated Bt Cotton Hybrids Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 150 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 75 kg Potassium (K2O).
+  - 1. Basal Dose (At Sowing): Apply 20% Nitrogen (30 kg N) + 100% Phosphorus (75 kg P2O5) + 33% Potassium (25 kg K2O).
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (Square Formation Stage - 40 to 45 DAS): Top-dress 40% Nitrogen (60 kg N) + 33% Potassium (25 kg K2O).
+    * Round 2 (Peak Flowering Stage - 70 to 75 DAS): Top-dress remaining 40% Nitrogen (60 kg N) + remaining 34% Potassium (25 kg K2O).
+  - 3. Final Phase: Foliar spray of 1% Magnesium Sulfate + 0.2% Borax at peak boll formation to prevent leaf reddening.
+• Rainfed Cotton Fertilizer Schedule:
+  - Total Dose: 90 kg Nitrogen (N) : 45 kg Phosphorus (P2O5) : 45 kg Potassium (K2O). Apply 50% N + full P & K basal; top-dress 50% N at 45 DAS after rains.
 
-Soil & Land Preparation for Cotton:
-• Soil Type: Deep black cotton soils (Vertisols) with high water retention capacity or deep fertile alluvial loams with pH 6.5–8.0.
-• Land Prep: Deep ploughing every 3 years to break hardpan followed by 2 harrowings. Form ridges and furrows for proper field drainage.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 150–180 days (approximately 5 to 6 months) from sowing to harvest (multiple pickings).
 
-Fertilizer Recommendations for Cotton (NPK per Hectare):
-• Irrigated Bt Cotton Hybrids: 150 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 75 kg Potassium (K2O).
-  - Basal Application: 20% Nitrogen + 100% Phosphorus + 33% Potassium at sowing.
-  - Square Formation Stage (40–45 Days After Sowing - DAS): 40% Nitrogen + 33% Potassium.
-  - Peak Flowering & Boll Formation (70–75 DAS): 40% Nitrogen + 34% Potassium.
-  - Magnesium & Boron Foliar Spray: Spray Magnesium Sulfate @ 1% + Borax @ 0.2% at peak flowering to prevent red leaf disease (leaf reddening).
-• Rainfed Cotton: 90 kg Nitrogen (N) : 45 kg Phosphorus (P2O5) : 45 kg Potassium (K2O) per hectare.
+Harvesting Details:
+• Signs of Maturity: Cotton bolls burst open fully exposing dry white lint fluff; boll carpels dry up.
+• Harvesting Method: Manual picking of clean seed cotton from fully burst bolls in 3–4 flush pickings.
+• Post-Harvest Handling: Avoid picking wet dew-laden cotton in morning; dry picked seed cotton in sun until moisture is <8% before ginning/bagging.
+• Expected Yield: Irrigated Bt Cotton: 28–35 quintals/ha (11–14 q/acre). Rainfed Cotton: 15–22 quintals/ha (6–9 q/acre).
 
-Critical Irrigation & Growth Stages for Cotton:
-1. Seedling & Vegetative Stage: 0–35 DAS.
-2. Square Formation (Flower Bud Emergence): 40–55 DAS.
-3. Flowering & Early Boll Development: 60–90 DAS (MOST CRITICAL for moisture — water shortage causes severe flower & boll dropping).
-4. Boll Development & Maturation: 90–120 DAS.
-5. Boll Bursting & Cotton Picking: 120–160 DAS (picking when bolls open fully; avoid picking morning dew cotton).
-
-Pest & Disease Management for Cotton:
-• Pink Bollworm (Pectinophora gossypiella): Install Pheromone traps @ 5/acre at 45 DAS. Spray Spinetoram 11.7 SC @ 1 ml/litre or Profenofos 50 EC @ 2 ml/litre at 10% pink bollworm infestation in green bolls.
-• Sucking Pests (Jassids, Thrips, Whitefly): Seed treatment with Imidacloprid 70 WS @ 7 g/kg seed; spray Flonicamid 50 WG @ 0.3 g/litre or Diafenthiuron 50 WP @ 1 g/litre.
-• Cotton Leaf Curl Virus (CLCuV) & Wilt: Control whitefly vector; drench soil with Carbendazim @ 1 g/litre.
+Growing Season:
+• Kharif Season: Sowing window May 15 to June 30 with pre-monsoon or monsoon rains.

@@ -1,42 +1,43 @@
 Sugarcane Cultivation Guidelines — National & Karnataka Advisory
-Source: ICAR-Sugarcane Breeding Institute (SBI), Coimbatore; ICAR-Indian Institute of Sugarcane Research (IISR), Lucknow
+Source: ICAR-Sugarcane Breeding Institute (SBI), Coimbatore; IISR Lucknow
 
-Suitable Agro-Climatic Zones for Sugarcane:
-• Top Producing States: Uttar Pradesh (No. 1 area), Maharashtra (No. 1 sugar recovery), Karnataka (3rd largest producer), Tamil Nadu, Gujarat, Andhra Pradesh, Telangana, and Bihar.
-• Karnataka Sugarcane Belts: Belagavi (Sugarcane capital of Karnataka — Sankeshwar/Chikodi belt), Bagalkot, Vijayapura, Mandya (Visvesvaraya Canal command), Mysuru, Haveri, and Kalaburagi.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Agro-Climatic Zones: Tropical South India (Karnataka - Belagavi, Mandya, Bagalkot, Mysuru; Maharashtra, Tamil Nadu) and Sub-Tropical North India (UP, Bihar, Punjab).
+• Recommended Varieties: Co-86032 (Nayana), Co-0238 (Subhash), CoC-671, SNK-09293. Yield: 100–140 tonnes/ha.
 
-Recommended Sugarcane Varieties:
-• Tropical South India (Karnataka, Maharashtra, Tamil Nadu):
-  - Co-86032 (Nayana — top sucrose variety, high tonnage), CoC-671, Co-0238 (Subhash), Co-91010, SNK-09293 (drought tolerant for Northern dry zones), VSI-434. Yield: 100–140 tonnes/ha.
-• Sub-Tropical North India (UP, Bihar, Punjab, Haryana):
-  - Co-0238, Co-0118, Co-98014, CoLk-94184 (waterlogging tolerant). Yield: 80–110 tonnes/ha.
+Water Requirement by Phase:
+• Crop Category: Suited to High-Water Irrigated (Drip / Furrow) ecosystems.
+• Total Water Requirement: Approximately 1,500–2,500 mm total water over the 12–18 month crop cycle.
+• 1. Initial Phase (Germination & Seedling Phase: 0–45 Days After Planting - DAP):
+  - Water Frequency: Light irrigation every 6–8 days. Keep furrows moist.
+• 2. Middle Phase (Formative / Tillering & Grand Growth: 45–270 DAP):
+  - Water Frequency: Irrigate every 8–10 days during formative tillering (45–120 DAP) and grand growth stem elongation (120–270 DAP).
+  - Water-Critical Sub-Stage: Formative / Tillering Stage (45–120 DAP) is the SINGLE most water-critical stage. Moisture stress reduces tiller survival by 35% and severely lowers final cane count.
+• 3. Final Phase (Maturity & Sucrose Ripening: 270–360 DAP):
+  - Water Frequency: Reduce watering frequency to once every 20 days.
+  - Stop Irrigation Timing: STOP all irrigation 25–30 days before harvest to promote sugar concentration and Brix accumulation in cane juice.
 
-Planting Seasons & Planting Material for Sugarcane:
-• Planting Seasons in South India:
-  - Adsali Planting: July 15 to August 30 (15–18 months crop duration; highest yield 130–160 t/ha).
-  - Pre-Seasonal Planting: October 15 to November 30 (14–15 months duration).
-  - Suru / Spring Planting: January 15 to February 28 (11–12 months duration).
-• Seed Sett Requirement: 40,000 two-budded setts or 75,000 single-budded setts per hectare. Treatment with Carbendazim 50 WP @ 1 g/litre water for 15 minutes before planting.
+Fertilizer Requirement by Phase:
+• Irrigated Sugarcane Plant Crop Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 250 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 75 kg Potassium (K2O).
+  - 1. Basal Dose (At Planting): Apply 10% Nitrogen (25 kg N) + 100% Phosphorus (75 kg P2O5) + 33% Potassium (25 kg K2O).
+  - 2. Top-Dressing / Middle Phase:
+    * Round 1 (Tillering Stage - 45 DAP): Top-dress 20% Nitrogen (50 kg N).
+    * Round 2 (90 DAP): Top-dress 30% Nitrogen (75 kg N).
+    * Round 3 (Final Earthing Up - 120 to 150 DAP): Top-dress remaining 40% Nitrogen (100 kg N) + remaining 67% Potassium (50 kg K2O).
+  - 3. Final Phase: None needed during final maturity phase.
 
-Soil & Land Preparation for Sugarcane:
-• Soil Type: Deep clay loams, well-drained alluvial soils, and heavy black clay soils with pH 6.5–8.0.
-• Land Prep: Deep subsoiling to 45 cm depth followed by 2 disk harrowings. Form ridges and furrows at 90 cm to 120 cm row spacing (wider 150 cm row spacing for drip irrigation).
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 360–540 days (approximately 12 to 18 months) from planting to harvest depending on planting season.
+• Variance: Suru / Spring Crop: 11–12 months (360 days); Pre-Seasonal: 14 months; Adsali Planting: 15–18 months (450–540 days).
 
-Fertilizer Recommendations for Sugarcane (NPK per Hectare):
-• Sugarcane Plant Crop (South India / Karnataka): 250 kg Nitrogen (N) : 75 kg Phosphorus (P2O5) : 75 kg K2O.
-  - At Planting: 10% Nitrogen + 100% Phosphorus + 33% Potassium.
-  - 45 Days After Planting (Tillering): 20% Nitrogen.
-  - 90 Days After Planting: 30% Nitrogen.
-  - Final Earthing Up (120–150 Days): 40% Nitrogen + 67% Potassium.
-• Sugarcane Ratoon Crop: 300 kg Nitrogen (N) : 100 kg Phosphorus (P2O5) : 100 kg Potassium (K2O) + 25 kg Ferrous Sulfate / Zinc Sulfate per hectare.
+Harvesting Details:
+• Signs of Maturity: Lower leaves yellow and dry out; cane juice Hand Sugar Refractometer Brix reading exceeds 18–20 °Brix; metallic sound when tapping mature cane.
+• Harvesting Method: Manual cutting close to ground level with heavy cane knives (cutting close to soil maximizes sugar yield).
+• Post-Harvest Handling: Transport cut cane to sugar mill within 24–48 hours to prevent invert sugar degradation and sucrose loss.
+• Expected Yield: Suru Plant Crop: 100–120 tonnes/ha (40–48 t/acre). Adsali Crop: 130–160 tonnes/ha (52–64 t/acre).
 
-Critical Irrigation & Growth Stages for Sugarcane:
-1. Germination Phase: 0–45 Days After Planting (DAP).
-2. Formative / Tillering Stage: 45–120 DAP (MOST CRITICAL for yield — water stress reduces tiller survival by 35%).
-3. Grand Growth Period (Stem Elongation & Internode Formation): 120–270 DAP (highest biomass accumulation; requires regular waterings every 8–10 days).
-4. Maturity & Sucrose Ripening: 270–360 DAP (stop irrigation 25–30 days prior to harvest to promote sugar synthesis).
-
-Pest & Disease Management for Sugarcane:
-• Early Shoot Borer (Chilo infuscatellus): Soil application of Chlorantraniliprole 0.4% GR @ 7.5 kg/acre at 30 DAP or spray Chlorantraniliprole 18.5 SC @ 0.4 ml/litre at 45 DAP.
-• Sugarcane Red Rot (Colletotrichum falcatum): Use disease-free certified setts; treat setts in hot water at 52°C for 30 minutes before planting. Destroy infected stools immediately.
-• Woolly Aphid (Ceratovacuna lanigera): Release predators Dipha aphidivora or Chrysoperla carnea; spray Thiamethoxam 25 WG @ 0.2 g/litre.
+Growing Season:
+• Adsali Season: July 15 to August 30 (South India).
+• Pre-Seasonal: October 15 to November 30.
+• Suru / Spring Season: January 15 to February 28.

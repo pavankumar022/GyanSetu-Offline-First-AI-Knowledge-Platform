@@ -27,7 +27,7 @@ _HEADER_PATTERNS = [
     re.compile(r"^#{1,3}\s+(.+)$"),                     # markdown ## headers
     re.compile(r"^([A-Z][A-Za-z &/()—–-]{3,}):?\s*$"),  # ALL-CAPS or Title: lines
     re.compile(r"^(\d+\.\s+[A-Z].{5,}):?\s*$"),          # "1. Section Name:"
-    re.compile(r"^((?:Kharif|Rabi|Zaid|Fertilizer|Water|Pest|Varieties?|Irrigat|Transplant|Sowing|NPK|Livestock|Fisheries?|GI Product)[^:\n]{0,60}):?\s*$", re.I),
+    re.compile(r"^((?:Kharif|Rabi|Zaid|Fertilizer|Water|Pest|Varieties?|Irrigat|Transplant|Sowing|NPK|Livestock|Fisheries?|GI Product|Harvesting|Total Crop|Growing|Section [A-E])[^:\n]{0,60}):?\s*$", re.I),
 ]
 
 MAX_CHUNK_WORDS = 150
@@ -37,19 +37,21 @@ CHUNK_OVERLAP_WORDS = 25
 # Maps a canonical sub-topic tag to a list of trigger keywords/phrases.
 # These are matched against the *section heading* of a chunk at index time.
 _SUBTOPIC_RULES: List[Tuple[str, List[str]]] = [
-    ("irrigation",   ["irrigat", "water", "watering", "awd", "drip", "flood", "moisture", "sinchayee"]),
+    ("irrigation",   ["irrigat", "water", "watering", "awd", "drip", "flood", "moisture", "sinchayee", "water requirement"]),
     ("fertilizer",   ["fertilizer", "npk", "nitrogen", "phosphorus", "potassium", "urea", "dap",
                        "fym", "manure", "nutrient", "dose", "top dress", "basal", "micronutrient"]),
     ("sowing",       ["sowing", "sow", "planting", "planting time", "nursery", "transplant",
-                       "seed rate", "seedling", "propagation", "spacing", "pit size"]),
+                       "seed rate", "seedling", "propagation", "spacing", "pit size", "sowing window"]),
     ("spacing",      ["spacing", "row gap", "plant distance", "seed rate", "pit size", "propagation"]),
     ("varieties",    ["variet", "hybrid", "cultivar", "variety", "recommended", "improved"]),
     ("pest",         ["pest", "insect", "bug", "thrips", "aphid", "mite", "borer", "armyworm",
                        "bollworm", "fly", "weevil", "beetle", "caterpillar"]),
     ("disease",      ["disease", "fungus", "fungal", "rust", "blight", "wilt", "mold", "virus",
                        "bacterial", "rot", "smut", "mildew", "spot", "pathogen"]),
-    ("yield",        ["yield", "produce", "output", "production", "harvest", "tonnes", "quintal",
-                       "per acre", "per hectare"]),
+    ("duration",     ["total crop duration", "total duration", "growth duration", "maturity duration", "crop duration", "how many days", "how many months"]),
+    ("harvest",      ["harvesting details", "harvesting", "harvest", "maturity", "ready for harvest", "readiness", "post-harvest", "post harvest"]),
+    ("season",       ["growing season", "season", "kharif", "rabi", "zaid", "summer", "sowing window", "sowing period"]),
+    ("yield",        ["yield", "produce", "output", "production", "tonnes", "quintal", "per acre", "per hectare"]),
     ("soil",         ["soil", "land", "vertisol", "loam", "clay", "sandy", "pH", "alkaline",
                        "acidic", "organic carbon", "soil type"]),
     ("eligibility",  ["eligib", "who can", "entitled", "beneficiar", "qualify", "criteria",
@@ -82,14 +84,22 @@ def _tag_subtopic(section_label: str, chunk_body: str) -> str:
 _INTENT_KEYWORD_MAP: List[Tuple[List[str], str]] = [
     # Irrigation / water
     (["water", "irrigat", "how often", "how frequently", "awd", "days between watering",
-      "how many irrigations", "flood", "drip", "moisture", "sinchayee"], "irrigation"),
+      "how many irrigations", "flood", "drip", "moisture", "sinchayee", "stop watering", "water requirement"], "irrigation"),
     # Fertilizer / NPK
     (["fertilizer", "npk", "nitrogen", "urea", "dap", "nutrient", "dose", "dosage",
       "how much to apply", "top dress", "basal", "manure", "micronutrient",
-      "zinc", "boron", "iron deficiency", "sulfur", "when to add urea"], "fertilizer"),
+      "zinc", "boron", "iron deficiency", "sulfur", "when to add urea", "top dressing schedule"], "fertilizer"),
     # Sowing / planting / nursery
     (["when to sow", "sowing", "planting time", "sow", "nursery", "transplant",
-      "best time to plant", "when should i plant", "season to plant"], "sowing"),
+      "best time to plant", "when should i plant", "sowing window"], "sowing"),
+    # Duration / how long to grow
+    (["how many days does", "how many months", "total crop duration", "total duration",
+      "growth duration", "how long does", "take to grow"], "duration"),
+    # Harvest / maturity / readiness
+    (["harvesting", "harvest", "ready to harvest", "ready for harvest", "signs of maturity",
+      "when is", "ready to reap", "signs that"], "harvest"),
+    # Growing Season
+    (["growing season", "which season", "season should i grow", "season for", "kharif", "rabi", "zaid"], "season"),
     # Spacing / seed rate
     (["spacing", "distance between", "row gap", "seed rate", "plant distance",
       "how far apart", "how close"], "spacing"),
@@ -353,6 +363,20 @@ _CROP_ALIASES: Dict[str, List[str]] = {
     "apple": ["apple"],
     "cardamom": ["cardamom"],
     "pepper": ["pepper"],
+    "cauliflower": ["cauliflower"],
+    "cabbage": ["cabbage"],
+    "brinjal": ["brinjal", "eggplant"],
+    "eggplant": ["brinjal", "eggplant"],
+    "chilli": ["chilli", "chili", "chillies"],
+    "okra": ["okra", "bhindi"],
+    "bhindi": ["okra", "bhindi"],
+    "pomegranate": ["pomegranate"],
+    "citrus": ["citrus", "lemon", "lime", "mandarin", "mosambi"],
+    "grapes": ["grapes", "grape"],
+    "papaya": ["papaya"],
+    "mango": ["mango"],
+    "jute": ["jute"],
+    "tobacco": ["tobacco"],
 }
 
 

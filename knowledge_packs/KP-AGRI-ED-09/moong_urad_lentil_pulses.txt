@@ -1,54 +1,31 @@
-Green Gram (Moong), Black Gram (Urad) & Lentil (Masoor) Cultivation Guidelines
-Source: ICAR-Indian Institute of Pulses Research (IIPR), Kanpur; UAS Dharwad & TNAU
+Green Gram (Moong), Black Gram (Urad) & Lentil (Masoor) Guidelines — National Advisory
+Source: ICAR-IIPR Kanpur; UAS Dharwad & TNAU
 
-Suitable Agro-Climatic Zones & Soil Requirements:
-• Zones & Regions: Rajasthan, Madhya Pradesh, Uttar Pradesh, Maharashtra, Karnataka (Northern Dry Zone & Rice Fallows of Coastal/Malnad), Andhra Pradesh, and Bihar.
-• Soil & pH: Well-drained fertile loams to clay loams with pH 6.5–7.5. Highly sensitive to waterlogging.
+Suitable Agro-Climatic Zones & Recommended Varieties:
+• Moong (Green Gram): IPM 02-3, HUM-16, DGG-5 (Karnataka). Urad: LBG-752, DU-1. Lentil: L-4076, HUL-57. Yield: 10–18 q/ha.
 
-Recommended Varieties by Season:
-• Moong (Green Gram):
-  - Kharif / Summer: IPM 02-3 (Meha), HUM-16, Shiny Moong, DGG-5 (for Karnataka). Yield: 12–15 q/ha.
-• Urad (Black Gram):
-  - Kharif / Rabi Rice Fallow: LBG-752, LBG-623, AKU-15, DU-1 (for South India). Yield: 10–14 q/ha.
-• Masoor (Lentil):
-  - Rabi Season: L-4076, HUL-57, DPL-62, K-75. Yield: 15–20 q/ha.
+Water Requirement by Phase:
+• Crop Category: Rainfed Kharif / Rice Fallows; Irrigated Summer (Zaid).
+• Total Water Requirement: Approximately 300–400 mm.
+• 1. Initial Phase (Germination & Seedling: 0–15 DAS): Light watering for summer crop; rainfed for Kharif.
+• 2. Middle Phase (Branching & Flowering: 15–50 DAS): Irrigate summer crop every 8–10 days. Flowering & Pod Development (30–45 DAS) is the SINGLE most water-critical stage.
+• 3. Final Phase (Pod Maturation: 50–70 DAS): STOP all irrigation 10 days before harvest when pods turn black/brown.
 
-Sowing Seasons & Planting Window:
-• Kharif Season: June 15 to July 15 (with arrival of monsoon rains).
-• Rabi / Rice Fallows: October 15 to November 15 (sowing directly into standing rice stubble moist soil).
-• Summer (Zaid) Season: March 1 to March 25 (under assured irrigation after wheat/mustard harvest).
+Fertilizer Requirement by Phase:
+• Pulse Fertilizer Schedule (NPK per Hectare):
+  - Total Dose: 20 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Sulfur.
+  - 1. Basal Dose: 100% N, P, K, and S at sowing + Rhizobium seed inoculation.
+  - 2. Top-Dressing / Middle Phase: Foliar spray of 2% DAP at 35 DAS.
+  - 3. Final Phase: None.
 
-Row Spacing & Seed Rate:
-• Moong / Urad Seed Rate: Kharif: 15–20 kg/ha (30 cm x 10 cm spacing). Summer / Rice Fallows: 25 kg/ha (22.5 cm x 10 cm spacing).
-• Lentil (Masoor) Seed Rate: 40–45 kg/ha (22.5 cm x 5 cm spacing).
-• Seed Treatment: Rhizobium leguminosarum @ 5 g/kg seed + PSB @ 5 g/kg seed + Trichoderma viride @ 5 g/kg seed.
+Total Crop Duration:
+• Standalone Total Duration: Total Duration: 65–75 days (approximately 2 to 2.5 months) for Moong/Urad; 110–120 days for Lentil.
 
-Irrigation Requirement & Water Management:
-• Water Type: Rainfed for Kharif & Rice Fallows; Irrigated for Summer (Zaid).
-• Critical Growth Stages needing Irrigation:
-  - Summer Moong/Urad: Requires 3–4 light irrigations at 10–12 day intervals.
-  - Critical Stages: Flowering (30–35 DAS) and Pod Development (45–50 DAS). Avoid excessive irrigation during peak flowering.
+Harvesting Details:
+• Signs of Maturity: 85% of pods turn dark brown or black; leaves yellow and dry.
+• Harvesting Method: Hand picking mature pods in flushes or cut whole plants.
+• Post-Harvest Handling: Sun-dry pods for 3 days; thresh and dry seeds to 9% moisture.
+• Expected Yield: Kharif Pulses: 10–12 q/ha. Summer Irrigated Pulses: 14–18 q/ha.
 
-Fertilizer & NPK Recommendations (per Hectare):
-• Rainfed Kharif Pulse Dose: 20 kg Nitrogen (N) : 40 kg Phosphorus (P2O5) : 20 kg Potassium (K2O) + 20 kg Sulfur per hectare.
-• Basal Application: Apply 100% N, P, K, and S at sowing time. Pulse root nodules fix atmospheric nitrogen.
-
-Growth Stages & Duration:
-1. Germination & Seedling Phase: 0–12 Days After Sowing (DAS).
-2. Vegetative Branching: 15–30 DAS.
-3. Flowering & Pod Initiation: 35–45 DAS.
-4. Pod Maturity & Harvesting: 65–75 DAS for Moong/Urad; 110–120 DAS for Lentil.
-
-Common Pest Control (Insect Pests):
-• Whitefly & Aphids (Yellow Mosaic Virus vectors): Spray Imidacloprid 17.8 SL @ 0.3 ml/litre or Dimethoate 30 EC @ 1.7 ml/litre.
-• Pod Borer (Helicoverpa / Maruca testulalis): Spray Emamectin Benzoate 5 SG @ 0.4 g/litre or Indoxacarb 14.5 SC @ 0.5 ml/litre at 50% flowering.
-
-Common Disease Management (Fungal & Viral):
-• Yellow Mosaic Virus (YMV): Grow YMV-resistant varieties (IPM 02-3, DGG-5); control whitefly vector early with yellow sticky traps @ 15/acre.
-• Powdery Mildew & Cercospora Leaf Spot: Spray Soluble Sulfur @ 3 g/litre or Carbendazim 50 WP @ 1 g/litre water.
-
-Expected Yield:
-• Rainfed Kharif: 10–12 quintals/ha. Irrigated Summer: 14–16 quintals/ha.
-
-Top Producing States:
-• Madhya Pradesh (No. 1 pulse producer), Rajasthan, Uttar Pradesh, Maharashtra, Karnataka.
+Growing Season:
+• Kharif: June 15 to July 15. Summer (Zaid): March 1 to March 25. Rabi Rice Fallows: October 15 to November 15.
